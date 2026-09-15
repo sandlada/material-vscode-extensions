@@ -3,7 +3,7 @@
  *
  * Upstream1: {@link https://github.com/material-components/material-web/tree/main/tokens}
  *
- * Upstream2: {@link https://material-theme-builder.sandlada.com/}
+ * Upstream2 (self-hosted deployment, not the official m3.material.io): {@link https://material-theme-builder.sandlada.com/}
  *
  * Previously served via contributes.css.customData; that namespace is now
  * claimed by a proposed-API CSS extension point, so tokens ship as css

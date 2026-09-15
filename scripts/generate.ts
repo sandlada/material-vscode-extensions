@@ -10,9 +10,9 @@ export interface SnippetDef {
     description: string
 }
 
-const SNIPPETS_REL = 'snippets/snippets.code-snippets'
-const HTML_DATA_REL = 'custom-data/html.html-data.json'
-const CSS_SNIPPETS_REL = 'snippets/css.code-snippets'
+const SNIPPETS_REL = 'packages/material-web-snippets/snippets/snippets.code-snippets'
+const HTML_DATA_REL = 'packages/material-web-snippets/custom-data/html.html-data.json'
+const CSS_SNIPPETS_REL = 'packages/material-design-css-snippets/snippets/css.code-snippets'
 
 function titleCase(s: string): string {
     return s

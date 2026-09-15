@@ -1,0 +1,48 @@
+{
+  "name": "material-design-css-snippets",
+  "displayName": "Material Design CSS Snippets",
+  "description": "Material Design 3 CSS System Color Token Snippets for Visual Studio Code.",
+  "keywords": [
+    "material",
+    "material-design",
+    "material-you",
+    "css",
+    "design-tokens",
+    "snippets"
+  ],
+  "author": "Kai Orion & Sandlada",
+  "publisher": "sandlada",
+  "license": "MIT",
+  "version": "0.0.1",
+  "icon": "images/icon/extension-icon-128.png",
+  "galleryBanner": {
+    "color": "#6750A4",
+    "theme": "dark"
+  },
+  "homepage": "https://github.com/sandlada/material-vscode-extensions/tree/main/packages/material-design-css-snippets",
+  "bugs": {
+    "url": "https://github.com/sandlada/material-vscode-extensions/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sandlada/material-vscode-extensions",
+    "directory": "packages/material-design-css-snippets"
+  },
+  "engines": {
+    "vscode": "^1.82.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "css",
+        "path": "./snippets/css.code-snippets"
+      }
+    ]
+  },
+  "scripts": {
+    "package": "vsce package --no-dependencies"
+  }
+}

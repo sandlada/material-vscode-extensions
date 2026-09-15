@@ -1,77 +1,28 @@
 {
-  "name": "material-web-vscode-snippets",
-  "displayName": "Material Web Components Snippets",
-  "description": "A material design 3(@material/web) snippets extension of visual studio code.",
-  "keywords": [
-    "google",
-    "material",
-    "snippets",
-    "material web components"
-  ],
-  "author": "kai-orion",
-  "publisher": "kai-orion",
-  "license": "MIT",
-  "version": "0.0.5",
-  "icon": "src/images/icon/extension-icon-128.png",
-  "engines": {
-    "vscode": "^1.82.0"
-  },
+  "private": true,
+  "name": "material-vscode-extension-monorepo",
+  "version": "0.0.0",
+  "description": "Monorepo for the Material Web Snippets and Material Design CSS Snippets VS Code extensions.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/kai-orion/material-web-vscode-snippets"
+    "url": "https://github.com/sandlada/material-vscode-extensions"
   },
-  "categories": [
-    "Snippets"
+  "workspaces": [
+    "packages/*"
   ],
-  "contributes": {
-    "snippets": [
-      {
-        "language": "html",
-        "path": "./snippets/snippets.code-snippets"
-      },
-      {
-        "language": "css",
-        "path": "./snippets/css.code-snippets"
-      }
-    ],
-    "html": {
-      "customData": [
-        "./custom-data/html.html-data.json"
-      ]
-    },
-    "viewsContainers": {
-      "activitybar": [
-        {
-          "title": "Material Web Components",
-          "id": "material-web-components-snippets",
-          "icon": "src/images/icon/extension-icon-32-outlined.svg"
-        }
-      ]
-    },
-    "views": {
-      "material-web-components-snippets": [
-        {
-          "id": "tree",
-          "name": "Code Snippets",
-          "type": "tree"
-        }
-      ]
-    }
-  },
-  "main": "./out/extension.js",
   "scripts": {
-    "vscode:prepublish": "npm run compile",
-    "compile": "tsc -p ./",
+    "compile": "npm run compile -w packages/material-web-snippets",
+    "watch": "npm run watch -w packages/material-web-snippets",
     "generate": "tsc -p tsconfig.tools.json && node tools-dist/scripts/generate.js --write",
     "generate:check": "tsc -p tsconfig.tools.json && node tools-dist/scripts/generate.js --check",
     "generate:stdout": "tsc -p tsconfig.tools.json && node tools-dist/scripts/generate.js --stdout",
-    "verify": "tsc -p tsconfig.tools.json && node tools-dist/scripts/verify.js",
-    "watch": "tsc -watch -p ./"
+    "verify": "tsc -p tsconfig.tools.json && node tools-dist/scripts/verify.js"
   },
   "devDependencies": {
     "@material/web": "^2.5.0",
     "@types/node": "^26.5.1",
     "@types/vscode": "^1.137.0",
+    "@vscode/vsce": "^4.0.0",
     "typescript": "^7.0.2"
   }
 }

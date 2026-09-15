@@ -88,7 +88,7 @@ function checkTagPair(key: string, lines: string[]): void {
 }
 
 function checkSnippetsFile(root: string): void {
-    const raw = fs.readFileSync(path.join(root, 'snippets/snippets.code-snippets'), 'utf8')
+    const raw = fs.readFileSync(path.join(root, 'packages/material-web-snippets/snippets/snippets.code-snippets'), 'utf8')
     const data = parseJsonc(raw) as Record<string, { prefix: unknown; body: unknown; description: unknown }>
     for (const [key, def] of Object.entries(data)) {
         if (typeof def.prefix !== 'string' && !Array.isArray(def.prefix)) fail(`${key}: prefix must be string|string[]`)
@@ -119,7 +119,7 @@ function checkSnippetsFile(root: string): void {
 }
 
 function checkHtmlDataFile(root: string): void {
-    const data = JSON.parse(fs.readFileSync(path.join(root, 'custom-data/html.html-data.json'), 'utf8')) as {
+    const data = JSON.parse(fs.readFileSync(path.join(root, 'packages/material-web-snippets/custom-data/html.html-data.json'), 'utf8')) as {
         version: unknown
         tags: Array<{ name: unknown; description: unknown; attributes?: Array<{ name: unknown; values?: Array<{ name: unknown }> }> }>
     }
@@ -146,7 +146,7 @@ function checkHtmlDataFile(root: string): void {
 }
 
 function checkCssSnippetsFile(root: string): void {
-    const raw = fs.readFileSync(path.join(root, 'snippets/css.code-snippets'), 'utf8')
+    const raw = fs.readFileSync(path.join(root, 'packages/material-design-css-snippets/snippets/css.code-snippets'), 'utf8')
     const data = parseJsonc(raw) as Record<string, { prefix: unknown; body: unknown; description: unknown }>
     assert.deepStrictEqual(data, buildCssSnippets(), 'css snippets differ from generator output')
     assert.deepStrictEqual(Object.keys(data).length, cssTokens.length, 'css token count mismatch')

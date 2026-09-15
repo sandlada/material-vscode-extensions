@@ -1,0 +1,85 @@
+{
+  "name": "material-web-snippets",
+  "displayName": "Material Web Snippets",
+  "description": "Snippets for Material Design 3 (@material/web) Web Components in Visual Studio Code.",
+  "keywords": [
+    "material",
+    "material-design",
+    "material-you",
+    "material web",
+    "material web components",
+    "web-components",
+    "snippets",
+    "html"
+  ],
+  "author": "Kai Orion & Sandlada",
+  "publisher": "sandlada",
+  "license": "MIT",
+  "version": "1.0.0",
+  "icon": "src/images/icon/extension-icon-128.png",
+  "galleryBanner": {
+    "color": "#6750A4",
+    "theme": "dark"
+  },
+  "homepage": "https://github.com/sandlada/material-vscode-extensions/tree/main/packages/material-web-snippets",
+  "bugs": {
+    "url": "https://github.com/sandlada/material-vscode-extensions/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sandlada/material-vscode-extensions",
+    "directory": "packages/material-web-snippets"
+  },
+  "engines": {
+    "vscode": "^1.82.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "html",
+        "path": "./snippets/snippets.code-snippets"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/snippets.code-snippets"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/snippets.code-snippets"
+      }
+    ],
+    "html": {
+      "customData": [
+        "./custom-data/html.html-data.json"
+      ]
+    },
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "title": "Material Web Components",
+          "id": "material-web-components-snippets",
+          "icon": "src/images/icon/extension-icon-32-outlined.svg"
+        }
+      ]
+    },
+    "views": {
+      "material-web-components-snippets": [
+        {
+          "id": "tree",
+          "name": "Code Snippets",
+          "type": "tree"
+        }
+      ]
+    }
+  },
+  "main": "./out/extension.js",
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "package": "vsce package --no-dependencies"
+  }
+}
