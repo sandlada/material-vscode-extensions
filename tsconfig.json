@@ -1,8 +1,8 @@
 {
 	"compilerOptions": {
 		"module": "commonjs",
-		"target": "es2020",
-		"lib": ["es2020"],
+		"target": "ESNext",
+		"lib": ["ESNext"],
 		"outDir": "out",
 		"sourceMap": true,
 		"rootDir": "src",
@@ -10,6 +10,9 @@
 	},
 	"exclude": [
 		"node_modules",
-		".vscode-test"
+		".vscode-test",
+		"schema",
+		"scripts",
+		"tools-dist"
 	]
 }

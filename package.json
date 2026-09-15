@@ -8,8 +8,8 @@
     "snippets",
     "material web components"
   ],
-  "author": "bre97-web",
-  "publisher": "bre97-web",
+  "author": "kai-orion",
+  "publisher": "kai-orion",
   "license": "MIT",
   "version": "0.0.5",
   "icon": "src/images/icon/extension-icon-128.png",
@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/bre97-web/material-web-vscode-snippets"
+    "url": "https://github.com/kai-orion/material-web-vscode-snippets"
   },
   "categories": [
     "Snippets"
@@ -28,13 +28,16 @@
       {
         "language": "html",
         "path": "./snippets/snippets.code-snippets"
+      },
+      {
+        "language": "css",
+        "path": "./snippets/css.code-snippets"
       }
     ],
     "html": {
-      "customData": ["./custom-data/html.html-data.json"]
-    },
-    "css": {
-      "customData": ["./custom-data/css.css-data.json"]
+      "customData": [
+        "./custom-data/html.html-data.json"
+      ]
     },
     "viewsContainers": {
       "activitybar": [
@@ -59,13 +62,15 @@
   "scripts": {
     "vscode:prepublish": "npm run compile",
     "compile": "tsc -p ./",
+    "generate": "tsc -p tsconfig.tools.json && node tools-dist/scripts/generate.js --write",
+    "generate:check": "tsc -p tsconfig.tools.json && node tools-dist/scripts/generate.js --check",
+    "verify": "tsc -p tsconfig.tools.json && node tools-dist/scripts/verify.js",
     "watch": "tsc -watch -p ./"
   },
-  "dependencies": {
-  },
   "devDependencies": {
-    "@types/vscode": "^1.73.0",
-    "typescript": "^5.2.2",
-    "@types/node": "^20.8.2"
+    "@material/web": "^2.5.0",
+    "@types/node": "^26.5.1",
+    "@types/vscode": "^1.137.0",
+    "typescript": "^7.0.2"
   }
 }

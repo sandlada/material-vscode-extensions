@@ -1,240 +1,619 @@
+// GENERATED — do not edit by hand.
+// Source: schema/  |  Regenerate: npm run generate
 {
   "MD All Components In One": {
     "prefix": "md-components",
     "body": [
-      "<md-${1|elevated-button,filled-button,filled-tonal-button,outlined-button,text-button,checkbox,ripple,icon,divider,chip-set,filter-chip,assist-chip,input-chip,suggestion-chip,dialog,elevation,fab,branded-fab,focus-ring,icon-button,filled-icon-button,outlined-icon-button,filled-tonal-button,icon,list,list-item,menu,sub-menu,menu-item,radio,ripple,slider,switch,tabs,primary-tab,secondary-tab,filled-text-field,outlined-text-field,outlined-select,filled-select,select-option,circular-progress,linear-progress|}>",
+      "<md-${1|focus-ring,badge,elevated-button,filled-button,filled-tonal-button,outlined-button,text-button,elevated-card,filled-card,outlined-card,checkbox,chip-set,assist-chip,filter-chip,input-chip,suggestion-chip,dialog,divider,elevation,fab,branded-fab,filled-field,outlined-field,icon,icon-button,filled-icon-button,filled-tonal-icon-button,outlined-icon-button,item,list,list-item,menu,menu-item,sub-menu,navigation-bar,navigation-drawer,navigation-drawer-modal,navigation-tab,circular-progress,linear-progress,radio,ripple,outlined-segmented-button,outlined-segmented-button-set,filled-select,outlined-select,select-option,slider,switch,tabs,primary-tab,secondary-tab,filled-text-field,outlined-text-field|}>",
       "\t${2}",
-      "</md-${1|elevated-button,filled-button,filled-tonal-button,outlined-button,text-button,checkbox,ripple,icon,divider,chip-set,filter-chip,assist-chip,input-chip,suggestion-chip,dialog,elevation,fab,branded-fab,focus-ring,icon-button,filled-icon-button,outlined-icon-button,filled-tonal-button,icon,list,list-item,menu,sub-menu,menu-item,radio,ripple,slider,switch,tabs,primary-tab,secondary-tab,filled-text-field,outlined-text-field,outlined-select,filled-select,select-option,circular-progress,linear-progress|}>"
+      "</md-${1|focus-ring,badge,elevated-button,filled-button,filled-tonal-button,outlined-button,text-button,elevated-card,filled-card,outlined-card,checkbox,chip-set,assist-chip,filter-chip,input-chip,suggestion-chip,dialog,divider,elevation,fab,branded-fab,filled-field,outlined-field,icon,icon-button,filled-icon-button,filled-tonal-icon-button,outlined-icon-button,item,list,list-item,menu,menu-item,sub-menu,navigation-bar,navigation-drawer,navigation-drawer-modal,navigation-tab,circular-progress,linear-progress,radio,ripple,outlined-segmented-button,outlined-segmented-button-set,filled-select,outlined-select,select-option,slider,switch,tabs,primary-tab,secondary-tab,filled-text-field,outlined-text-field|}>"
     ],
     "description": "All Material Web Components in one"
   },
-
-  "MD Button": {
-    "prefix": "md-button",
-    "body": ["<md-${1|elevated,filled,filled-tonal,outlined,text|}-button>${2}</md-${1|elevated,filled,filled-tonal,outlined,text|}-button>"],
-    "description": "Buttons have label text that describes the action that will occur if a user taps a button."
-  },
-  "MD Button Elevated": {
-    "prefix": "md-elevated-button",
-    "body": ["<md-elevated-button>${1}</md-elevated-button>"],
-    "description": "Buttons have label text that describes the action that will occur if a user taps a button."
-  },
-  "MD Button Filled": {
-    "prefix": "md-filled-button",
-    "body": ["<md-filled-button>${1}</md-filled-button>"],
-    "description": "Buttons have label text that describes the action that will occur if a user taps a button."
-  },
-  "MD Button Filled Tonal": {
-    "prefix": "md-filled-tonal-button",
-    "body": ["<md-filled-tonal-button>${1}</md-filled-tonal-button>"],
-    "description": "Buttons have label text that describes the action that will occur if a user taps a button."
-  },
-  "MD Button Outlined": {
-    "prefix": "md-outlined-button",
-    "body": ["<md-outlined-button>${1}</md-outlined-button>"],
-    "description": "Buttons have label text that describes the action that will occur if a user taps a button."
-  },
-  "MD Button Text": {
-    "prefix": "md-text-button",
-    "body": ["<md-text-button>${1}</md-text-button>"],
-    "description": "Buttons have label text that describes the action that will occur if a user taps a button."
-  },
-  "MD Button Full Properties": {
-    "prefix": "md-button:full-properties",
+  "MD Focus Ring": {
+    "prefix": "md-focus-ring",
     "body": [
-      "<md-${1|elevated,filled,filled-tonal,outlined,text|}-button",
-      "\ttype=\"${2|submit,button,reset|}\"",
-      "\ttarget=\"${3|_blank,_parent,_self,_top|}\"",
-      "\tvalue=\"${4}\"",
-      "\tname=\"${5}\"",
-      "\t${6:has-icon}",
-      ">${7}</md-${1|elevated,filled,filled-tonal,outlined,text|}-button>"
+      "<md-focus-ring></md-focus-ring>"
+    ],
+    "description": "Focus rings are accessible outlines for components to show keyboard focus."
+  },
+  "MD Focus Ring Visible": {
+    "prefix": "md-focus-ring:visible",
+    "body": [
+      "<md-focus-ring visible></md-focus-ring>"
+    ],
+    "description": "Makes the focus ring visible."
+  },
+  "MD Focus Ring Inward": {
+    "prefix": "md-focus-ring:inward",
+    "body": [
+      "<md-focus-ring inward></md-focus-ring>"
+    ],
+    "description": "Makes the focus ring animate inwards instead of outwards."
+  },
+  "MD Focus Ring For": {
+    "prefix": "md-focus-ring:for",
+    "body": [
+      "<md-focus-ring for=\"${1:controlId}\"></md-focus-ring>"
+    ],
+    "description": "ID of the control element the focus ring attaches to."
+  },
+  "MD Focus Ring Full Properties": {
+    "prefix": "md-focus-ring:full-properties",
+    "body": [
+      "<md-focus-ring ${1:visible} ${2:inward} for=\"${3:controlId}\"></md-focus-ring>"
     ],
     "description": ""
+  },
+  "MD Badge": {
+    "prefix": "md-badge",
+    "body": [
+      "<md-badge></md-badge>"
+    ],
+    "description": "A badge shows a small count or status anchored to another UI element."
+  },
+  "MD Badge Value": {
+    "prefix": "md-badge:value",
+    "body": [
+      "<md-badge value=\"${1}\"></md-badge>"
+    ],
+    "description": "The count or status text shown in the badge."
+  },
+  "MD Badge Full Properties": {
+    "prefix": "md-badge:full-properties",
+    "body": [
+      "<md-badge value=\"${1:}\"></md-badge>"
+    ],
+    "description": ""
+  },
+  "MD Button": {
+    "prefix": "md-button",
+    "body": [
+      "<md-${1|elevated,filled,filled-tonal,outlined,text|}-button></md-${1|elevated,filled,filled-tonal,outlined,text|}-button>"
+    ],
+    "description": "Elevated buttons are essentially filled tonal buttons with a shadow. To prevent shadow creep, only use them when absolutely necessary, such as when the button requires visual separation from a patterned background."
   },
   "MD Button Disabled": {
     "prefix": "md-button:disabled",
     "body": [
-      "<md-${1|elevated,filled,filled-tonal,outlined,text|}-button disabled>${2}</md-${1|elevated,filled,filled-tonal,outlined,text|}-button>"
+      "<md-${1|elevated,filled,filled-tonal,outlined,text|}-button disabled></md-${1|elevated,filled,filled-tonal,outlined,text|}-button>"
     ],
     "description": "Whether or not the button is disabled."
+  },
+  "MD Button Soft Disabled": {
+    "prefix": "md-button:soft-disabled",
+    "body": [
+      "<md-${1|elevated,filled,filled-tonal,outlined,text|}-button soft-disabled></md-${1|elevated,filled,filled-tonal,outlined,text|}-button>"
+    ],
+    "description": "Whether or not the button is \"soft-disabled\" (disabled but still focusable)."
+  },
+  "MD Button Href": {
+    "prefix": "md-button:href",
+    "body": [
+      "<md-${1|elevated,filled,filled-tonal,outlined,text|}-button href=\"${2}\"></md-${1|elevated,filled,filled-tonal,outlined,text|}-button>"
+    ],
+    "description": "The URL that the link button points to."
+  },
+  "MD Button Download": {
+    "prefix": "md-button:download",
+    "body": [
+      "<md-${1|elevated,filled,filled-tonal,outlined,text|}-button download=\"${2}\"></md-${1|elevated,filled,filled-tonal,outlined,text|}-button>"
+    ],
+    "description": "The filename to use when downloading the linked resource."
+  },
+  "MD Button Trailing Icon": {
+    "prefix": "md-button:trailing-icon",
+    "body": [
+      "<md-${1|elevated,filled,filled-tonal,outlined,text|}-button trailing-icon></md-${1|elevated,filled,filled-tonal,outlined,text|}-button>"
+    ],
+    "description": "Whether to render the icon at the inline end of the label rather than the start."
+  },
+  "MD Button Has Icon": {
+    "prefix": "md-button:has-icon",
+    "body": [
+      "<md-${1|elevated,filled,filled-tonal,outlined,text|}-button has-icon></md-${1|elevated,filled,filled-tonal,outlined,text|}-button>"
+    ],
+    "description": "Whether to display the icon or not. An icon may optionally be added to a button to help communicate the button's action and help draw attention."
+  },
+  "MD Button Value": {
+    "prefix": "md-button:value",
+    "body": [
+      "<md-${1|elevated,filled,filled-tonal,outlined,text|}-button value=\"${2}\"></md-${1|elevated,filled,filled-tonal,outlined,text|}-button>"
+    ],
+    "description": "The value of the button. When combined with a name, it is submitted with the form."
+  },
+  "MD Button Name": {
+    "prefix": "md-button:name",
+    "body": [
+      "<md-${1|elevated,filled,filled-tonal,outlined,text|}-button name=\"${2}\"></md-${1|elevated,filled,filled-tonal,outlined,text|}-button>"
+    ],
+    "description": "The HTML name to use in form submission."
+  },
+  "MD Button Form": {
+    "prefix": "md-button:form",
+    "body": [
+      "<md-${1|elevated,filled,filled-tonal,outlined,text|}-button form=\"${2}\"></md-${1|elevated,filled,filled-tonal,outlined,text|}-button>"
+    ],
+    "description": "The ID of the form to associate the button with."
   },
   "MD Button Type": {
     "prefix": "md-button:type",
     "body": [
-      "<md-${1|elevated,filled,filled-tonal,outlined,text|}-button type=\"${3|submit,button,reset|}\">${2}</md-${1|elevated,filled,filled-tonal,outlined,text|}-button>"
+      "<md-${1|elevated,filled,filled-tonal,outlined,text|}-button type=\"${2|submit,button,reset|}\"></md-${1|elevated,filled,filled-tonal,outlined,text|}-button>"
     ],
     "description": "Submit is default."
   },
   "MD Button Target": {
     "prefix": "md-button:target",
     "body": [
-      "<md-${1|elevated,filled,filled-tonal,outlined,text|}-button target=\"${3|_blank,_parent,_self,_top|}\">${2}</md-${1|elevated,filled,filled-tonal,outlined,text|}-button>"
+      "<md-${1|elevated,filled,filled-tonal,outlined,text|}-button target=\"${2|_blank,_parent,_self,_top|}\"></md-${1|elevated,filled,filled-tonal,outlined,text|}-button>"
     ],
     "description": "Where to display the linked href URL for a link button. Common options include _blank to open in a new tab."
   },
-  "MD Button Has-icon": {
-    "prefix": "md-button:has-icon",
+  "MD Button Full Properties": {
+    "prefix": "md-button:full-properties",
     "body": [
-      "<md-${1|elevated,filled,filled-tonal,outlined,text|}-button has-icon>",
-      "\t<md-icon slot=\"icon\">${2}</md-icon>",
-      "\t${3}",
-      "</md-${1|elevated,filled,filled-tonal,outlined,text|}-button>"
+      "<md-${1|elevated,filled,filled-tonal,outlined,text|}-button ${2:disabled} ${3:soft-disabled} href=\"${4:}\" download=\"${5:}\" ${6:trailing-icon} ${7:has-icon} value=\"${8:}\" name=\"${9:}\" form=\"${10:}\" type=\"${11|submit,button,reset|}\" target=\"${12|_blank,_parent,_self,_top|}\"></md-${1|elevated,filled,filled-tonal,outlined,text|}-button>"
     ],
-    "description": "Whether to display the icon or not. An icon may optionally be added to a button to help communicate the button's action and help draw attention."
+    "description": ""
   },
-
-  "MD Checkbox" : { 
-    "prefix": "md-checkbox", 
-    "body": [  
+  "MD Elevated Button": {
+    "prefix": "md-elevated-button",
+    "body": [
+      "<md-elevated-button></md-elevated-button>"
+    ],
+    "description": "Elevated buttons are essentially filled tonal buttons with a shadow. To prevent shadow creep, only use them when absolutely necessary, such as when the button requires visual separation from a patterned background."
+  },
+  "MD Filled Button": {
+    "prefix": "md-filled-button",
+    "body": [
+      "<md-filled-button></md-filled-button>"
+    ],
+    "description": "Filled buttons have the most visual impact after the FAB, and should be used for important, final actions that complete a flow, like Save, Join now, or Confirm."
+  },
+  "MD Filled Tonal Button": {
+    "prefix": "md-filled-tonal-button",
+    "body": [
+      "<md-filled-tonal-button></md-filled-tonal-button>"
+    ],
+    "description": "A filled tonal button is an alternative middle ground between filled and outlined buttons. They're useful in contexts where a lower-priority button requires slightly more emphasis than an outline would give, such as \"Next\" in an onboarding flow."
+  },
+  "MD Outlined Button": {
+    "prefix": "md-outlined-button",
+    "body": [
+      "<md-outlined-button></md-outlined-button>"
+    ],
+    "description": "Outlined buttons are medium-emphasis buttons. They contain actions that are important, but aren't the primary action in an app."
+  },
+  "MD Text Button": {
+    "prefix": "md-text-button",
+    "body": [
+      "<md-text-button></md-text-button>"
+    ],
+    "description": "Text buttons are used for the lowest priority actions, especially when presenting multiple options."
+  },
+  "MD Elevated Card": {
+    "prefix": "md-elevated-card",
+    "body": [
+      "<md-elevated-card>",
+      "\t${1}",
+      "</md-elevated-card>"
+    ],
+    "description": "Elevated cards display content in a container with a shadow."
+  },
+  "MD Elevated Card Full Properties": {
+    "prefix": "md-elevated-card:full-properties",
+    "body": [
+      "<md-elevated-card ></md-elevated-card>"
+    ],
+    "description": ""
+  },
+  "MD Filled Card": {
+    "prefix": "md-filled-card",
+    "body": [
+      "<md-filled-card>",
+      "\t${1}",
+      "</md-filled-card>"
+    ],
+    "description": "Filled cards display content in a container with a fill color and no shadow."
+  },
+  "MD Filled Card Full Properties": {
+    "prefix": "md-filled-card:full-properties",
+    "body": [
+      "<md-filled-card ></md-filled-card>"
+    ],
+    "description": ""
+  },
+  "MD Outlined Card": {
+    "prefix": "md-outlined-card",
+    "body": [
+      "<md-outlined-card>",
+      "\t${1}",
+      "</md-outlined-card>"
+    ],
+    "description": "Outlined cards display content in a container with an outline border."
+  },
+  "MD Outlined Card Full Properties": {
+    "prefix": "md-outlined-card:full-properties",
+    "body": [
+      "<md-outlined-card ></md-outlined-card>"
+    ],
+    "description": ""
+  },
+  "MD Checkbox": {
+    "prefix": "md-checkbox",
+    "body": [
       "<md-checkbox></md-checkbox>"
     ],
-    "description": "Checkboxes may be standalone, pre-checked, or indeterminate."
+    "description": "Checkboxes allow users to select one or more items from a set. Checkboxes can turn an option on or off."
   },
-  "MD Checkbox Checked" : { 
-    "prefix": "md-checkbox:checked", 
-    "body": [  
+  "MD Checkbox Checked": {
+    "prefix": "md-checkbox:checked",
+    "body": [
       "<md-checkbox checked></md-checkbox>"
     ],
     "description": "Whether or not the checkbox is selected."
   },
-  "MD Checkbox Disabled" : { 
-    "prefix": "md-checkbox:disabled", 
-    "body": [  
+  "MD Checkbox Disabled": {
+    "prefix": "md-checkbox:disabled",
+    "body": [
       "<md-checkbox disabled></md-checkbox>"
     ],
     "description": "Whether or not the checkbox is disabled."
   },
-  "MD Checkbox Indeterminate" : { 
-    "prefix": "md-checkbox:indeterminate", 
-    "body": [  
+  "MD Checkbox Indeterminate": {
+    "prefix": "md-checkbox:indeterminate",
+    "body": [
       "<md-checkbox indeterminate></md-checkbox>"
     ],
     "description": "Whether or not the checkbox is indeterminate. https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox#indeterminate_state_checkboxes"
   },
-  "MD Checkbox Required" : { 
-    "prefix": "md-checkbox:required", 
-    "body": [  
+  "MD Checkbox Required": {
+    "prefix": "md-checkbox:required",
+    "body": [
       "<md-checkbox required></md-checkbox>"
     ],
     "description": "When true, require the checkbox to be selected when participating in form submission. https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox#validation"
   },
-  "MD Checkbox Value" : { 
-    "prefix": "md-checkbox:value", 
-    "body": [  
-      "<md-checkbox value=\"${1|on,off|}\"></md-checkbox>"
+  "MD Checkbox Value": {
+    "prefix": "md-checkbox:value",
+    "body": [
+      "<md-checkbox value=\"${1}\"></md-checkbox>"
     ],
     "description": "The value of the checkbox that is submitted with a form when selected. https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox#value"
   },
-  "MD Checkbox Name" : { 
-    "prefix": "md-checkbox:name", 
-    "body": [  
+  "MD Checkbox Name": {
+    "prefix": "md-checkbox:name",
+    "body": [
       "<md-checkbox name=\"${1}\"></md-checkbox>"
     ],
+    "description": "The HTML name to use in form submission."
   },
-  "MD Checkbox With Label" : { 
-    "prefix": "md-checkbox:with-label", 
-    "body": [  
-      "<label>",
+  "MD Checkbox Form": {
+    "prefix": "md-checkbox:form",
+    "body": [
+      "<md-checkbox form=\"${1}\"></md-checkbox>"
+    ],
+    "description": "The ID of the form to associate the checkbox with."
+  },
+  "MD Checkbox Full Properties": {
+    "prefix": "md-checkbox:full-properties",
+    "body": [
+      "<md-checkbox ${1:checked} ${2:disabled} ${3:indeterminate} ${4:required} value=\"${5:}\" name=\"${6:}\" form=\"${7:}\"></md-checkbox>"
+    ],
+    "description": ""
+  },
+  "MD Chip Set": {
+    "prefix": "md-chip-set",
+    "body": [
+      "<md-chip-set>",
       "\t${1}",
-      "\t<md-checkbox></md-checkbox>",
-      "</label>"
+      "</md-chip-set>"
+    ],
+    "description": "Chips help people enter information, make selections, filter content, or trigger actions."
+  },
+  "MD Chip Set Full Properties": {
+    "prefix": "md-chip-set:full-properties",
+    "body": [
+      "<md-chip-set ></md-chip-set>"
     ],
     "description": ""
   },
-  "MD Checkbox Full Properties" : { 
-    "prefix": "md-checkbox:full-properties", 
-    "body": [  
-      "<md-checkbox",
-      "\tvalue=\"${1|on,off|}\"",
-      "\tid=\"${2:checkboxId}\"",
-      "\tname=\"${3}\"",
-      "\taria-label=\"${4}\"",
-      "\t${checked}",
-      "\t${disabled}",
-      "\t${indeterminate}",
-      "\t${required}",
-      "\ttouch$-target=\"${wrapper}\"",
-      "></md-checkbox>"
-    ],
-    "description": "The value of the checkbox that is submitted with a form when selected. https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox#value"
-  },
-
-  "MD Ripple" : { 
-    "prefix": "md-ripple",
-    "body": [  
-      "<md-ripple></md-ripple>"
-    ],
-    "description": "Ripples display on hover and press pointer interactions. They may be attached to a control in one of three ways."
-  },
-  "MD Ripple With Div" : { 
-    "prefix": "md-ripple:with-div",
+  "MD Assist Chip": {
+    "prefix": "md-assist-chip",
     "body": [
-      "<div class=\"${1:relative}\">",
-      "\t<md-ripple></md-ripple>",
-      "\t${2}",
-      "</div>"
+      "<md-assist-chip></md-assist-chip>"
     ],
-    "description": "Ripples must be placed within a position: relative container."
+    "description": "Assist chips represent smart or automated actions that can span multiple apps, such as opening a calendar event from the home screen. Assist chips function as though the user asked an assistant to complete the action. They should appear dynamically and contextually in a UI."
   },
-  "MD Ripple Disabled" : { 
-    "prefix": "md-ripple:disabled",
-    "body": ["<md-ripple disabled></md-ripple>"],
-    "description": "Disables the ripple."
-  },
-
-  "MD Icon" : { 
-    "prefix": "md-icon",
+  "MD Assist Chip Elevated": {
+    "prefix": "md-assist-chip:elevated",
     "body": [
-      "<md-icon>${1}</md-icon>"
-    ],
-    "description": "Icons can be specified by name, unicode code point, or have an <svg> child element."
-  },
-  "MD Icon Slot" : { 
-    "prefix": "md-icon:slot",
-    "body": [
-      "<md-icon slot=\"${1:icon}\">${2}</md-icon>"
+      "<md-assist-chip elevated></md-assist-chip>"
     ],
     "description": ""
   },
-
-  "MD Divider" : { 
-    "prefix": "md-divider",
+  "MD Assist Chip Href": {
+    "prefix": "md-assist-chip:href",
     "body": [
-      "<md-divider></md-divider>"
+      "<md-assist-chip href=\"${1}\"></md-assist-chip>"
     ],
-    "description": "Use full width dividers to separate larger sections of unrelated content."
+    "description": "Sets the underlying HTMLAnchorElement's href resource attribute."
   },
-  "MD Divider Inset" : { 
-    "prefix": "md-divider:inset",
+  "MD Assist Chip Download": {
+    "prefix": "md-assist-chip:download",
     "body": [
-      "<md-divider inset></md-divider>"
+      "<md-assist-chip download=\"${1}\"></md-assist-chip>"
     ],
-    "description": "Indents the divider with equal padding on both sides."
+    "description": "The filename to use when downloading the linked resource. If not specified, the browser will determine a filename."
   },
-  "MD Divider Inset Start" : { 
-    "prefix": "md-divider:inset-start",
+  "MD Assist Chip Target": {
+    "prefix": "md-assist-chip:target",
     "body": [
-      "<md-divider inset-start></md-divider>"
+      "<md-assist-chip target=\"${1|_blank,_parent,_self,_top|}\"></md-assist-chip>"
     ],
-    "description": "Indents the divider with padding on the leading side."
+    "description": "Sets the underlying HTMLAnchorElement's target attribute."
   },
-  "MD Divider Inset End" : { 
-    "prefix": "md-divider:inset-end",
+  "MD Assist Chip Disabled": {
+    "prefix": "md-assist-chip:disabled",
     "body": [
-      "<md-divider inset-end></md-divider>"
+      "<md-assist-chip disabled></md-assist-chip>"
     ],
-    "description": "Indents the divider with padding on the trailing side."
+    "description": "Whether or not the chip is disabled. Disabled chips are not focusable, unless `always-focusable` is set."
   },
-  "MD Divider Role Separator" : { 
-    "prefix": "md-divider:role-separator",
+  "MD Assist Chip Soft Disabled": {
+    "prefix": "md-assist-chip:soft-disabled",
     "body": [
-      "<md-divider role=\"separator\"></md-divider>"
+      "<md-assist-chip soft-disabled></md-assist-chip>"
     ],
-    "description": "Dividers are decorative by default and not announced by assistive technology. Add a role=\"separator\" attribute to non-decorative dividers that should be announced."
+    "description": "Whether or not the chip is \"soft-disabled\" (disabled but still focusable)."
   },
-
-  "MD Dialog" : { 
+  "MD Assist Chip Always Focusable": {
+    "prefix": "md-assist-chip:always-focusable",
+    "body": [
+      "<md-assist-chip always-focusable></md-assist-chip>"
+    ],
+    "description": "When true, allow disabled chips to be focused with arrow keys. Add this when a chip needs increased visibility when disabled. See https://www.w3.org/WAI/ARIA/apg/practices/keyboard-interface/#kbd_disabled_controls for more guidance on when this is needed."
+  },
+  "MD Assist Chip Label": {
+    "prefix": "md-assist-chip:label",
+    "body": [
+      "<md-assist-chip label=\"${1}\"></md-assist-chip>"
+    ],
+    "description": "The label of the chip."
+  },
+  "MD Assist Chip Full Properties": {
+    "prefix": "md-assist-chip:full-properties",
+    "body": [
+      "<md-assist-chip ${1:elevated} href=\"${2:}\" download=\"${3:}\" target=\"${4|_blank,_parent,_self,_top|}\" ${5:disabled} ${6:soft-disabled} ${7:always-focusable} label=\"${8:}\"></md-assist-chip>"
+    ],
+    "description": ""
+  },
+  "MD Filter Chip": {
+    "prefix": "md-filter-chip",
+    "body": [
+      "<md-filter-chip></md-filter-chip>"
+    ],
+    "description": "Filter chips use tags or descriptive words to filter content. They can be a good alternative to toggle buttons or checkboxes."
+  },
+  "MD Filter Chip Elevated": {
+    "prefix": "md-filter-chip:elevated",
+    "body": [
+      "<md-filter-chip elevated></md-filter-chip>"
+    ],
+    "description": ""
+  },
+  "MD Filter Chip Removable": {
+    "prefix": "md-filter-chip:removable",
+    "body": [
+      "<md-filter-chip removable></md-filter-chip>"
+    ],
+    "description": ""
+  },
+  "MD Filter Chip Selected": {
+    "prefix": "md-filter-chip:selected",
+    "body": [
+      "<md-filter-chip selected></md-filter-chip>"
+    ],
+    "description": ""
+  },
+  "MD Filter Chip Disabled": {
+    "prefix": "md-filter-chip:disabled",
+    "body": [
+      "<md-filter-chip disabled></md-filter-chip>"
+    ],
+    "description": "Whether or not the chip is disabled. Disabled chips are not focusable, unless `always-focusable` is set."
+  },
+  "MD Filter Chip Soft Disabled": {
+    "prefix": "md-filter-chip:soft-disabled",
+    "body": [
+      "<md-filter-chip soft-disabled></md-filter-chip>"
+    ],
+    "description": "Whether or not the chip is \"soft-disabled\" (disabled but still focusable)."
+  },
+  "MD Filter Chip Always Focusable": {
+    "prefix": "md-filter-chip:always-focusable",
+    "body": [
+      "<md-filter-chip always-focusable></md-filter-chip>"
+    ],
+    "description": "When true, allow disabled chips to be focused with arrow keys. Add this when a chip needs increased visibility when disabled. See https://www.w3.org/WAI/ARIA/apg/practices/keyboard-interface/#kbd_disabled_controls for more guidance on when this is needed."
+  },
+  "MD Filter Chip Label": {
+    "prefix": "md-filter-chip:label",
+    "body": [
+      "<md-filter-chip label=\"${1}\"></md-filter-chip>"
+    ],
+    "description": "The label of the chip."
+  },
+  "MD Filter Chip Aria Label Remove": {
+    "prefix": "md-filter-chip:aria-label-remove",
+    "body": [
+      "<md-filter-chip aria-label-remove=\"${1}\"></md-filter-chip>"
+    ],
+    "description": ""
+  },
+  "MD Filter Chip Full Properties": {
+    "prefix": "md-filter-chip:full-properties",
+    "body": [
+      "<md-filter-chip ${1:elevated} ${2:removable} ${3:selected} ${4:disabled} ${5:soft-disabled} ${6:always-focusable} label=\"${7:}\" aria-label-remove=\"${8:}\"></md-filter-chip>"
+    ],
+    "description": ""
+  },
+  "MD Input Chip": {
+    "prefix": "md-input-chip",
+    "body": [
+      "<md-input-chip></md-input-chip>"
+    ],
+    "description": "Input chips represent discrete pieces of information entered by a user, such as Gmail contacts or filter options within a search field. Input chips whose icons are user images may add the avatar attribute to display the image in a larger circle."
+  },
+  "MD Input Chip Avatar": {
+    "prefix": "md-input-chip:avatar",
+    "body": [
+      "<md-input-chip avatar></md-input-chip>"
+    ],
+    "description": ""
+  },
+  "MD Input Chip Href": {
+    "prefix": "md-input-chip:href",
+    "body": [
+      "<md-input-chip href=\"${1}\"></md-input-chip>"
+    ],
+    "description": "Sets the underlying HTMLAnchorElement's href resource attribute."
+  },
+  "MD Input Chip Target": {
+    "prefix": "md-input-chip:target",
+    "body": [
+      "<md-input-chip target=\"${1|_blank,_parent,_self,_top|}\"></md-input-chip>"
+    ],
+    "description": "Sets the underlying HTMLAnchorElement's target attribute."
+  },
+  "MD Input Chip Remove Only": {
+    "prefix": "md-input-chip:remove-only",
+    "body": [
+      "<md-input-chip remove-only></md-input-chip>"
+    ],
+    "description": ""
+  },
+  "MD Input Chip Selected": {
+    "prefix": "md-input-chip:selected",
+    "body": [
+      "<md-input-chip selected></md-input-chip>"
+    ],
+    "description": ""
+  },
+  "MD Input Chip Disabled": {
+    "prefix": "md-input-chip:disabled",
+    "body": [
+      "<md-input-chip disabled></md-input-chip>"
+    ],
+    "description": "Whether or not the chip is disabled. Disabled chips are not focusable, unless `always-focusable` is set."
+  },
+  "MD Input Chip Soft Disabled": {
+    "prefix": "md-input-chip:soft-disabled",
+    "body": [
+      "<md-input-chip soft-disabled></md-input-chip>"
+    ],
+    "description": "Whether or not the chip is \"soft-disabled\" (disabled but still focusable)."
+  },
+  "MD Input Chip Always Focusable": {
+    "prefix": "md-input-chip:always-focusable",
+    "body": [
+      "<md-input-chip always-focusable></md-input-chip>"
+    ],
+    "description": "When true, allow disabled chips to be focused with arrow keys. Add this when a chip needs increased visibility when disabled. See https://www.w3.org/WAI/ARIA/apg/practices/keyboard-interface/#kbd_disabled_controls for more guidance on when this is needed."
+  },
+  "MD Input Chip Label": {
+    "prefix": "md-input-chip:label",
+    "body": [
+      "<md-input-chip label=\"${1}\"></md-input-chip>"
+    ],
+    "description": "The label of the chip."
+  },
+  "MD Input Chip Aria Label Remove": {
+    "prefix": "md-input-chip:aria-label-remove",
+    "body": [
+      "<md-input-chip aria-label-remove=\"${1}\"></md-input-chip>"
+    ],
+    "description": ""
+  },
+  "MD Input Chip Full Properties": {
+    "prefix": "md-input-chip:full-properties",
+    "body": [
+      "<md-input-chip ${1:avatar} href=\"${2:}\" target=\"${3|_blank,_parent,_self,_top|}\" ${4:remove-only} ${5:selected} ${6:disabled} ${7:soft-disabled} ${8:always-focusable} label=\"${9:}\" aria-label-remove=\"${10:}\"></md-input-chip>"
+    ],
+    "description": ""
+  },
+  "MD Suggestion Chip": {
+    "prefix": "md-suggestion-chip",
+    "body": [
+      "<md-suggestion-chip></md-suggestion-chip>"
+    ],
+    "description": "Suggestion chips help narrow a user's intent by presenting dynamically generated suggestions, such as possible responses or search filters."
+  },
+  "MD Suggestion Chip Elevated": {
+    "prefix": "md-suggestion-chip:elevated",
+    "body": [
+      "<md-suggestion-chip elevated></md-suggestion-chip>"
+    ],
+    "description": ""
+  },
+  "MD Suggestion Chip Href": {
+    "prefix": "md-suggestion-chip:href",
+    "body": [
+      "<md-suggestion-chip href=\"${1}\"></md-suggestion-chip>"
+    ],
+    "description": "Sets the underlying HTMLAnchorElement's href resource attribute."
+  },
+  "MD Suggestion Chip Download": {
+    "prefix": "md-suggestion-chip:download",
+    "body": [
+      "<md-suggestion-chip download=\"${1}\"></md-suggestion-chip>"
+    ],
+    "description": "The filename to use when downloading the linked resource. If not specified, the browser will determine a filename."
+  },
+  "MD Suggestion Chip Target": {
+    "prefix": "md-suggestion-chip:target",
+    "body": [
+      "<md-suggestion-chip target=\"${1|_blank,_parent,_self,_top|}\"></md-suggestion-chip>"
+    ],
+    "description": "Sets the underlying HTMLAnchorElement's target attribute."
+  },
+  "MD Suggestion Chip Disabled": {
+    "prefix": "md-suggestion-chip:disabled",
+    "body": [
+      "<md-suggestion-chip disabled></md-suggestion-chip>"
+    ],
+    "description": "Whether or not the chip is disabled. Disabled chips are not focusable, unless `always-focusable` is set."
+  },
+  "MD Suggestion Chip Soft Disabled": {
+    "prefix": "md-suggestion-chip:soft-disabled",
+    "body": [
+      "<md-suggestion-chip soft-disabled></md-suggestion-chip>"
+    ],
+    "description": "Whether or not the chip is \"soft-disabled\" (disabled but still focusable)."
+  },
+  "MD Suggestion Chip Always Focusable": {
+    "prefix": "md-suggestion-chip:always-focusable",
+    "body": [
+      "<md-suggestion-chip always-focusable></md-suggestion-chip>"
+    ],
+    "description": "When true, allow disabled chips to be focused with arrow keys. Add this when a chip needs increased visibility when disabled. See https://www.w3.org/WAI/ARIA/apg/practices/keyboard-interface/#kbd_disabled_controls for more guidance on when this is needed."
+  },
+  "MD Suggestion Chip Label": {
+    "prefix": "md-suggestion-chip:label",
+    "body": [
+      "<md-suggestion-chip label=\"${1}\"></md-suggestion-chip>"
+    ],
+    "description": "The label of the chip."
+  },
+  "MD Suggestion Chip Full Properties": {
+    "prefix": "md-suggestion-chip:full-properties",
+    "body": [
+      "<md-suggestion-chip ${1:elevated} href=\"${2:}\" download=\"${3:}\" target=\"${4|_blank,_parent,_self,_top|}\" ${5:disabled} ${6:soft-disabled} ${7:always-focusable} label=\"${8:}\"></md-suggestion-chip>"
+    ],
+    "description": ""
+  },
+  "MD Dialog": {
     "prefix": "md-dialog",
     "body": [
       "<md-dialog>",
@@ -245,14 +624,7 @@
     ],
     "description": "Dialogs behave like <dialog> elements, and can be closed with a <form method=\"dialog\"> element. Dialogs have three optional sections: the headline title, the main content, and action buttons."
   },
-  "MD Dialog Slot" : { 
-    "prefix": "md-dialog:slot",
-    "body": [
-      "<${1|div,form|} slot=\"${2|headline,content,actions|}\">${3}</${1|div,form|}>",
-    ],
-    "description": ""
-  },
-  "MD Dialog Open" : { 
+  "MD Dialog Open": {
     "prefix": "md-dialog:open",
     "body": [
       "<md-dialog open>",
@@ -263,708 +635,520 @@
     ],
     "description": "Dialogs are opened and closed by setting the open attribute or property."
   },
-  "MD Dialog Alert" : { 
-    "prefix": "md-dialog:alert",
+  "MD Dialog Quick": {
+    "prefix": "md-dialog:quick",
     "body": [
-      "<md-dialog type=\"alert\">",
-      "\t<div slot=\"headline\">${1}</div>",
-      "\t<form slot=\"content\" id=\"${2:formId}\" method=\"dialog\">${3}</form>",
-      "\t<div slot=\"actions\">",
-      "\t\t<md-text-button form=\"${2:formId}\">OK</md-text-button>",
-      "\t\t${4}\n\t</div>",
-      "</md-dialog>"
+      "<md-dialog quick></md-dialog>"
     ],
-    "description": "Add a type=\"alert\" attribute to dialogs that need to communicate an important message and require a user's response."
+    "description": "Skips the opening and closing animations."
   },
-  "MD Dialog Confirm" : { 
-    "prefix": "md-dialog:confirm",
+  "MD Dialog Type": {
+    "prefix": "md-dialog:type",
     "body": [
-      "<md-dialog>",
-      "\t<div slot=\"headline\">${1}</div>",
-      "\t<md-icon slot=\"icon\">${2}</md-icon>",
-      "\t<form slot=\"content\" id=\"${3:formId}\" method=\"dialog\">${4}</form>",
-      "\t<div slot=\"actions\">",
-      "\t\t<md-text-button value=\"cancel\">Cancel</md-text-button>",
-      "\t\t<md-filled-tonal-button id=\"${3:formId}\" value=\"apply\">Apply</md-filled-tonal-button>",
-      "\t\t${5}",
-      "\t</div>",
-      "</md-dialog>"
+      "<md-dialog type=\"${1|alert|}\"></md-dialog>"
     ],
-    "description": ""
+    "description": "The type of dialog for accessibility. Set this to `alert` to announce a dialog as an alert dialog."
   },
-  "MD DialogFloating Sheet" : { 
-    "prefix": "md-dialog:floating-sheet",
+  "MD Dialog No Focus Trap": {
+    "prefix": "md-dialog:no-focus-trap",
     "body": [
-      "<md-dialog>",
-      "\t<span slot=\"headline\">",
-      "\t\t<span style=\"flex: 1;\">Floating Sheet</span>",
-      "\t\t<md-icon-button \"${1:formId}\" value=\"close\" aria-label=\"Close dialog\">",
-      "\t\t\t<md-icon>${2}</md-icon>",
-      "\t\t</md-icon-button>",
-      "\t</span>",
-      "\t<form slot=\"content\" id=\"${1:formId}\" method=\"dialog\">${3}</form>",
-      "</md-dialog>"
+      "<md-dialog no-focus-trap></md-dialog>"
     ],
-    "description": ""
+    "description": "Disables focus trapping, which by default keeps keyboard Tab navigation within the dialog."
   },
-  "MD Dialog Full Properties" : { 
+  "MD Dialog Full Properties": {
     "prefix": "md-dialog:full-properties",
     "body": [
-      "<md-dialog ${1:open} ${2:type=\"alert\"}>",
-      "\t<div slot=\"headline\">${3}</div>",
-      "\t<md-icon slot=\"icon\">${4}</md-icon>",
-      "\t<form slot=\"content\" method=\"dialog\">${5}</form>",
-      "\t<div slot=\"actions\">${6}</div>",
-      "</md-dialog>"
+      "<md-dialog ${1:open} ${2:quick} type=\"${3|alert|}\" ${4:no-focus-trap}></md-dialog>"
     ],
     "description": ""
   },
-
-  "MD Radio" : { 
-    "prefix": "md-radio",
+  "MD Dialog Slot": {
+    "prefix": "md-dialog:slot",
     "body": [
-      "<md-radio></md-radio>"
-    ],
-    "description": "Radios behave like <input type=\"radio\"> elements and form a group with the same name attribute. Only one radio can be selected in a group."
-  },
-  "MD Radio Disabled" : { 
-    "prefix": "md-radio:disabled",
-    "body": [
-      "<md-radio disabled></md-radio>"
-    ],
-    "description": "Whether or not the radio is disabled."
-  },
-  "MD Radio Checked" : { 
-    "prefix": "md-radio:checked",
-    "body": [
-      "<md-radio checked></md-radio>"
+      "<${1|div,form|} slot=\"${2|headline,content,actions|}\">${3}</${1|div,form|}>"
     ],
     "description": ""
   },
-  "MD Radio Name" : { 
-    "prefix": "md-radio:name",
+  "MD Divider": {
+    "prefix": "md-divider",
     "body": [
-      "<md-radio name=\"${1}\"></md-radio>"
+      "<md-divider></md-divider>"
+    ],
+    "description": "Dividers can reinforce tapability, such as when used to separate list items or define tappable regions in an accordion."
+  },
+  "MD Divider Inset": {
+    "prefix": "md-divider:inset",
+    "body": [
+      "<md-divider inset></md-divider>"
+    ],
+    "description": "Indents the divider with equal padding on both sides."
+  },
+  "MD Divider Inset Start": {
+    "prefix": "md-divider:inset-start",
+    "body": [
+      "<md-divider inset-start></md-divider>"
+    ],
+    "description": "Indents the divider with padding on the leading side."
+  },
+  "MD Divider Inset End": {
+    "prefix": "md-divider:inset-end",
+    "body": [
+      "<md-divider inset-end></md-divider>"
+    ],
+    "description": "Indents the divider with padding on the trailing side."
+  },
+  "MD Divider Full Properties": {
+    "prefix": "md-divider:full-properties",
+    "body": [
+      "<md-divider ${1:inset} ${2:inset-start} ${3:inset-end}></md-divider>"
     ],
     "description": ""
   },
-  "MD Radio Value" : { 
-    "prefix": "md-radio:value",
-    "body": [
-      "<md-radio value=\"${1}\"></md-radio>"
-    ],
-    "description": ""
-  },
-  "MD Radio Full Properties" : { 
-    "prefix": "md-radio:full-properties",
-    "body": [
-      "<md-radio",
-      "\tname=\"${1}\"",
-      "\tvalue=\"${2}\"",
-      "\t${3:disabled}",
-      "\t${4:checked}",
-      "></md-radio>"
-    ],
-    "description": ""
-  },
-  "MD Radio With Label" : { 
-    "prefix": "md-radio:with-label",
-    "body": [
-      "<label for=\"${1:radioId}\"></label>",
-      "<md-radio id=\"${1:radioId}\"></md-radio>"
-    ],
-    "description": "Associate a label with a radio using the <label> element. do not wrap radios inside of a <label>, which stops screen readers from correctly announcing the number of radios in a group."
-  },
-  "MD Radio Role Radiogroup" : { 
-    "prefix": "md-radio:role-radiogroup",
-    "body": [
-      "<div role=\"radiogroup\" aria-labelledby=\"${1:group-title}\">",
-      "\t<h3 id=\"${1:group-title}\">${2}</h3>",
-      "\t<div>",
-      "\t\t<md-radio id=\"${3:firstId}\"></md-radio>",
-      "\t\t<label for=\"${3:firstId}\"></label>",
-      "\t</div>",
-      "</div>"
-    ],
-    "description": "Add an aria-label attribute to radios without labels or radios whose labels need to be more descriptive. Place radios inside a role=\"radiogroup\". Radio groups must display a label, either with aria-label or aria-labelledby."
-  },
-
-  "MD Switch" : { 
-    "prefix": "md-switch",
-    "body": [
-      "<md-switch></md-switch>"
-    ],
-    "description": ""
-  },
-  "MD Switch Selected" : { 
-    "prefix": "md-switch:selected",
-    "body": [
-      "<md-switch selected></md-switch>"
-    ],
-    "description": "Puts the switch in the selected state and sets the form submission value to the value property."
-  },
-  "MD Switch Disabled" : { 
-    "prefix": "md-switch:disabled",
-    "body": [
-      "<md-switch disabled></md-switch>"
-    ],
-    "description": "	Disables the switch and makes it non-interactive."
-  },
-  "MD Switch required" : { 
-    "prefix": "md-switch:required",
-    "body": [
-      "<md-switch required></md-switch>"
-    ],
-    "description": "When true, require the switch to be selected when participating in form submission. https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox#validation"
-  },
-  "MD Switch Name" : { 
-    "prefix": "md-switch:name",
-    "body": [
-      "<md-switch name=\"${1}\"></md-switch>"
-    ],
-    "description": ""
-  },
-  "MD Switch Value" : { 
-    "prefix": "md-switch:value",
-    "body": [
-      "<md-switch value=\"${1}\"></md-switch>"
-    ],
-    "description": ""
-  },
-  "MD Switch Icons" : { 
-    "prefix": "md-switch:icons",
-    "body": [
-      "<md-switch icons></md-switch>"
-    ],
-    "description": "Shows both the selected and deselected icons."
-  },
-  "MD Switch Show Only Selected Icon" : { 
-    "prefix": "md-switch:show-only-selected-icon",
-    "body": [
-      "<md-switch icons show-only-selected-icon></md-switch>"
-    ],
-    "description": "Shows only the selected icon, and not the deselected icon. If true, overrides the behavior of the icons property."
-  },
-  "MD Switch With Label" : { 
-    "prefix": "md-switch:with-label",
-    "body": [
-      "<label>",
-      "\t<md-switch></md-switch>",
-      "</label>"
-    ],
-    "description": ""
-  },
-  "MD Switch Full Properties" : { 
-    "prefix": "md-switch:full-properties",
-    "body": [
-      "<md-switch",
-      "\t${1:icons}",
-      "\t${2:showOnlySelectedIcon}",
-      "\t${3:required}",
-      "\t${4:selected}",
-      "\t${5:disabled}",
-      "\tname=\"${6}\"",
-      "\tvalue=\"${7|on,off|}\"",
-      "></md-switch>"
-    ],
-    "description": ""
-  },
-
-  "MD Chip Set" : { 
-    "prefix": "md-chip-set",
-    "body": [
-      "<md-chip-set>",
-      "\t${1}",
-      "</md-chip-set>"
-    ],
-    "description": "Chips help people enter information, make selections, filter content, or trigger actions. While buttons are expected to appear consistently and with familiar calls to action, chips should appear dynamically as a group of multiple interactive elements."
-  },
-
-  "MD Chip" : { 
-    "prefix": "md-chip",
-    "body": [
-      "<md-${1|assist,filter,input,suggestion|}-chip label=\"${2}\"></md-${1|assist,filter,input,suggestion|}-chip>"
-    ],
-    "description": "Choose the type of chip based on its purpose and author."
-  },
-  "MD Chip Elevated" : { 
-    "prefix": "md-chip:elevated",
-    "body": [
-      "<md-${1|assist,filter,suggestion|}-chip label=\"${2}\" elevated></md-${1|assist,filter,input,suggestion|}-chip>"
-    ],
-    "description": ""
-  },
-  "MD Chip Disabled" : { 
-    "prefix": "md-chip:disabled",
-    "body": [
-      "<md-${1|assist,filter,input,suggestion|}-chip label=\"${2}\" disabled></md-${1|assist,filter,input,suggestion|}-chip>"
-    ],
-    "description": "Whether or not the chip is disabled. Disabled chips are not focusable, unless always-focusable is set."
-  },
-  "MD Chip Always Focusable" : { 
-    "prefix": "md-chip:always-focusable",
-    "body": [
-      "<md-${1|assist,filter,input,suggestion|}-chip label=\"${2}\" always-focusable></md-${1|assist,filter,input,suggestion|}-chip>"
-    ],
-    "description": "When true, allow disabled chips to be focused with arrow keys. Add this when a chip needs increased visibility when disabled. See https://www.w3.org/WAI/ARIA/apg/practices/keyboard-interface/#kbd_disabled_controls for more guidance on when this is needed."
-  },
-  "MD Chip Selected" : { 
-    "prefix": "md-chip:selected",
-    "body": [
-      "<md-${1|filter,input|}-chip label=\"${2}\" selected></md-${1|assist,filter,input,suggestion|}-chip>"
-    ],
-    "description": ""
-  },
-  "MD Chip Icons" : { 
-    "prefix": "md-chip:icons",
-    "body": [
-      "<md-${1|assist,filter,input,suggestion|}-chip label=\"${2}\">",
-      "\t<md-icon slot=\"icon\">${3}</md-icon>"
-      "</md-${1|assist,filter,input,suggestion|}-chip>"
-    ],
-    "description": ""
-  },
-  "MD Chip Assist" : { 
-    "prefix": "md-assist-chip",
-    "body": [
-      "<md-assist-chip label=\"${1}\"></md-assist-chip>"
-    ],
-    "description": ""
-  },
-  "MD Chip Filter" : { 
-    "prefix": "md-filter-chip",
-    "body": [
-      "<md-filter-chip label=\"${1}\"></md-filter-chip>"
-    ],
-    "description": ""
-  },
-  "MD Chip Filter Removable" : { 
-    "prefix": "md-filter-chip:removable",
-    "body": [
-      "<md-filter-chip label=\"${1}\" removable></md-filter-chip>"
-    ],
-    "description": ""
-  },
-  "MD Chip Input" : { 
-    "prefix": "md-input-chip",
-    "body": [
-      "<md-input-chip label=\"${1}\"></md-input-chip>"
-    ],
-    "description": ""
-  },
-  "MD Chip Input Remove Only" : { 
-    "prefix": "md-input-chip:remove-only",
-    "body": [
-      "<md-input-chip label=\"${1}\" remove-only></md-input-chip>"
-    ],
-    "description": ""
-  },
-  "MD Chip Input Avatar" : { 
-    "prefix": "md-input-chip:avatar",
-    "body": [
-      "<md-input-chip label=\"${1}\" avatar>",
-      "\t<img slot=\"icon\" src=\"${2}\" />",
-      "</md-input-chip>"
-    ],
-    "description": ""
-  },
-  "MD Chip Suggestion" : { 
-    "prefix": "md-suggestion-chip",
-    "body": [
-      "<md-suggestion-chip label=\"${1}\"></md-suggestion-chip>"
-    ],
-    "description": ""
-  },
-
-  "MD Elevation" : { 
+  "MD Elevation": {
     "prefix": "md-elevation",
-    "body": ["<md-elevation></md-elevation>"],
-    "description": "Elevation can be set from 0 to 5 using the --md-elevation-level CSS custom property. The elevation's container needs width, height, and a relative position."
-  },
-  "MD Elevation With Div" : { 
-    "prefix": "md-elevation:with-div",
     "body": [
-      "<div class=\"${1:relative}\">",
-      "\t<md-elevation></md-elevation>"
-      "</div>"
+      "<md-elevation></md-elevation>"
     ],
-    "description": ""
+    "description": "Material's elevation system is deliberately limited to just a handful of levels. This creative constraint means you need to make thoughtful decisions about your UI's elevation story."
   },
-
-  "MD Focus Ring" : { 
-    "prefix": "md-focus-ring",
-    "body": [  
-      "<md-focus-ring></md-focus-ring>"
-    ],
-    "description": ""
-  },
-  "MD Focus Ring Inward" : { 
-    "prefix": "md-focus-ring:inward",
-    "body": [  
-      "<md-focus-ring inward></md-focus-ring>"
-    ],
-    "description": "Makes the focus ring animate inwards instead of outwards."
-  },
-  "MD Focus Ring Visible" : { 
-    "prefix": "md-focus-ring:visible",
-    "body": [  
-      "<md-focus-ring visible></md-focus-ring>"
-    ],
-    "description": "Makes the focus ring visible."
-  },
-  "MD Focus Ring With Div" : { 
-    "prefix": "md-focus-ring:with-div",
+  "MD Elevation Full Properties": {
+    "prefix": "md-elevation:full-properties",
     "body": [
-      "<div class=\"${1:relative}\">",
-      "\t<md-focus-ring></md-focus-ring>"
-      "</div>"
+      "<md-elevation ></md-elevation>"
     ],
     "description": ""
   },
-  "MD Focus Ring With Input" : { 
-    "prefix": "md-focus-ring-with-input",
-    "body": [
-      "<div class=\"${1:relative}\">",
-      "\t<md-focus-ring for=\"${2:controlId}\"></md-focus-ring>",
-      "\t<input id=\"${2:controlId}\" />",
-      "</div>"
-    ],
-    "description": ""
-  },
-  "MD Focus Ring With button" : { 
-    "prefix": "md-focus-ring:with-button",
-    "body": [
-      "<div class=\"${1:relative}\">",
-      "\t<md-focus-ring for=\"${2:controlId}\"></md-focus-ring>",
-      "\t<button id=\"${2:controlId}\"></button>",
-      "</div>"
-    ],
-    "description": ""
-  },
-  
-  "MD Fab" : { 
+  "MD Fab": {
     "prefix": "md-fab",
-    "body": [  
-      "<md-fab>",
-      "\t<md-icon slot=\"icon\">${1}</md-icon>",
-      "</md-fab>"
+    "body": [
+      "<md-fab></md-fab>"
     ],
-    "description": "FABs should have an icon, such as a font md-icon, an svg, or an img."
+    "description": "FAB represents the most important action on a screen. It puts key actions within reach."
   },
-  "MD Fab Label" : { 
+  "MD Fab Variant": {
+    "prefix": "md-fab:variant",
+    "body": [
+      "<md-fab variant=\"${1|surface,primary,secondary,tertiary|}\"></md-fab>"
+    ],
+    "description": "The FAB color variant to render."
+  },
+  "MD Fab Size": {
+    "prefix": "md-fab:size",
+    "body": [
+      "<md-fab size=\"${1|small,medium,large|}\"></md-fab>"
+    ],
+    "description": "The size of the FAB."
+  },
+  "MD Fab Label": {
     "prefix": "md-fab:label",
-    "body": [  
-      "<md-fab label=\"${1}\">",
-      "\t<md-icon slot=\"icon\">${2}</md-icon>",
-      "</md-fab>"
-    ],
-    "description": "The text to display on the FAB."
-  },
-  "MD Fab Only Label" : { 
-    "prefix": "md-fab:onlt-label",
-    "body": [  
+    "body": [
       "<md-fab label=\"${1}\"></md-fab>"
     ],
     "description": "The text to display on the FAB."
   },
-  "MD Fab Variant" : { 
-    "prefix": "md-fab:variant",
-    "body": [  
-      "<md-fab variant=\"${1|primary,secondary,tertiary|}\">",
-      "\t<md-icon slot=\"icon\">${5}</md-icon>",
-      "</md-fab>"
-    ],
-    "description": "The FAB color variant to render."
-  },
-  "MD Fab Size" : { 
-    "prefix": "md-fab:size",
-    "body": [  
-      "<md-fab size=\"${2|small,medium,large|}\">",
-      "\t<md-icon slot=\"icon\">${5}</md-icon>",
-      "</md-fab>"
-    ],
-    "description": "The size of the FAB. NOTE: Branded FABs cannot be sized to small, and Extended FABs do not have different sizes."
-  },
-  "MD Fab Lowered" : { 
+  "MD Fab Lowered": {
     "prefix": "md-fab:lowered",
-    "body": [  
-      "<md-fab lowered>",
-      "\t<md-icon slot=\"icon\">${5}</md-icon>",
-      "</md-fab>"
+    "body": [
+      "<md-fab lowered></md-fab>"
     ],
     "description": "Lowers the FAB's elevation."
   },
-  "MD Fab Full Properties" : { 
+  "MD Fab Full Properties": {
     "prefix": "md-fab:full-properties",
-    "body": [  
-      "<md-fab",
-      "\tvariant=\"${1|primary,secondary,tertiary|}\"",
-      "\tsize=\"${2|small,medium,large|}\"",
-      "\tlabel=\"${3:}\"",
-      "\t${4:lowered}",
-      ">",
-      "\t<md-icon slot=\"icon\">${5}</md-icon>",
-      "</md-fab>"
+    "body": [
+      "<md-fab variant=\"${1|surface,primary,secondary,tertiary|}\" size=\"${2|small,medium,large|}\" label=\"${3:}\" ${4:lowered}></md-fab>"
     ],
     "description": ""
   },
-  "MD Branded Fab" : { 
+  "MD Branded Fab": {
     "prefix": "md-branded-fab",
-    "body": [  
-      "<md-branded-fab>",
-      "\t<md-icon slot=\"icon\">${1}</md-icon>",
-      "</md-branded-fab>"
+    "body": [
+      "<md-branded-fab></md-branded-fab>"
     ],
     "description": "Branded FABs use a brightly colored logo for their icon. Unlike FAB, branded FABs do not have color variants."
   },
-  "MD Branded Fab Label" : { 
-    "prefix": "md-branded-fab:label",
-    "body": [  
-      "<md-branded-fab label=\"${1}\">",
-      "\t<md-icon slot=\"icon\">${2}</md-icon>",
-      "</md-branded-fab>"
-    ],
-    "description": "The text to display on the FAB."
-  },
-  "MD Branded Fab Variant" : { 
+  "MD Branded Fab Variant": {
     "prefix": "md-branded-fab:variant",
-    "body": [  
-      "<md-branded-fab variant=\"${1|primary,secondary,tertiary|}\">",
-      "\t<md-icon slot=\"icon\">${5}</md-icon>",
-      "</md-branded-fab>"
+    "body": [
+      "<md-branded-fab variant=\"${1|surface,primary,secondary,tertiary|}\"></md-branded-fab>"
     ],
     "description": "The FAB color variant to render."
   },
-  "MD Branded Fab Size" : { 
+  "MD Branded Fab Size": {
     "prefix": "md-branded-fab:size",
-    "body": [  
-      "<md-branded-fab size=\"${2|small,medium,large|}\">",
-      "\t<md-icon slot=\"icon\">${5}</md-icon>",
-      "</md-branded-fab>"
+    "body": [
+      "<md-branded-fab size=\"${1|medium,large|}\"></md-branded-fab>"
     ],
-    "description": "The size of the FAB. NOTE: Branded FABs cannot be sized to small, and Extended FABs do not have different sizes."
+    "description": "The size of the FAB. NOTE: Branded FABs cannot be sized to small."
   },
-  "MD Branded Fab Lowered" : { 
+  "MD Branded Fab Label": {
+    "prefix": "md-branded-fab:label",
+    "body": [
+      "<md-branded-fab label=\"${1}\"></md-branded-fab>"
+    ],
+    "description": "The text to display on the FAB."
+  },
+  "MD Branded Fab Lowered": {
     "prefix": "md-branded-fab:lowered",
-    "body": [  
-      "<md-branded-fab lowered>",
-      "\t<md-icon slot=\"icon\">${5}</md-icon>",
-      "</md-branded-fab>"
+    "body": [
+      "<md-branded-fab lowered></md-branded-fab>"
     ],
     "description": "Lowers the FAB's elevation."
   },
-  "MD Branded Fab Full Properties" : { 
+  "MD Branded Fab Full Properties": {
     "prefix": "md-branded-fab:full-properties",
-    "body": [  
-      "<md-branded-fab",
-      "\tvariant=\"${1|primary,secondary,tertiary|}\"",
-      "\tsize=\"${2|small,medium,large|}\"",
-      "\tlabel=\"${3:}\"",
-      "\t${4:lowered}",
-      ">",
-      "\t<md-icon slot=\"icon\">${5}</md-icon>",
-      "</md-branded-fab>"
+    "body": [
+      "<md-branded-fab variant=\"${1|surface,primary,secondary,tertiary|}\" size=\"${2|medium,large|}\" label=\"${3:}\" ${4:lowered}></md-branded-fab>"
     ],
     "description": ""
   },
-
-  "MD Progress Indicators" : { 
-    "prefix": "md-progress-indicators",
-    "body": [  
-      "<md-${1|circular,linear|}-progress></md-${1|circular,linear|}-progress>"
+  "MD Field": {
+    "prefix": "md-field",
+    "body": [
+      "<md-${1|filled,outlined|}-field></md-${1|filled,outlined|}-field>"
     ],
-    "description": "Progress indicators may be determinate to show progress, or indeterminate for an unspecified amount of progress."
+    "description": "Filled container for form field content such as labels and supporting text."
   },
-  "MD Linear Progress Indicators Buffer" : { 
-    "prefix": "md-linear-progress-indicators:buffer",
-    "body": [  
-      "<md-linear-progress",
-      "\tvalue=\"${1:0}\"",
-      "\tbuffer=\"${2:0}\"",
-      "\t${3:indeterminate}",
-      "\tmax=\"${4:1}\"",
-      "></md-linear-progress>"
+  "MD Field Disabled": {
+    "prefix": "md-field:disabled",
+    "body": [
+      "<md-${1|filled,outlined|}-field disabled></md-${1|filled,outlined|}-field>"
+    ],
+    "description": "Whether or not the field is disabled."
+  },
+  "MD Field Error": {
+    "prefix": "md-field:error",
+    "body": [
+      "<md-${1|filled,outlined|}-field error></md-${1|filled,outlined|}-field>"
+    ],
+    "description": "Whether or not the field is in an error state."
+  },
+  "MD Field Focused": {
+    "prefix": "md-field:focused",
+    "body": [
+      "<md-${1|filled,outlined|}-field focused></md-${1|filled,outlined|}-field>"
+    ],
+    "description": "Whether or not the field is focused."
+  },
+  "MD Field Label": {
+    "prefix": "md-field:label",
+    "body": [
+      "<md-${1|filled,outlined|}-field label=\"${2}\"></md-${1|filled,outlined|}-field>"
+    ],
+    "description": "The floating label of the field."
+  },
+  "MD Field No Asterisk": {
+    "prefix": "md-field:no-asterisk",
+    "body": [
+      "<md-${1|filled,outlined|}-field no-asterisk></md-${1|filled,outlined|}-field>"
+    ],
+    "description": "Disables the asterisk on the floating label, when the field is required."
+  },
+  "MD Field Populated": {
+    "prefix": "md-field:populated",
+    "body": [
+      "<md-${1|filled,outlined|}-field populated></md-${1|filled,outlined|}-field>"
+    ],
+    "description": "Whether or not the field has a value."
+  },
+  "MD Field Required": {
+    "prefix": "md-field:required",
+    "body": [
+      "<md-${1|filled,outlined|}-field required></md-${1|filled,outlined|}-field>"
+    ],
+    "description": "Whether or not the field is required."
+  },
+  "MD Field Resizable": {
+    "prefix": "md-field:resizable",
+    "body": [
+      "<md-${1|filled,outlined|}-field resizable></md-${1|filled,outlined|}-field>"
+    ],
+    "description": "Whether or not the field is resizable."
+  },
+  "MD Field Supporting Text": {
+    "prefix": "md-field:supporting-text",
+    "body": [
+      "<md-${1|filled,outlined|}-field supporting-text=\"${2}\"></md-${1|filled,outlined|}-field>"
+    ],
+    "description": "Conveys additional information below the field."
+  },
+  "MD Field Error Text": {
+    "prefix": "md-field:error-text",
+    "body": [
+      "<md-${1|filled,outlined|}-field error-text=\"${2}\"></md-${1|filled,outlined|}-field>"
+    ],
+    "description": "The error message shown when the field is in an error state."
+  },
+  "MD Field Count": {
+    "prefix": "md-field:count",
+    "body": [
+      "<md-${1|filled,outlined|}-field count=\"${2}\"></md-${1|filled,outlined|}-field>"
+    ],
+    "description": "The current character count of the field."
+  },
+  "MD Field Max": {
+    "prefix": "md-field:max",
+    "body": [
+      "<md-${1|filled,outlined|}-field max=\"${2}\"></md-${1|filled,outlined|}-field>"
+    ],
+    "description": "The maximum character count of the field."
+  },
+  "MD Field Has Start": {
+    "prefix": "md-field:has-start",
+    "body": [
+      "<md-${1|filled,outlined|}-field has-start></md-${1|filled,outlined|}-field>"
+    ],
+    "description": "Whether or not the field has leading content."
+  },
+  "MD Field Has End": {
+    "prefix": "md-field:has-end",
+    "body": [
+      "<md-${1|filled,outlined|}-field has-end></md-${1|filled,outlined|}-field>"
+    ],
+    "description": "Whether or not the field has trailing content."
+  },
+  "MD Field Full Properties": {
+    "prefix": "md-field:full-properties",
+    "body": [
+      "<md-${1|filled,outlined|}-field ${2:disabled} ${3:error} ${4:focused} label=\"${5:}\" ${6:no-asterisk} ${7:populated} ${8:required} ${9:resizable} supporting-text=\"${10:}\" error-text=\"${11:}\" count=\"${12:}\" max=\"${13:}\" ${14:has-start} ${15:has-end}></md-${1|filled,outlined|}-field>"
     ],
     "description": ""
   },
-  "MD Progress Indicators Indeterminate" : { 
-    "prefix": "md-linear-progress-indicators:indeterminate",
-    "body": [  
-      "<md-${1|circular,linear|}-progress indeterminate></md-${1|circular,linear|}-progress>"
+  "MD Filled Field": {
+    "prefix": "md-filled-field",
+    "body": [
+      "<md-filled-field></md-filled-field>"
     ],
-    "description": "Whether or not to display indeterminate progress, which gives no indication to how long an activity will take."
+    "description": "Filled container for form field content such as labels and supporting text."
   },
-  "MD Progress Indicators Value" : { 
-    "prefix": "md-linear-progress-indicators:value",
-    "body": [  
-      "<md-${1|circular,linear|}-progress value=\"${2}\"></md-${1|circular,linear|}-progress>"
+  "MD Outlined Field": {
+    "prefix": "md-outlined-field",
+    "body": [
+      "<md-outlined-field></md-outlined-field>"
     ],
-    "description": "Progress to display, a fraction between 0 and max."
+    "description": "Outlined container for form field content such as labels and supporting text."
   },
-  "MD Progress Indicators Max" : { 
-    "prefix": "md-linear-progress-indicators:max",
-    "body": [  
-      "<md-${1|circular,linear|}-progress max=\"${2}\"></md-${1|circular,linear|}-progress>"
+  "MD Icon": {
+    "prefix": "md-icon",
+    "body": [
+      "<md-icon>${1}</md-icon>"
     ],
-    "description": "Maximum progress to display, defaults to 1."
+    "description": "Icons can be used to represent common actions. Material Symbols are a set of variable icon fonts created at seven weights across three different styles."
   },
-  "MD Progress Indicators Four Colors" : { 
-    "prefix": "md-progress-indicators:four-colors",
-    "body": [  
-      "<md-${1|circular,linear|}-progress",
-      "\tvalue=\"${2:0}\"",
-      "\t${3:indeterminate}",
-      "\t${4:four-color}",
-      "\tmax=\"${5:1}\"",
-      "></md-${1|circular,linear|}-progress>"
+  "MD Icon Full Properties": {
+    "prefix": "md-icon:full-properties",
+    "body": [
+      "<md-icon ></md-icon>"
     ],
     "description": ""
   },
-
-  "MD Icon Button" : { 
+  "MD Icon Button": {
     "prefix": "md-icon-button",
-    "body": [  
-      "<md-${1|icon,filled-icon,filled-tonal-icon,outlined-icon|}-button>",
-      "\t<md-icon>${2}</md-icon>",
-      "</md-${1|icon,filled-icon,filled-tonal-icon,outlined-icon|}-button>"
+    "body": [
+      "<md-icon-button></md-icon-button>"
     ],
-    "description": "Use icon buttons to display actions in a compact layout. Icon buttons can represent opening actions such as opening an overflow menu or search, or represent binary actions that can be toggled on and off, such as favorite or bookmark. Icon buttons can be grouped together or they can stand alone. To use icons by name, see the Icon documentation for loading the icon font."
+    "description": "Icon buttons can be grouped together or they can stand alone."
   },
-  "MD Icon Button Filled" : { 
-    "prefix": "md-filled-icon-button",
-    "body": [  
-      "<md-filled-icon-button>",
-      "\t<md-icon>${1}</md-icon>",
-      "</md-filled-icon-button>"
-    ],
-    "description": "Use icon buttons to display actions in a compact layout. Icon buttons can represent opening actions such as opening an overflow menu or search, or represent binary actions that can be toggled on and off, such as favorite or bookmark. Icon buttons can be grouped together or they can stand alone. To use icons by name, see the Icon documentation for loading the icon font."
-  },
-  "MD Icon Button Filled Tonal" : { 
-    "prefix": "md-filled-tonal-icon-button",
-    "body": [  
-      "<md-filled-tonal-icon-button>",
-      "\t<md-icon>${1}</md-icon>",
-      "</md-filled-tonal-icon-button>"
-    ],
-    "description": "Use icon buttons to display actions in a compact layout. Icon buttons can represent opening actions such as opening an overflow menu or search, or represent binary actions that can be toggled on and off, such as favorite or bookmark. Icon buttons can be grouped together or they can stand alone. To use icons by name, see the Icon documentation for loading the icon font."
-  },
-  "MD Icon Button Outlined" : { 
-    "prefix": "md-outlined-icon-button",
-    "body": [  
-      "<md-outlined-icon-button>",
-      "\t<md-icon>${1}</md-icon>",
-      "</md-outlined-icon-button>"
-    ],
-    "description": "Use icon buttons to display actions in a compact layout. Icon buttons can represent opening actions such as opening an overflow menu or search, or represent binary actions that can be toggled on and off, such as favorite or bookmark. Icon buttons can be grouped together or they can stand alone. To use icons by name, see the Icon documentation for loading the icon font."
-  },
-  "MD Icon Button Links" : { 
-    "prefix": ["md-icon-button:links","md-icon-button:href"],
-    "body": [  
-      "<md-${1|icon,filled-icon,filled-tonal-icon,outlined-icon|}-button href=\"${2}\">",
-      "\t<md-icon>${3}</md-icon>",
-      "</md-${1|icon,filled-icon,filled-tonal-icon,outlined-icon|}-button>"
-    ],
-    "description": "Sets the underlying HTMLAnchorElement's href resource attribute."
-  },
-  "MD Icon Button Type" : { 
-    "prefix": "md-icon-button:type",
-    "body": [  
-      "<md-${1|icon,filled-icon,filled-tonal-icon,outlined-icon|}-button type=\"${2|submit,button,reset|}\">",
-      "\t<md-icon>${3}</md-icon>",
-      "</md-${1|icon,filled-icon,filled-tonal-icon,outlined-icon|}-button>"
-    ],
-    "description": ""
-  },
-  "MD Icon Button Toggle" : { 
-    "prefix": "md-icon-button:toggle",
-    "body": [  
-      "<md-${1|icon,filled-icon,filled-tonal-icon,outlined-icon|}-button toggle>",
-      "\t<md-icon>${2}</md-icon>",
-      "\t<md-icon slot=\"selected\">${3}</md-icon>",
-      "</md-${1|icon,filled-icon,filled-tonal-icon,outlined-icon|}-button>"
-    ],
-    "description": "When true, the button will toggle between selected and unselected states"
-  },
-  "MD Icon Button Disabled" : { 
+  "MD Icon Button Disabled": {
     "prefix": "md-icon-button:disabled",
-    "body": [  
-      "<md-${1|icon,filled-icon,filled-tonal-icon,outlined-icon|}-button disabled>",
-      "\t<md-icon>${2}</md-icon>",
-      "</md-${1|icon,filled-icon,filled-tonal-icon,outlined-icon|}-button>"
+    "body": [
+      "<md-${1|icon,filled-icon,filled-tonal-icon,outlined-icon|}-button disabled></md-${1|icon,filled-icon,filled-tonal-icon,outlined-icon|}-button>"
     ],
     "description": "Disables the icon button and makes it non-interactive."
   },
-  "MD Icon Button Selected" : { 
-    "prefix": "md-icon-button-selected",
-    "body": [  
-      "<md-${1|icon,filled-icon,filled-tonal-icon,outlined-icon|}-button selected>",
-      "\t<md-icon>${2}</md-icon>",
-      "\t<md-icon slot=\"selected\">${3}</md-icon>",
-      "</md-${1|icon,filled-icon,filled-tonal-icon,outlined-icon|}-button>"
+  "MD Icon Button Soft Disabled": {
+    "prefix": "md-icon-button:soft-disabled",
+    "body": [
+      "<md-${1|icon,filled-icon,filled-tonal-icon,outlined-icon|}-button soft-disabled></md-${1|icon,filled-icon,filled-tonal-icon,outlined-icon|}-button>"
+    ],
+    "description": "\"Soft-disables\" the icon button (disabled but still focusable)."
+  },
+  "MD Icon Button Flip Icon In Rtl": {
+    "prefix": "md-icon-button:flip-icon-in-rtl",
+    "body": [
+      "<md-${1|icon,filled-icon,filled-tonal-icon,outlined-icon|}-button flip-icon-in-rtl></md-${1|icon,filled-icon,filled-tonal-icon,outlined-icon|}-button>"
+    ],
+    "description": "Flips the icon if it is in an RTL context at startup."
+  },
+  "MD Icon Button Href": {
+    "prefix": "md-icon-button:href",
+    "body": [
+      "<md-${1|icon,filled-icon,filled-tonal-icon,outlined-icon|}-button href=\"${2}\"></md-${1|icon,filled-icon,filled-tonal-icon,outlined-icon|}-button>"
+    ],
+    "description": "Sets the underlying HTMLAnchorElement's href resource attribute."
+  },
+  "MD Icon Button Download": {
+    "prefix": "md-icon-button:download",
+    "body": [
+      "<md-${1|icon,filled-icon,filled-tonal-icon,outlined-icon|}-button download=\"${2}\"></md-${1|icon,filled-icon,filled-tonal-icon,outlined-icon|}-button>"
+    ],
+    "description": "The filename to use when downloading the linked resource."
+  },
+  "MD Icon Button Target": {
+    "prefix": "md-icon-button:target",
+    "body": [
+      "<md-${1|icon,filled-icon,filled-tonal-icon,outlined-icon|}-button target=\"${2|_blank,_parent,_self,_top|}\"></md-${1|icon,filled-icon,filled-tonal-icon,outlined-icon|}-button>"
+    ],
+    "description": "Sets the underlying HTMLAnchorElement's target attribute."
+  },
+  "MD Icon Button Aria Label Selected": {
+    "prefix": "md-icon-button:aria-label-selected",
+    "body": [
+      "<md-${1|icon,filled-icon,filled-tonal-icon,outlined-icon|}-button aria-label-selected=\"${2}\"></md-${1|icon,filled-icon,filled-tonal-icon,outlined-icon|}-button>"
+    ],
+    "description": "The `aria-label` of the button when the button is toggleable and selected."
+  },
+  "MD Icon Button Toggle": {
+    "prefix": "md-icon-button:toggle",
+    "body": [
+      "<md-${1|icon,filled-icon,filled-tonal-icon,outlined-icon|}-button toggle></md-${1|icon,filled-icon,filled-tonal-icon,outlined-icon|}-button>"
+    ],
+    "description": "When true, the button will toggle between selected and unselected states"
+  },
+  "MD Icon Button Selected": {
+    "prefix": "md-icon-button:selected",
+    "body": [
+      "<md-${1|icon,filled-icon,filled-tonal-icon,outlined-icon|}-button selected></md-${1|icon,filled-icon,filled-tonal-icon,outlined-icon|}-button>"
     ],
     "description": "Sets the selected state. When false, displays the default icon. When true, displays the selected icon, or the default icon If no slot=\"selected\" icon is provided."
   },
-  "MD Icon Button Full Properties" : { 
+  "MD Icon Button Type": {
+    "prefix": "md-icon-button:type",
+    "body": [
+      "<md-${1|icon,filled-icon,filled-tonal-icon,outlined-icon|}-button type=\"${2|submit,button,reset|}\"></md-${1|icon,filled-icon,filled-tonal-icon,outlined-icon|}-button>"
+    ],
+    "description": "Submit is default."
+  },
+  "MD Icon Button Value": {
+    "prefix": "md-icon-button:value",
+    "body": [
+      "<md-${1|icon,filled-icon,filled-tonal-icon,outlined-icon|}-button value=\"${2}\"></md-${1|icon,filled-icon,filled-tonal-icon,outlined-icon|}-button>"
+    ],
+    "description": "The value of the button. When combined with a name, it is submitted with the form."
+  },
+  "MD Icon Button Name": {
+    "prefix": "md-icon-button:name",
+    "body": [
+      "<md-${1|icon,filled-icon,filled-tonal-icon,outlined-icon|}-button name=\"${2}\"></md-${1|icon,filled-icon,filled-tonal-icon,outlined-icon|}-button>"
+    ],
+    "description": "The HTML name to use in form submission."
+  },
+  "MD Icon Button Form": {
+    "prefix": "md-icon-button:form",
+    "body": [
+      "<md-${1|icon,filled-icon,filled-tonal-icon,outlined-icon|}-button form=\"${2}\"></md-${1|icon,filled-icon,filled-tonal-icon,outlined-icon|}-button>"
+    ],
+    "description": "The ID of the form to associate the button with."
+  },
+  "MD Icon Button Full Properties": {
     "prefix": "md-icon-button:full-properties",
-    "body": [  
-      "<md-${1|icon,filled-icon,filled-tonal-icon,outlined-icon|}-button>",
-      "\type=\"${2|submit,button,reset|}\"",
-      "\tname=\"${3}\"",
-      "\tvalue=\"${4}\"",
-      "\t${5:toggle}",
-      "\t${6:disabled}",
-      "\thref=\"${6}\"",
-      ">",
-      "\t<md-icon>${2}</md-icon>",
-      "</md-${1|icon,filled-icon,filled-tonal-icon,outlined-icon|}-button>"
+    "body": [
+      "<md-${1|icon,filled-icon,filled-tonal-icon,outlined-icon|}-button ${2:disabled} ${3:soft-disabled} ${4:flip-icon-in-rtl} href=\"${5:}\" download=\"${6:}\" target=\"${7|_blank,_parent,_self,_top|}\" aria-label-selected=\"${8:}\" ${9:toggle} ${10:selected} type=\"${11|submit,button,reset|}\" value=\"${12:}\" name=\"${13:}\" form=\"${14:}\"></md-${1|icon,filled-icon,filled-tonal-icon,outlined-icon|}-button>"
     ],
     "description": ""
   },
-
-  "MD List" : { 
+  "MD Filled Icon Button": {
+    "prefix": "md-filled-icon-button",
+    "body": [
+      "<md-filled-icon-button></md-filled-icon-button>"
+    ],
+    "description": "Filled icon buttons have higher visual impact and are best for high emphasis actions."
+  },
+  "MD Filled Tonal Icon Button": {
+    "prefix": "md-filled-tonal-icon-button",
+    "body": [
+      "<md-filled-tonal-icon-button></md-filled-tonal-icon-button>"
+    ],
+    "description": "Filled tonal icon buttons are a middle ground between filled and outlined icon buttons. They're useful in contexts where the button requires slightly more emphasis than an outline would give, such as a secondary action paired with a high emphasis action."
+  },
+  "MD Outlined Icon Button": {
+    "prefix": "md-outlined-icon-button",
+    "body": [
+      "<md-outlined-icon-button></md-outlined-icon-button>"
+    ],
+    "description": "Outlined icon buttons are medium-emphasis buttons. They're useful when an icon button needs more emphasis than a standard icon button but less than a filled or filled tonal icon button."
+  },
+  "MD Item": {
+    "prefix": "md-item",
+    "body": [
+      "<md-item>",
+      "\t${1}",
+      "</md-item>"
+    ],
+    "description": "An item layout component that can be used inside list items to give them their customizable structure."
+  },
+  "MD Item Multiline": {
+    "prefix": "md-item:multiline",
+    "body": [
+      "<md-item multiline></md-item>"
+    ],
+    "description": "Only needed for SSR. Add this attribute when an item has two lines to avoid a Flash Of Unstyled Content."
+  },
+  "MD Item Full Properties": {
+    "prefix": "md-item:full-properties",
+    "body": [
+      "<md-item ${1:multiline}></md-item>"
+    ],
+    "description": ""
+  },
+  "MD List": {
     "prefix": "md-list",
-    "body": [  
+    "body": [
       "<md-list>",
       "\t${1}",
       "</md-list>"
     ],
-    "description": "<md-list> is a container composed of <md-list-item>s of different types."
+    "description": "Lists are continuous, vertical indexes of text and images"
   },
-  "MD List Item" : { 
-    "prefix": "md-list-item",
-    "body": [  
-      "<md-list-item>",
-      "\t${1}",
-      "</md-list-item>"
+  "MD List Full Properties": {
+    "prefix": "md-list:full-properties",
+    "body": [
+      "<md-list ></md-list>"
     ],
     "description": ""
   },
-  "MD List Item Disabled" : { 
+  "MD List Item": {
+    "prefix": "md-list-item",
+    "body": [
+      "<md-list-item></md-list-item>"
+    ],
+    "description": "<md-list> is a container composed of <md-list-item>s of different types."
+  },
+  "MD List Item Disabled": {
     "prefix": "md-list-item:disabled",
-    "body": [  
-      "<md-list-item disabled>",
-      "\t${1}",
-      "</md-list-item>"
+    "body": [
+      "<md-list-item disabled></md-list-item>"
     ],
     "description": "Disables the item and makes it non-selectable and non-interactive."
   },
-  "MD List Item Href" : { 
+  "MD List Item Type": {
+    "prefix": "md-list-item:type",
+    "body": [
+      "<md-list-item type=\"${1|text,link,button|}\"></md-list-item>"
+    ],
+    "description": "Sets the behavior of the list item, defaults to \"text\". Change to \"link\" or \"button\" for interactive items."
+  },
+  "MD List Item Href": {
     "prefix": "md-list-item:href",
-    "body": [  
-      "<md-list-item href=\"${1}\">",
-      "\t${2}",
-      "</md-list-item>"
+    "body": [
+      "<md-list-item href=\"${1}\"></md-list-item>"
     ],
     "description": "Sets the underlying HTMLAnchorElement's href resource attribute."
   },
-  "MD List Item Type" : { 
-    "prefix": "md-list-item:type",
-    "body": [  
-      "<md-list-item interactive type=\"${1|text,link,button|}\">",
-      "\t${2}",
-      "</md-list-item>"
+  "MD List Item Target": {
+    "prefix": "md-list-item:target",
+    "body": [
+      "<md-list-item target=\"${1|_blank,_parent,_self,_top|}\"></md-list-item>"
     ],
-    "description": "Sets the behavior of the list item, defaults to \"text\". Change to \"link\" or \"button\" for interactive items."
+    "description": "Sets the underlying HTMLAnchorElement's target attribute when href is set."
+  },
+  "MD List Item Full Properties": {
+    "prefix": "md-list-item:full-properties",
+    "body": [
+      "<md-list-item ${1:disabled} type=\"${2|text,link,button|}\" href=\"${3:}\" target=\"${4|_blank,_parent,_self,_top|}\"></md-list-item>"
+    ],
+    "description": ""
   },
   "MD List Item With Slot": {
     "prefix": "md-list-item:with-slot",
@@ -978,367 +1162,1424 @@
     ],
     "description": ""
   },
-  "MD List Item Slot" : { 
+  "MD List Item Slot": {
     "prefix": "md-list-item:slot",
-    "body": ["<div slot=\"${1|start,headline,supporting-text,end|}\">${2}</div>"],
+    "body": [
+      "<div slot=\"${1|start,headline,supporting-text,end|}\">${2}</div>"
+    ],
     "description": ""
   },
-
-  "MD Menu" : { 
+  "MD Menu": {
     "prefix": "md-menu",
-    "body": [  
+    "body": [
       "<md-menu>",
       "\t${1}",
       "</md-menu>"
     ],
-    "description": "When opened, menus position themselves to an anchor. Thus, either anchor or anchorElement must be supplied to md-menu before opening. Additionally, a shared parent of position:relative should be present around the menu and it's anchor. Menus also render menu items such as md-menu-item and handle keyboard navigation between md-menu-items as well as typeahead functionality. Additionally, md-menu interacts with md-menu-items to help you determine how a menu was closed. Listen for and inspect the close-menu custom event's details to determine what action and items closed the menu."
+    "description": "Menus display a list of choices on a temporary surface."
   },
-  "MD Menu Id" : { 
-    "prefix": "md-menu:id",
-    "body": [  
-      "<md-menu id=\"${1:menuId}\" anchor=\"${2:menuAnchor}\">",
-      "\t${2}",
-      "</md-menu>"
+  "MD Menu Anchor": {
+    "prefix": "md-menu:anchor",
+    "body": [
+      "<md-menu anchor=\"${1}\"></md-menu>"
+    ],
+    "description": "The ID of the element the menu anchors to."
+  },
+  "MD Menu Positioning": {
+    "prefix": "md-menu:positioning",
+    "body": [
+      "<md-menu positioning=\"${1|absolute,fixed,document,popover|}\"></md-menu>"
+    ],
+    "description": "How the menu is positioned."
+  },
+  "MD Menu Quick": {
+    "prefix": "md-menu:quick",
+    "body": [
+      "<md-menu quick></md-menu>"
+    ],
+    "description": "Skips the opening and closing animations."
+  },
+  "MD Menu Has Overflow": {
+    "prefix": "md-menu:has-overflow",
+    "body": [
+      "<md-menu has-overflow></md-menu>"
+    ],
+    "description": "Displays overflow content like a submenu."
+  },
+  "MD Menu Open": {
+    "prefix": "md-menu:open",
+    "body": [
+      "<md-menu open></md-menu>"
+    ],
+    "description": "Opens the menu and makes it visible."
+  },
+  "MD Menu X Offset": {
+    "prefix": "md-menu:x-offset",
+    "body": [
+      "<md-menu x-offset=\"${1}\"></md-menu>"
+    ],
+    "description": "Offsets the menu's inline alignment from the anchor."
+  },
+  "MD Menu Y Offset": {
+    "prefix": "md-menu:y-offset",
+    "body": [
+      "<md-menu y-offset=\"${1}\"></md-menu>"
+    ],
+    "description": "Offsets the menu's block alignment from the anchor."
+  },
+  "MD Menu No Horizontal Flip": {
+    "prefix": "md-menu:no-horizontal-flip",
+    "body": [
+      "<md-menu no-horizontal-flip></md-menu>"
+    ],
+    "description": "Disable the `flip` behavior that usually happens on the horizontal axis when the surface would render outside the viewport."
+  },
+  "MD Menu No Vertical Flip": {
+    "prefix": "md-menu:no-vertical-flip",
+    "body": [
+      "<md-menu no-vertical-flip></md-menu>"
+    ],
+    "description": "Disable the `flip` behavior that usually happens on the vertical axis when the surface would render outside the viewport."
+  },
+  "MD Menu Typeahead Delay": {
+    "prefix": "md-menu:typeahead-delay",
+    "body": [
+      "<md-menu typeahead-delay=\"${1}\"></md-menu>"
+    ],
+    "description": "The max time between the keystrokes of the typeahead menu behavior before it clears the typeahead buffer."
+  },
+  "MD Menu Anchor Corner": {
+    "prefix": "md-menu:anchor-corner",
+    "body": [
+      "<md-menu anchor-corner=\"${1|end-start,end-end,start-start,start-end|}\"></md-menu>"
+    ],
+    "description": "The corner of the anchor which to align the menu in the standard logical property style of <block>-<inline>."
+  },
+  "MD Menu Menu Corner": {
+    "prefix": "md-menu:menu-corner",
+    "body": [
+      "<md-menu menu-corner=\"${1|end-start,end-end,start-start,start-end|}\"></md-menu>"
+    ],
+    "description": "The corner of the menu which to align the anchor in the standard logical property style of <block>-<inline>."
+  },
+  "MD Menu Stay Open On Outside Click": {
+    "prefix": "md-menu:stay-open-on-outside-click",
+    "body": [
+      "<md-menu stay-open-on-outside-click></md-menu>"
+    ],
+    "description": "Keeps the user clicks outside the menu."
+  },
+  "MD Menu Stay Open On Focusout": {
+    "prefix": "md-menu:stay-open-on-focusout",
+    "body": [
+      "<md-menu stay-open-on-focusout></md-menu>"
+    ],
+    "description": "Keeps the menu open when focus leaves the menu's composed subtree."
+  },
+  "MD Menu Skip Restore Focus": {
+    "prefix": "md-menu:skip-restore-focus",
+    "body": [
+      "<md-menu skip-restore-focus></md-menu>"
+    ],
+    "description": "After closing, does not restore focus to the last focused element before the menu was opened."
+  },
+  "MD Menu Default Focus": {
+    "prefix": "md-menu:default-focus",
+    "body": [
+      "<md-menu default-focus=\"${1|none,list-root,first-item,last-item|}\"></md-menu>"
+    ],
+    "description": "The element that should be focused by default once opened."
+  },
+  "MD Menu No Navigation Wrap": {
+    "prefix": "md-menu:no-navigation-wrap",
+    "body": [
+      "<md-menu no-navigation-wrap></md-menu>"
+    ],
+    "description": "Turns off navigation wrapping."
+  },
+  "MD Menu Full Properties": {
+    "prefix": "md-menu:full-properties",
+    "body": [
+      "<md-menu anchor=\"${1:}\" positioning=\"${2|absolute,fixed,document,popover|}\" ${3:quick} ${4:has-overflow} ${5:open} x-offset=\"${6:}\" y-offset=\"${7:}\" ${8:no-horizontal-flip} ${9:no-vertical-flip} typeahead-delay=\"${10:}\" anchor-corner=\"${11|end-start,end-end,start-start,start-end|}\" menu-corner=\"${12|end-start,end-end,start-start,start-end|}\" ${13:stay-open-on-outside-click} ${14:stay-open-on-focusout} ${15:skip-restore-focus} default-focus=\"${16|none,list-root,first-item,last-item|}\" ${17:no-navigation-wrap}></md-menu>"
     ],
     "description": ""
   },
-  "MD Sub Menu" : { 
-    "prefix": "md-sub-menu",
-    "body": [  
-      "<md-sub-menu>",
-      "\t<md-menu-item slot=\"item\">${1}</md-menu-item>",
-      "\t<div slot=\"headline\">${2}</div>",
-      "\t<md-menu slot=\"menu\">${3}</md-menu>",
-      "</md-sub-menu>"
-    ],
-    "description": ""
-  },
-  "MD Menu Item" : { 
+  "MD Menu Item": {
     "prefix": "md-menu-item",
-    "body": [  
+    "body": [
       "<md-menu-item>",
       "\t<div slot=\"headline\">${1}</div>",
       "</md-menu-item>"
     ],
-    "description": ""
+    "description": "Menus also render menu items such as md-menu-item and handle keyboard navigation between md-menu-items as well as typeahead functionality. Additionally, md-menu interacts with md-menu-items to help you determine how a menu was closed. Listen for and inspect the close-menu custom event's details to determine what action and items closed the menu."
   },
-
-  "MD Slider" : { 
-    "prefix": "md-slider",
-    "body": ["<md-slider></md-slider>"],
-    "description": "Sliders may be continuous or discrete, and may also represent a range."
-  },
-  "MD Slider Value" : { 
-    "prefix": "md-slider:value",
-    "body": ["<md-slider value=\"${1:50}\"></md-slider>"],
-    "description": "The slider value displayed when range is false."
-  },
-  "MD Slider Continuous" : { 
-    "prefix": "md-slider:continuous",
-    "body": ["<md-slider min=\"${1}\" max=\"${2}\" value=\"${3}\"></md-slider>"],
-    "description": ""
-  },
-  "MD Slider Min" : { 
-    "prefix": "md-slider:min",
-    "body": ["<md-slider min=\"${1:0}\"></md-slider>"],
-    "description": "The slider minimum value"
-  },
-  "MD Slider Max" : { 
-    "prefix": "md-slider:max",
-    "body": ["<md-slider max=\"${1:100}\"></md-slider>"],
-    "description": "The slider maximum value"
-  },
-  "MD Slider Discrete" : { 
-    "prefix": "md-slider:discrete",
-    "body": ["<md-slider step=\"${1}\" ticks min=\"${2}\" max=\"${3}\"></md-slider>"],
-    "description": ""
-  },
-  "MD Slider Step" : { 
-    "prefix": "md-slider:step",
-    "body": ["<md-slider step=\"${1:1}\"></md-slider>"],
-    "description": "The step between values."
-  },
-  "MD Slider Ticks" : { 
-    "prefix": "md-slider:ticks",
-    "body": ["<md-slider ticks></md-slider>"],
-    "description": "Whether or not to show tick marks."
-  },
-  "MD Slider Range" : { 
-    "prefix": "md-slider:range",
-    "body": ["<md-slider range value-start=\"${1}\" value-end=\"${2}\"></md-slider>"],
-    "description": ""
-  },
-  "MD Slider Label" : { 
-    "prefix": "md-slider:label",
-    "body": ["<md-slider labeled></md-slider>"],
-    "description": "Whether or not to show a value label when activated."
-  },
-
-  "MD Tabs" : { 
-    "prefix": "md-tabs",
-    "body": [  
-      "<md-tabs>",
-      "\t${1}"
-      "</md-tabs>"
-    ],
-    "description": "Tabs contain multiple primary or secondary tab children. Use the same type of tab in a tab bar."
-  },
-  "MD Tab" : { 
-    "prefix": "md-tab",
-    "body": [  
-      "<md-${1|primary,secondary|}-tab>",
-      "\t${2}"
-      "</md-${1|primary,secondary|}-tab>"
-    ],
-    "description": ""
-  },
-  "MD Tab Active" : { 
-    "prefix": "md-tab:active",
-    "body": [  
-      "<md-${1|primary,secondary|}-tab active>",
-      "\t${2}"
-      "</md-${1|primary,secondary|}-tab>"
-    ],
-    "description": "Whether or not the tab is selected."
-  },
-  "MD Tab Icon" : { 
-    "prefix": "md-tab:icon",
-    "body": [  
-      "<md-${1|primary,secondary|}-tab>",
-      "\t<md-icon slot=\"icon\">${2}</md-icon>",
-      "\t${3}"
-      "</md-${1|primary,secondary|}-tab>"
-    ],
-    "description": ""
-  },
-  "MD Tab Inline Icon" : { 
-    "prefix": "md-tab:inline-icon",
-    "body": [  
-      "<md-primary-tab inline-icon>",
-      "\t<md-icon slot=\"icon\">${1}</md-icon>",
-      "\t${2}"
-      "</md-primary-tab>"
-    ],
-    "description": ""
-  },
-  "MD Tab Panel" : { 
-    "prefix": "md-tab:tab-panel",
+  "MD Menu Item Disabled": {
+    "prefix": "md-menu-item:disabled",
     "body": [
-      "<md-tabs>",
-      "\t<md-${1|primary,secondary|}-tab aria-label=\"Content to view\">",
-      "\t\t<md-primary-tab id=\"${2}-tab\" aria-controls=\"${2}-panel\">${3}</md-primary-tab>",
-      "\t</md-${1|primary,secondary|}-tab>",
-      "</md-tabs>",
-      "<div id=\"${2}-panel\" role=\"tabpanel\" aria-labelledby=\"${2}-tab\">",
-      "\t${4}",
-      "</div>"
+      "<md-menu-item disabled></md-menu-item>"
+    ],
+    "description": "Disables the item and makes it non-selectable and non-interactive."
+  },
+  "MD Menu Item Type": {
+    "prefix": "md-menu-item:type",
+    "body": [
+      "<md-menu-item type=\"${1|menuitem,option,button,link|}\"></md-menu-item>"
+    ],
+    "description": "Sets the behavior and role of the menu item, defaults to \"menuitem\"."
+  },
+  "MD Menu Item Href": {
+    "prefix": "md-menu-item:href",
+    "body": [
+      "<md-menu-item href=\"${1}\"></md-menu-item>"
+    ],
+    "description": "Sets the underlying HTMLAnchorElement's href resource attribute."
+  },
+  "MD Menu Item Target": {
+    "prefix": "md-menu-item:target",
+    "body": [
+      "<md-menu-item target=\"${1|_blank,_parent,_self,_top|}\"></md-menu-item>"
+    ],
+    "description": "Sets the underlying HTMLAnchorElement's target attribute when href is set."
+  },
+  "MD Menu Item Keep Open": {
+    "prefix": "md-menu-item:keep-open",
+    "body": [
+      "<md-menu-item keep-open></md-menu-item>"
+    ],
+    "description": "Keeps the menu open if clicked or keyboard selected."
+  },
+  "MD Menu Item Selected": {
+    "prefix": "md-menu-item:selected",
+    "body": [
+      "<md-menu-item selected></md-menu-item>"
+    ],
+    "description": "Sets the item in the selected visual state when a submenu is opened."
+  },
+  "MD Menu Item Full Properties": {
+    "prefix": "md-menu-item:full-properties",
+    "body": [
+      "<md-menu-item ${1:disabled} type=\"${2|menuitem,option,button,link|}\" href=\"${3:}\" target=\"${4|_blank,_parent,_self,_top|}\" ${5:keep-open} ${6:selected}></md-menu-item>"
     ],
     "description": ""
   },
-
-  "MD Text Field" : { 
-    "prefix": ["md-text-field", "md-filled-text-field", "md-outlined-text-field"],
-    "body": [  
-      "<md-${1|filled,outlined|}-text-field label=\"${2}\"></md-${1|filled,outlined|}-text-field>"
-    ],
-    "description": "Text fields behave like <input> elements. They provide a container with labels for user input."
-  },
-  "MD Text Field Value" : { 
-    "prefix": "md-text-field:value",
-    "body": [  
-      "<md-${1|filled,outlined|}-text-field label=\"${2}\" value=\"${3}\"></md-${1|filled,outlined|}-text-field>"
-    ],
-    "description": "The current value of the text field. It is always a string."
-  },
-  "MD Text Field Disabled" : { 
-    "prefix": "md-text-field:disabled",
-    "body": [  
-      "<md-${1|filled,outlined|}-text-field label=\"${2}\" disabled></md-${1|filled,outlined|}-text-field>"
+  "MD Sub Menu": {
+    "prefix": "md-sub-menu",
+    "body": [
+      "<md-sub-menu>",
+      "\t<md-menu-item slot=\"item\">${1}</md-menu-item>",
+      "\t<md-menu slot=\"menu\">${2}</md-menu>",
+      "</md-sub-menu>"
     ],
     "description": ""
   },
-  "MD Text Field Error" : { 
-    "prefix": "md-text-field:error",
-    "body": [  
-      "<md-${1|filled,outlined|}-text-field label=\"${2}\" error></md-${1|filled,outlined|}-text-field>"
+  "MD Sub Menu Anchor Corner": {
+    "prefix": "md-sub-menu:anchor-corner",
+    "body": [
+      "<md-sub-menu anchor-corner=\"${1|end-start,end-end,start-start,start-end|}\"></md-sub-menu>"
     ],
-    "description": "Gets or sets whether or not the text field is in a visually invalid state. This error state overrides the error state controlled by reportValidity()."
+    "description": "The anchorCorner to set on the submenu."
   },
-  "MD Text Field Error Text" : { 
-    "prefix": "md-text-field:error-text",
-    "body": [  
-      "<md-${1|filled,outlined|}-text-field label=\"${2}\" error-text=\"${3}\"></md-${1|filled,outlined|}-text-field>"
+  "MD Sub Menu Menu Corner": {
+    "prefix": "md-sub-menu:menu-corner",
+    "body": [
+      "<md-sub-menu menu-corner=\"${1|end-start,end-end,start-start,start-end|}\"></md-sub-menu>"
     ],
-    "description": "The error message that replaces supporting text when error is true. If errorText is an empty string, then the supporting text will continue to show. This error message overrides the error message displayed by reportValidity()."
+    "description": "The menuCorner to set on the submenu."
   },
-  "MD Text Field Required" : { 
-    "prefix": "md-text-field:required",
-    "body": [  
-      "<md-${1|filled,outlined|}-text-field label=\"${2}\" required></md-${1|filled,outlined|}-text-field>"
+  "MD Sub Menu Hover Open Delay": {
+    "prefix": "md-sub-menu:hover-open-delay",
+    "body": [
+      "<md-sub-menu hover-open-delay=\"${1}\"></md-sub-menu>"
     ],
-    "description": ""
+    "description": "The delay between mouseenter and submenu opening."
   },
-  "MD Text Field Icons" : { 
-    "prefix": "md-text-field:icons",
-    "body": [  
-      "<md-${1|filled,outlined|}-text-field label=\"${2}\" value=\"${3}\" placeholder=\"${4}\">",
-      "\t<md-icon slot=\"leading-icon\">${5}</md-icon>",
-      "</md-${1|filled,outlined|}-text-field>"
+  "MD Sub Menu Hover Close Delay": {
+    "prefix": "md-sub-menu:hover-close-delay",
+    "body": [
+      "<md-sub-menu hover-close-delay=\"${1}\"></md-sub-menu>"
     ],
-    "description": ""
+    "description": "The delay between pointerleave and the submenu closing."
   },
-  "MD Text Field Icon Button" : { 
-    "prefix": "md-text-field:icon-button",
-    "body": [  
-      "<md-${1|filled,outlined|}-text-field label=\"${2}\" value=\"${3}\" placeholder=\"${4}\">",
-      "\t<md-icon-button slot=\"trailing-icon\">",
-      "\t\t<md-icon>${5}</md-icon>",
-      "\t\t<md-icon slot=\"selected\">${6}</md-icon>",
-      "</md-${1|filled,outlined|}-text-field>"
+  "MD Sub Menu Full Properties": {
+    "prefix": "md-sub-menu:full-properties",
+    "body": [
+      "<md-sub-menu anchor-corner=\"${1|end-start,end-end,start-start,start-end|}\" menu-corner=\"${2|end-start,end-end,start-start,start-end|}\" hover-open-delay=\"${3:}\" hover-close-delay=\"${4:}\"></md-sub-menu>"
     ],
     "description": ""
   },
-  "MD Text Field Type" : { 
-    "prefix": "md-text-field:type",
-    "body": [  
-      "<md-${1|filled,outlined|}-text-field\n\tlabel=\"${2}\"\n\tvalue=\"${3}\"\n\tplaceholder=\"${4}\"\n\ttype={$5|text,email,number,password,search,tel,url,textarea|}\n>",
-      "</md-${1|filled,outlined|}-text-field>"
+  "MD Navigation Bar": {
+    "prefix": "md-navigation-bar",
+    "body": [
+      "<md-navigation-bar>",
+      "\t${1}",
+      "</md-navigation-bar>"
+    ],
+    "description": "Navigation bars offer a persistent and convenient way to switch between primary destinations in an app."
+  },
+  "MD Navigation Bar Active Index": {
+    "prefix": "md-navigation-bar:active-index",
+    "body": [
+      "<md-navigation-bar active-index=\"${1}\"></md-navigation-bar>"
+    ],
+    "description": "The index of the currently active tab."
+  },
+  "MD Navigation Bar Hide Inactive Labels": {
+    "prefix": "md-navigation-bar:hide-inactive-labels",
+    "body": [
+      "<md-navigation-bar hide-inactive-labels></md-navigation-bar>"
+    ],
+    "description": "Whether or not to hide the labels of inactive tabs."
+  },
+  "MD Navigation Bar Full Properties": {
+    "prefix": "md-navigation-bar:full-properties",
+    "body": [
+      "<md-navigation-bar active-index=\"${1:}\" ${2:hide-inactive-labels}></md-navigation-bar>"
     ],
     "description": ""
   },
-  "MD Text Field Prefix Suffix" : { 
-    "prefix": "md-text-field:prefix-suffix",
-    "body": [  
-      "<md-${1|filled,outlined|}-text-field\n\tlabel=\"${2}\"\n\tvalue=\"${3}\"\n\tplaceholder=\"${4}\"\n\tprefix-text=\"${5}\"\n\tsuffix-text=\"${6}\"\n>",
-      "</md-${1|filled,outlined|}-text-field>"
+  "MD Navigation Drawer": {
+    "prefix": "md-navigation-drawer",
+    "body": [
+      "<md-navigation-drawer>",
+      "\t${1}",
+      "</md-navigation-drawer>"
+    ],
+    "description": "Navigation drawers provide access to destinations in an app."
+  },
+  "MD Navigation Drawer Opened": {
+    "prefix": "md-navigation-drawer:opened",
+    "body": [
+      "<md-navigation-drawer opened></md-navigation-drawer>"
+    ],
+    "description": "Whether or not the drawer is opened."
+  },
+  "MD Navigation Drawer Pivot": {
+    "prefix": "md-navigation-drawer:pivot",
+    "body": [
+      "<md-navigation-drawer pivot=\"${1|start,end|}\"></md-navigation-drawer>"
+    ],
+    "description": "Which side the drawer pivots from."
+  },
+  "MD Navigation Drawer Full Properties": {
+    "prefix": "md-navigation-drawer:full-properties",
+    "body": [
+      "<md-navigation-drawer ${1:opened} pivot=\"${2|start,end|}\"></md-navigation-drawer>"
     ],
     "description": ""
   },
-  "MD Text Field Supporting Text" : { 
-    "prefix": "md-text-field:supporting-text",
-    "body": [  
-      "<md-${1|filled,outlined|}-text-field\n\tlabel=\"${2}\"\n\tvalue=\"${3}\"\n\tplaceholder=\"${4}\"\n\tsupporting-text=\"${5}\"\n\terror-text=\"${6}\"\n>",
-      "</md-${1|filled,outlined|}-text-field>"
+  "MD Navigation Drawer Modal": {
+    "prefix": "md-navigation-drawer-modal",
+    "body": [
+      "<md-navigation-drawer-modal>",
+      "\t${1}",
+      "</md-navigation-drawer-modal>"
+    ],
+    "description": "A modal navigation drawer blocks interaction with the rest of the screen while open."
+  },
+  "MD Navigation Drawer Modal Opened": {
+    "prefix": "md-navigation-drawer-modal:opened",
+    "body": [
+      "<md-navigation-drawer-modal opened></md-navigation-drawer-modal>"
+    ],
+    "description": "Whether or not the drawer is opened."
+  },
+  "MD Navigation Drawer Modal Pivot": {
+    "prefix": "md-navigation-drawer-modal:pivot",
+    "body": [
+      "<md-navigation-drawer-modal pivot=\"${1|start,end|}\"></md-navigation-drawer-modal>"
+    ],
+    "description": "Which side the drawer pivots from."
+  },
+  "MD Navigation Drawer Modal Full Properties": {
+    "prefix": "md-navigation-drawer-modal:full-properties",
+    "body": [
+      "<md-navigation-drawer-modal ${1:opened} pivot=\"${2|start,end|}\"></md-navigation-drawer-modal>"
     ],
     "description": ""
   },
-  "MD Text Field Character Counter" : { 
-    "prefix": "md-text-field:character-counter",
-    "body": [  
-      "<md-${1|filled,outlined|}-text-field label=\"${2}\" value=\"${3}\" placeholder=\"${4}\" maxlength=\"${5}\">",
-      "</md-${1|filled,outlined|}-text-field>"
+  "MD Navigation Tab": {
+    "prefix": "md-navigation-tab",
+    "body": [
+      "<md-navigation-tab></md-navigation-tab>"
+    ],
+    "description": "A tab destination inside a navigation bar."
+  },
+  "MD Navigation Tab Disabled": {
+    "prefix": "md-navigation-tab:disabled",
+    "body": [
+      "<md-navigation-tab disabled></md-navigation-tab>"
+    ],
+    "description": "Whether or not the navigation tab is disabled."
+  },
+  "MD Navigation Tab Active": {
+    "prefix": "md-navigation-tab:active",
+    "body": [
+      "<md-navigation-tab active></md-navigation-tab>"
+    ],
+    "description": "Whether or not the navigation tab is active."
+  },
+  "MD Navigation Tab Hide Inactive Label": {
+    "prefix": "md-navigation-tab:hide-inactive-label",
+    "body": [
+      "<md-navigation-tab hide-inactive-label></md-navigation-tab>"
+    ],
+    "description": "Hides the label when the tab is inactive."
+  },
+  "MD Navigation Tab Label": {
+    "prefix": "md-navigation-tab:label",
+    "body": [
+      "<md-navigation-tab label=\"${1}\"></md-navigation-tab>"
+    ],
+    "description": "The text label of the navigation tab."
+  },
+  "MD Navigation Tab Badge Value": {
+    "prefix": "md-navigation-tab:badge-value",
+    "body": [
+      "<md-navigation-tab badge-value=\"${1}\"></md-navigation-tab>"
+    ],
+    "description": "The value shown in the tab badge."
+  },
+  "MD Navigation Tab Show Badge": {
+    "prefix": "md-navigation-tab:show-badge",
+    "body": [
+      "<md-navigation-tab show-badge></md-navigation-tab>"
+    ],
+    "description": "Whether or not to show the badge."
+  },
+  "MD Navigation Tab Full Properties": {
+    "prefix": "md-navigation-tab:full-properties",
+    "body": [
+      "<md-navigation-tab ${1:disabled} ${2:active} ${3:hide-inactive-label} label=\"${4:}\" badge-value=\"${5:}\" ${6:show-badge}></md-navigation-tab>"
     ],
     "description": ""
   },
-  "MD Text Field Name" : { 
-    "prefix": "md-text-field:name",
-    "body": [  
-      "<md-${1|filled,outlined|}-text-field label=\"${2}\" value=\"${3}\" name=\"${5}\" ${6:required}>",
-      "</md-${1|filled,outlined|}-text-field>"
+  "MD Circular Progress": {
+    "prefix": "md-circular-progress",
+    "body": [
+      "<md-circular-progress></md-circular-progress>"
+    ],
+    "description": "Circular progress indicators display progress by animating along an invisible circular track in a clockwise direction."
+  },
+  "MD Circular Progress Value": {
+    "prefix": "md-circular-progress:value",
+    "body": [
+      "<md-circular-progress value=\"${1}\"></md-circular-progress>"
+    ],
+    "description": "Progress to display, a fraction between 0 and max."
+  },
+  "MD Circular Progress Max": {
+    "prefix": "md-circular-progress:max",
+    "body": [
+      "<md-circular-progress max=\"${1}\"></md-circular-progress>"
+    ],
+    "description": "Maximum progress to display, defaults to 1."
+  },
+  "MD Circular Progress Indeterminate": {
+    "prefix": "md-circular-progress:indeterminate",
+    "body": [
+      "<md-circular-progress indeterminate></md-circular-progress>"
+    ],
+    "description": "Whether or not to display indeterminate progress, which gives no indication to how long an activity will take."
+  },
+  "MD Circular Progress Four Color": {
+    "prefix": "md-circular-progress:four-color",
+    "body": [
+      "<md-circular-progress four-color></md-circular-progress>"
+    ],
+    "description": "Whether or not to render indeterminate mode using 4 colors instead of one."
+  },
+  "MD Circular Progress Full Properties": {
+    "prefix": "md-circular-progress:full-properties",
+    "body": [
+      "<md-circular-progress value=\"${1:}\" max=\"${2:}\" ${3:indeterminate} ${4:four-color}></md-circular-progress>"
     ],
     "description": ""
   },
-  "MD Text Field Placeholder" : { 
-    "prefix": "md-text-field:placeholder",
-    "body": [  
-      "<md-${1|filled,outlined|}-text-field label=\"${2}\" value=\"${3}\" name=\"${5}\" placeholder=\"${6}\" ${7:required}>",
-      "</md-${1|filled,outlined|}-text-field>"
+  "MD Linear Progress": {
+    "prefix": "md-linear-progress",
+    "body": [
+      "<md-linear-progress></md-linear-progress>"
+    ],
+    "description": "Linear progress indicators display progress by animating along the length of a fixed, visible track."
+  },
+  "MD Linear Progress Buffer": {
+    "prefix": "md-linear-progress:buffer",
+    "body": [
+      "<md-linear-progress buffer=\"${1}\"></md-linear-progress>"
     ],
     "description": ""
   },
-
-  "MD Select" : { 
+  "MD Linear Progress Value": {
+    "prefix": "md-linear-progress:value",
+    "body": [
+      "<md-linear-progress value=\"${1}\"></md-linear-progress>"
+    ],
+    "description": "Progress to display, a fraction between 0 and max."
+  },
+  "MD Linear Progress Max": {
+    "prefix": "md-linear-progress:max",
+    "body": [
+      "<md-linear-progress max=\"${1}\"></md-linear-progress>"
+    ],
+    "description": "Maximum progress to display, defaults to 1."
+  },
+  "MD Linear Progress Indeterminate": {
+    "prefix": "md-linear-progress:indeterminate",
+    "body": [
+      "<md-linear-progress indeterminate></md-linear-progress>"
+    ],
+    "description": "Whether or not to display indeterminate progress, which gives no indication to how long an activity will take."
+  },
+  "MD Linear Progress Four Color": {
+    "prefix": "md-linear-progress:four-color",
+    "body": [
+      "<md-linear-progress four-color></md-linear-progress>"
+    ],
+    "description": "Whether or not to render indeterminate mode using 4 colors instead of one."
+  },
+  "MD Linear Progress Full Properties": {
+    "prefix": "md-linear-progress:full-properties",
+    "body": [
+      "<md-linear-progress buffer=\"${1:}\" value=\"${2:}\" max=\"${3:}\" ${4:indeterminate} ${5:four-color}></md-linear-progress>"
+    ],
+    "description": ""
+  },
+  "MD Radio": {
+    "prefix": "md-radio",
+    "body": [
+      "<md-radio></md-radio>"
+    ],
+    "description": "Radios behave like <input type=\"radio\"> elements and form a group with the same name attribute. Only one radio can be selected in a group."
+  },
+  "MD Radio Disabled": {
+    "prefix": "md-radio:disabled",
+    "body": [
+      "<md-radio disabled></md-radio>"
+    ],
+    "description": "Whether or not the radio is disabled."
+  },
+  "MD Radio Required": {
+    "prefix": "md-radio:required",
+    "body": [
+      "<md-radio required></md-radio>"
+    ],
+    "description": "Whether or not the radio is required."
+  },
+  "MD Radio Value": {
+    "prefix": "md-radio:value",
+    "body": [
+      "<md-radio value=\"${1}\"></md-radio>"
+    ],
+    "description": "The element value to use in form submission when checked."
+  },
+  "MD Radio Checked": {
+    "prefix": "md-radio:checked",
+    "body": [
+      "<md-radio checked></md-radio>"
+    ],
+    "description": "Whether or not the radio is selected."
+  },
+  "MD Radio Name": {
+    "prefix": "md-radio:name",
+    "body": [
+      "<md-radio name=\"${1}\"></md-radio>"
+    ],
+    "description": "The HTML name to use in form submission."
+  },
+  "MD Radio Form": {
+    "prefix": "md-radio:form",
+    "body": [
+      "<md-radio form=\"${1}\"></md-radio>"
+    ],
+    "description": "The ID of the form to associate the radio with."
+  },
+  "MD Radio Full Properties": {
+    "prefix": "md-radio:full-properties",
+    "body": [
+      "<md-radio ${1:disabled} ${2:required} value=\"${3:}\" ${4:checked} name=\"${5:}\" form=\"${6:}\"></md-radio>"
+    ],
+    "description": ""
+  },
+  "MD Ripple": {
+    "prefix": "md-ripple",
+    "body": [
+      "<md-ripple></md-ripple>"
+    ],
+    "description": "Ripples display on hover and press pointer interactions. They may be attached to a control in one of three ways."
+  },
+  "MD Ripple Disabled": {
+    "prefix": "md-ripple:disabled",
+    "body": [
+      "<md-ripple disabled></md-ripple>"
+    ],
+    "description": "Disables the ripple."
+  },
+  "MD Ripple For": {
+    "prefix": "md-ripple:for",
+    "body": [
+      "<md-ripple for=\"${1:controlId}\"></md-ripple>"
+    ],
+    "description": "ID of the control element the ripple attaches to."
+  },
+  "MD Ripple Full Properties": {
+    "prefix": "md-ripple:full-properties",
+    "body": [
+      "<md-ripple ${1:disabled} for=\"${2:controlId}\"></md-ripple>"
+    ],
+    "description": ""
+  },
+  "MD Segmented Button": {
+    "prefix": "md-outlined-segmented-button",
+    "body": [
+      "<md-outlined-segmented-button></md-outlined-segmented-button>"
+    ],
+    "description": "MdOutlinedSegmentedButton is the custom element for the Material Design outlined segmented button component. It is intended only for use as a child of a segmented button set."
+  },
+  "MD Segmented Button Disabled": {
+    "prefix": "md-outlined-segmented-button:disabled",
+    "body": [
+      "<md-outlined-segmented-button disabled></md-outlined-segmented-button>"
+    ],
+    "description": "Whether or not the segmented button is disabled."
+  },
+  "MD Segmented Button Selected": {
+    "prefix": "md-outlined-segmented-button:selected",
+    "body": [
+      "<md-outlined-segmented-button selected></md-outlined-segmented-button>"
+    ],
+    "description": "Whether or not the segmented button is selected."
+  },
+  "MD Segmented Button Label": {
+    "prefix": "md-outlined-segmented-button:label",
+    "body": [
+      "<md-outlined-segmented-button label=\"${1}\"></md-outlined-segmented-button>"
+    ],
+    "description": "The text label of the segmented button."
+  },
+  "MD Segmented Button No Checkmark": {
+    "prefix": "md-outlined-segmented-button:no-checkmark",
+    "body": [
+      "<md-outlined-segmented-button no-checkmark></md-outlined-segmented-button>"
+    ],
+    "description": "Hides the checkmark shown on selected buttons."
+  },
+  "MD Segmented Button Has Icon": {
+    "prefix": "md-outlined-segmented-button:has-icon",
+    "body": [
+      "<md-outlined-segmented-button has-icon></md-outlined-segmented-button>"
+    ],
+    "description": "Set this to true when an icon is present."
+  },
+  "MD Segmented Button Full Properties": {
+    "prefix": "md-outlined-segmented-button:full-properties",
+    "body": [
+      "<md-outlined-segmented-button ${1:disabled} ${2:selected} label=\"${3:}\" ${4:no-checkmark} ${5:has-icon}></md-outlined-segmented-button>"
+    ],
+    "description": ""
+  },
+  "MD Segmented Button Set": {
+    "prefix": "md-outlined-segmented-button-set",
+    "body": [
+      "<md-outlined-segmented-button-set>",
+      "\t${1}",
+      "</md-outlined-segmented-button-set>"
+    ],
+    "description": "MdOutlinedSegmentedButtonSet is the custom element for the Material Design outlined segmented button set component. Only segmented button components may be used as children."
+  },
+  "MD Segmented Button Set Multiselect": {
+    "prefix": "md-outlined-segmented-button-set:multiselect",
+    "body": [
+      "<md-outlined-segmented-button-set multiselect></md-outlined-segmented-button-set>"
+    ],
+    "description": "Whether or not the set allows selecting multiple buttons."
+  },
+  "MD Segmented Button Set Full Properties": {
+    "prefix": "md-outlined-segmented-button-set:full-properties",
+    "body": [
+      "<md-outlined-segmented-button-set ${1:multiselect}></md-outlined-segmented-button-set>"
+    ],
+    "description": ""
+  },
+  "MD Select": {
     "prefix": "md-select",
-    "body": [  
+    "body": [
       "<md-${1|filled,outlined|}-select>",
       "\t${2}",
       "</md-${1|filled,outlined|}-select>"
     ],
-    "description": "Select (also referred to as a dropdown menu) allows choosing a value from a fixed list of available options. It is analogous to the native HTML <select> element."
+    "description": "Select menus display a list of choices on temporary surfaces and display the currently selected menu item above the menu."
   },
-  "MD Select Filled" : { 
-    "prefix": "md-filled-select",
-    "body": [  
-      "<md-filled-select>",
-      "\t${2}",
-      "</md-filled-select>"
+  "MD Select Quick": {
+    "prefix": "md-select:quick",
+    "body": [
+      "<md-${1|filled,outlined|}-select quick></md-${1|filled,outlined|}-select>"
     ],
-    "description": "Select (also referred to as a dropdown menu) allows choosing a value from a fixed list of available options. It is analogous to the native HTML <select> element."
+    "description": "Opens the menu synchronously with no animation."
   },
-  "MD Select Outlined" : { 
-    "prefix": "md-outlined-select",
-    "body": [  
-      "<md-outlined-select>",
-      "\t${2}",
-      "</md-outlined-select>"
-    ],
-    "description": "Select (also referred to as a dropdown menu) allows choosing a value from a fixed list of available options. It is analogous to the native HTML <select> element."
-  },
-  "MD Select Required" : { 
+  "MD Select Required": {
     "prefix": "md-select:required",
-    "body": [  
-      "<md-${1|filled,outlined|}-select required>",
-      "\t${2}",
-      "</md-${1|filled,outlined|}-select>"
+    "body": [
+      "<md-${1|filled,outlined|}-select required></md-${1|filled,outlined|}-select>"
     ],
     "description": "Whether or not the select is required."
   },
-  "MD Select Disabled" : { 
+  "MD Select Disabled": {
     "prefix": "md-select:disabled",
-    "body": [  
-      "<md-${1|filled,outlined|}-select disabled>",
-      "\t${2}",
-      "</md-${1|filled,outlined|}-select>"
+    "body": [
+      "<md-${1|filled,outlined|}-select disabled></md-${1|filled,outlined|}-select>"
     ],
     "description": "Disables the select."
   },
-  "MD Select Name" : { 
+  "MD Select Error Text": {
+    "prefix": "md-select:error-text",
+    "body": [
+      "<md-${1|filled,outlined|}-select error-text=\"${2}\"></md-${1|filled,outlined|}-select>"
+    ],
+    "description": "The error message that replaces supporting text when `error` is true. If `errorText` is an empty string, then the supporting text will continue to show."
+  },
+  "MD Select Label": {
+    "prefix": "md-select:label",
+    "body": [
+      "<md-${1|filled,outlined|}-select label=\"${2}\"></md-${1|filled,outlined|}-select>"
+    ],
+    "description": "The floating label for the field."
+  },
+  "MD Select No Asterisk": {
+    "prefix": "md-select:no-asterisk",
+    "body": [
+      "<md-${1|filled,outlined|}-select no-asterisk></md-${1|filled,outlined|}-select>"
+    ],
+    "description": "Disables the asterisk on the floating label, when the select is required."
+  },
+  "MD Select Supporting Text": {
+    "prefix": "md-select:supporting-text",
+    "body": [
+      "<md-${1|filled,outlined|}-select supporting-text=\"${2}\"></md-${1|filled,outlined|}-select>"
+    ],
+    "description": "Conveys additional information below the select, such as how it should be used."
+  },
+  "MD Select Error": {
+    "prefix": "md-select:error",
+    "body": [
+      "<md-${1|filled,outlined|}-select error></md-${1|filled,outlined|}-select>"
+    ],
+    "description": "Gets or sets whether or not the select is in a visually invalid state."
+  },
+  "MD Select Menu Positioning": {
+    "prefix": "md-select:menu-positioning",
+    "body": [
+      "<md-${1|filled,outlined|}-select menu-positioning=\"${2|absolute,fixed,popover|}\"></md-${1|filled,outlined|}-select>"
+    ],
+    "description": "Whether or not the underlying md-menu should be position: fixed to display in a top-level manner, or position: absolute."
+  },
+  "MD Select Clamp Menu Width": {
+    "prefix": "md-select:clamp-menu-width",
+    "body": [
+      "<md-${1|filled,outlined|}-select clamp-menu-width></md-${1|filled,outlined|}-select>"
+    ],
+    "description": "Clamps the menu-width to the width of the select."
+  },
+  "MD Select Typeahead Delay": {
+    "prefix": "md-select:typeahead-delay",
+    "body": [
+      "<md-${1|filled,outlined|}-select typeahead-delay=\"${2}\"></md-${1|filled,outlined|}-select>"
+    ],
+    "description": "The max time between the keystrokes of the typeahead select / menu behavior before it clears the typeahead buffer."
+  },
+  "MD Select Has Leading Icon": {
+    "prefix": "md-select:has-leading-icon",
+    "body": [
+      "<md-${1|filled,outlined|}-select has-leading-icon></md-${1|filled,outlined|}-select>"
+    ],
+    "description": "Whether or not the text field has a leading icon. Used for SSR."
+  },
+  "MD Select Display Text": {
+    "prefix": "md-select:display-text",
+    "body": [
+      "<md-${1|filled,outlined|}-select display-text=\"${2}\"></md-${1|filled,outlined|}-select>"
+    ],
+    "description": "Text to display in the field. Only set for SSR."
+  },
+  "MD Select Menu Align": {
+    "prefix": "md-select:menu-align",
+    "body": [
+      "<md-${1|filled,outlined|}-select menu-align=\"${2|start,end|}\"></md-${1|filled,outlined|}-select>"
+    ],
+    "description": "Whether the menu should be aligned to the start or the end of the select's textbox."
+  },
+  "MD Select Value": {
+    "prefix": "md-select:value",
+    "body": [
+      "<md-${1|filled,outlined|}-select value=\"${2}\"></md-${1|filled,outlined|}-select>"
+    ],
+    "description": "The value of the currently selected option."
+  },
+  "MD Select Selected Index": {
+    "prefix": "md-select:selected-index",
+    "body": [
+      "<md-${1|filled,outlined|}-select selected-index=\"${2}\"></md-${1|filled,outlined|}-select>"
+    ],
+    "description": "The index of the currently selected option."
+  },
+  "MD Select Name": {
     "prefix": "md-select:name",
-    "body": [  
-      "<md-${1|filled,outlined|}-select name=\"${2}\">",
-      "\t${3}",
-      "</md-${1|filled,outlined|}-select>"
+    "body": [
+      "<md-${1|filled,outlined|}-select name=\"${2}\"></md-${1|filled,outlined|}-select>"
     ],
-    "description": "Disables the select."
+    "description": "The HTML name to use in form submission."
   },
-  "MD Select Option" : { 
+  "MD Select Form": {
+    "prefix": "md-select:form",
+    "body": [
+      "<md-${1|filled,outlined|}-select form=\"${2}\"></md-${1|filled,outlined|}-select>"
+    ],
+    "description": "The ID of the form to associate the select with."
+  },
+  "MD Select Full Properties": {
+    "prefix": "md-select:full-properties",
+    "body": [
+      "<md-${1|filled,outlined|}-select ${2:quick} ${3:required} ${4:disabled} error-text=\"${5:}\" label=\"${6:}\" ${7:no-asterisk} supporting-text=\"${8:}\" ${9:error} menu-positioning=\"${10|absolute,fixed,popover|}\" ${11:clamp-menu-width} typeahead-delay=\"${12:}\" ${13:has-leading-icon} display-text=\"${14:}\" menu-align=\"${15|start,end|}\" value=\"${16:}\" selected-index=\"${17:}\" name=\"${18:}\" form=\"${19:}\"></md-${1|filled,outlined|}-select>"
+    ],
+    "description": ""
+  },
+  "MD Filled Select": {
+    "prefix": "md-filled-select",
+    "body": [
+      "<md-filled-select></md-filled-select>"
+    ],
+    "description": "Select menus display a list of choices on temporary surfaces and display the currently selected menu item above the menu."
+  },
+  "MD Outlined Select": {
+    "prefix": "md-outlined-select",
+    "body": [
+      "<md-outlined-select></md-outlined-select>"
+    ],
+    "description": "Select menus display a list of choices on temporary surfaces and display the currently selected menu item above the menu."
+  },
+  "MD Select Option": {
     "prefix": "md-select-option",
-    "body": [  
-      "<md-select-option value=\"${1}\">",
-      "\t${2}",
-      "</md-select-option>"
+    "body": [
+      "<md-select-option></md-select-option>"
     ],
-    "description": ""
+    "description": "Select (also referred to as a dropdown menu) allows choosing a value from a fixed list of available options. It is analogous to the native HTML <select> element."
   },
-  "MD Select Option Selected" : { 
-    "prefix": "md-select-option:selected",
-    "body": [  
-      "<md-select-option value=\"${1}\" selected>",
-      "\t${2}",
-      "</md-select-option>"
-    ],
-    "description": ""
-  },
-  "MD Select Option Slot" : { 
-    "prefix": "md-select-option:slot",
-    "body": [  
-      "<md-select-option value=\"${1}\">",
-      "\t<div slot=\"headline\">${2}</div>",
-      "</md-select-option>"
-    ],
-    "description": ""
-  },
-  "MD Select Option Disabled" : { 
+  "MD Select Option Disabled": {
     "prefix": "md-select-option:disabled",
-    "body": [  
-      "<md-select-option value=\"${1}\" disabled>",
+    "body": [
+      "<md-select-option disabled></md-select-option>"
+    ],
+    "description": "Disables the item and makes it non-selectable and non-interactive."
+  },
+  "MD Select Option Selected": {
+    "prefix": "md-select-option:selected",
+    "body": [
+      "<md-select-option selected></md-select-option>"
+    ],
+    "description": "Whether or not the SelectOption is selected."
+  },
+  "MD Select Option Value": {
+    "prefix": "md-select-option:value",
+    "body": [
+      "<md-select-option value=\"${1}\"></md-select-option>"
+    ],
+    "description": "The form value associated with the Select Option."
+  },
+  "MD Select Option Full Properties": {
+    "prefix": "md-select-option:full-properties",
+    "body": [
+      "<md-select-option ${1:disabled} ${2:selected} value=\"${3:}\"></md-select-option>"
+    ],
+    "description": ""
+  },
+  "MD Select Option Slot": {
+    "prefix": "md-select-option:slot",
+    "body": [
+      "<md-select-option value=\"${1}\">",
       "\t<div slot=\"headline\">${2}</div>",
       "</md-select-option>"
     ],
     "description": ""
   },
-  
-
-
-
+  "MD Slider": {
+    "prefix": "md-slider",
+    "body": [
+      "<md-slider></md-slider>"
+    ],
+    "description": "Sliders allow users to view and select a value (or range) along a track. They're ideal for adjusting settings such as volume and brightness, or for applying image filters."
+  },
+  "MD Slider Disabled": {
+    "prefix": "md-slider:disabled",
+    "body": [
+      "<md-slider disabled></md-slider>"
+    ],
+    "description": "Whether or not the slider is disabled."
+  },
+  "MD Slider Min": {
+    "prefix": "md-slider:min",
+    "body": [
+      "<md-slider min=\"${1}\"></md-slider>"
+    ],
+    "description": "The slider minimum value"
+  },
+  "MD Slider Max": {
+    "prefix": "md-slider:max",
+    "body": [
+      "<md-slider max=\"${1}\"></md-slider>"
+    ],
+    "description": "The slider maximum value"
+  },
+  "MD Slider Value": {
+    "prefix": "md-slider:value",
+    "body": [
+      "<md-slider value=\"${1}\"></md-slider>"
+    ],
+    "description": "The slider value displayed when range is false."
+  },
+  "MD Slider Value Start": {
+    "prefix": "md-slider:value-start",
+    "body": [
+      "<md-slider value-start=\"${1}\"></md-slider>"
+    ],
+    "description": "The slider start value displayed when range is true."
+  },
+  "MD Slider Value End": {
+    "prefix": "md-slider:value-end",
+    "body": [
+      "<md-slider value-end=\"${1}\"></md-slider>"
+    ],
+    "description": "The slider end value displayed when range is true."
+  },
+  "MD Slider Value Label": {
+    "prefix": "md-slider:value-label",
+    "body": [
+      "<md-slider value-label=\"${1}\"></md-slider>"
+    ],
+    "description": "An optional label for the slider's value."
+  },
+  "MD Slider Value Label Start": {
+    "prefix": "md-slider:value-label-start",
+    "body": [
+      "<md-slider value-label-start=\"${1}\"></md-slider>"
+    ],
+    "description": "An optional label for the slider's start value."
+  },
+  "MD Slider Value Label End": {
+    "prefix": "md-slider:value-label-end",
+    "body": [
+      "<md-slider value-label-end=\"${1}\"></md-slider>"
+    ],
+    "description": "An optional label for the slider's end value."
+  },
+  "MD Slider Aria Label Start": {
+    "prefix": "md-slider:aria-label-start",
+    "body": [
+      "<md-slider aria-label-start=\"${1}\"></md-slider>"
+    ],
+    "description": "Aria label for the slider's start handle."
+  },
+  "MD Slider Aria Label End": {
+    "prefix": "md-slider:aria-label-end",
+    "body": [
+      "<md-slider aria-label-end=\"${1}\"></md-slider>"
+    ],
+    "description": "Aria label for the slider's end handle."
+  },
+  "MD Slider Aria Valuetext Start": {
+    "prefix": "md-slider:aria-valuetext-start",
+    "body": [
+      "<md-slider aria-valuetext-start=\"${1}\"></md-slider>"
+    ],
+    "description": "Aria value text for the slider's start value."
+  },
+  "MD Slider Aria Valuetext End": {
+    "prefix": "md-slider:aria-valuetext-end",
+    "body": [
+      "<md-slider aria-valuetext-end=\"${1}\"></md-slider>"
+    ],
+    "description": "Aria value text for the slider's end value."
+  },
+  "MD Slider Step": {
+    "prefix": "md-slider:step",
+    "body": [
+      "<md-slider step=\"${1}\"></md-slider>"
+    ],
+    "description": "The step between values."
+  },
+  "MD Slider Ticks": {
+    "prefix": "md-slider:ticks",
+    "body": [
+      "<md-slider ticks></md-slider>"
+    ],
+    "description": "Whether or not to show tick marks."
+  },
+  "MD Slider Labeled": {
+    "prefix": "md-slider:labeled",
+    "body": [
+      "<md-slider labeled></md-slider>"
+    ],
+    "description": "Whether or not to show a value label when activated."
+  },
+  "MD Slider Range": {
+    "prefix": "md-slider:range",
+    "body": [
+      "<md-slider range></md-slider>"
+    ],
+    "description": "Whether or not to show a value range."
+  },
+  "MD Slider Name": {
+    "prefix": "md-slider:name",
+    "body": [
+      "<md-slider name=\"${1}\"></md-slider>"
+    ],
+    "description": "The HTML name to use in form submission."
+  },
+  "MD Slider Form": {
+    "prefix": "md-slider:form",
+    "body": [
+      "<md-slider form=\"${1}\"></md-slider>"
+    ],
+    "description": "The ID of the form to associate the slider with."
+  },
+  "MD Slider Full Properties": {
+    "prefix": "md-slider:full-properties",
+    "body": [
+      "<md-slider ${1:disabled} min=\"${2:}\" max=\"${3:}\" value=\"${4:}\" value-start=\"${5:}\" value-end=\"${6:}\" value-label=\"${7:}\" value-label-start=\"${8:}\" value-label-end=\"${9:}\" aria-label-start=\"${10:}\" aria-label-end=\"${11:}\" aria-valuetext-start=\"${12:}\" aria-valuetext-end=\"${13:}\" step=\"${14:}\" ${15:ticks} ${16:labeled} ${17:range} name=\"${18:}\" form=\"${19:}\"></md-slider>"
+    ],
+    "description": ""
+  },
+  "MD Switch": {
+    "prefix": "md-switch",
+    "body": [
+      "<md-switch></md-switch>"
+    ],
+    "description": "Switches toggle the state of an item on or off."
+  },
+  "MD Switch Disabled": {
+    "prefix": "md-switch:disabled",
+    "body": [
+      "<md-switch disabled></md-switch>"
+    ],
+    "description": "Disables the switch and makes it non-interactive."
+  },
+  "MD Switch Selected": {
+    "prefix": "md-switch:selected",
+    "body": [
+      "<md-switch selected></md-switch>"
+    ],
+    "description": "Puts the switch in the selected state and sets the form submission value to the value property."
+  },
+  "MD Switch Icons": {
+    "prefix": "md-switch:icons",
+    "body": [
+      "<md-switch icons></md-switch>"
+    ],
+    "description": "Shows both the selected and deselected icons."
+  },
+  "MD Switch Show Only Selected Icon": {
+    "prefix": "md-switch:show-only-selected-icon",
+    "body": [
+      "<md-switch show-only-selected-icon></md-switch>"
+    ],
+    "description": "Shows only the selected icon, and not the deselected icon. If true, overrides the behavior of the icons property."
+  },
+  "MD Switch Required": {
+    "prefix": "md-switch:required",
+    "body": [
+      "<md-switch required></md-switch>"
+    ],
+    "description": "When true, require the switch to be selected when participating in form submission. https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox#validation"
+  },
+  "MD Switch Value": {
+    "prefix": "md-switch:value",
+    "body": [
+      "<md-switch value=\"${1}\"></md-switch>"
+    ],
+    "description": "The value associated with this switch on form submission."
+  },
+  "MD Switch Name": {
+    "prefix": "md-switch:name",
+    "body": [
+      "<md-switch name=\"${1}\"></md-switch>"
+    ],
+    "description": "The HTML name to use in form submission."
+  },
+  "MD Switch Form": {
+    "prefix": "md-switch:form",
+    "body": [
+      "<md-switch form=\"${1}\"></md-switch>"
+    ],
+    "description": "The ID of the form to associate the switch with."
+  },
+  "MD Switch Full Properties": {
+    "prefix": "md-switch:full-properties",
+    "body": [
+      "<md-switch ${1:disabled} ${2:selected} ${3:icons} ${4:show-only-selected-icon} ${5:required} value=\"${6:}\" name=\"${7:}\" form=\"${8:}\"></md-switch>"
+    ],
+    "description": ""
+  },
+  "MD Tabs": {
+    "prefix": "md-tabs",
+    "body": [
+      "<md-tabs>",
+      "\t${1}",
+      "</md-tabs>"
+    ],
+    "description": "Tabs organize groups of related content that are at the same level of hierarchy."
+  },
+  "MD Tabs Auto Activate": {
+    "prefix": "md-tabs:auto-activate",
+    "body": [
+      "<md-tabs auto-activate></md-tabs>"
+    ],
+    "description": "Whether or not to automatically select a tab when it is focused."
+  },
+  "MD Tabs Active Tab Index": {
+    "prefix": "md-tabs:active-tab-index",
+    "body": [
+      "<md-tabs active-tab-index=\"${1}\"></md-tabs>"
+    ],
+    "description": "The index of the currently active tab."
+  },
+  "MD Tabs Full Properties": {
+    "prefix": "md-tabs:full-properties",
+    "body": [
+      "<md-tabs ${1:auto-activate} active-tab-index=\"${2:}\"></md-tabs>"
+    ],
+    "description": ""
+  },
+  "MD Tabs Tab Panel": {
+    "prefix": "md-tabs:tab-panel",
+    "body": [
+      "<md-tabs>",
+      "\t<md-primary-tab id=\"${1:tabId}\" aria-controls=\"${1:tabId}-panel\">${2}</md-primary-tab>",
+      "</md-tabs>",
+      "<div id=\"${1:tabId}-panel\" role=\"tabpanel\" aria-labelledby=\"${1:tabId}-tab\">",
+      "\t${3}",
+      "</div>"
+    ],
+    "description": ""
+  },
+  "MD Primary Tab": {
+    "prefix": "md-primary-tab",
+    "body": [
+      "<md-primary-tab></md-primary-tab>"
+    ],
+    "description": "Primary tabs are placed at the top of the content pane under a top app bar. They display the main content destinations."
+  },
+  "MD Primary Tab Inline Icon": {
+    "prefix": "md-primary-tab:inline-icon",
+    "body": [
+      "<md-primary-tab inline-icon></md-primary-tab>"
+    ],
+    "description": ""
+  },
+  "MD Primary Tab Md Tab": {
+    "prefix": "md-primary-tab:md-tab",
+    "body": [
+      "<md-primary-tab md-tab></md-primary-tab>"
+    ],
+    "description": "Indicates that the element is a tab for the parent `<md-tabs>`."
+  },
+  "MD Primary Tab Active": {
+    "prefix": "md-primary-tab:active",
+    "body": [
+      "<md-primary-tab active></md-primary-tab>"
+    ],
+    "description": "Whether or not the tab is selected."
+  },
+  "MD Primary Tab Has Icon": {
+    "prefix": "md-primary-tab:has-icon",
+    "body": [
+      "<md-primary-tab has-icon></md-primary-tab>"
+    ],
+    "description": "In SSR, set this to true when an icon is present."
+  },
+  "MD Primary Tab Icon Only": {
+    "prefix": "md-primary-tab:icon-only",
+    "body": [
+      "<md-primary-tab icon-only></md-primary-tab>"
+    ],
+    "description": "In SSR, set this to true when there is no label and only an icon."
+  },
+  "MD Primary Tab Full Properties": {
+    "prefix": "md-primary-tab:full-properties",
+    "body": [
+      "<md-primary-tab ${1:inline-icon} ${2:md-tab} ${3:active} ${4:has-icon} ${5:icon-only}></md-primary-tab>"
+    ],
+    "description": ""
+  },
+  "MD Secondary Tab": {
+    "prefix": "md-secondary-tab",
+    "body": [
+      "<md-secondary-tab></md-secondary-tab>"
+    ],
+    "description": "Secondary tabs are used within a content area to further separate related content and establish hierarchy."
+  },
+  "MD Secondary Tab Md Tab": {
+    "prefix": "md-secondary-tab:md-tab",
+    "body": [
+      "<md-secondary-tab md-tab></md-secondary-tab>"
+    ],
+    "description": "Indicates that the element is a tab for the parent `<md-tabs>`."
+  },
+  "MD Secondary Tab Active": {
+    "prefix": "md-secondary-tab:active",
+    "body": [
+      "<md-secondary-tab active></md-secondary-tab>"
+    ],
+    "description": "Whether or not the tab is selected."
+  },
+  "MD Secondary Tab Has Icon": {
+    "prefix": "md-secondary-tab:has-icon",
+    "body": [
+      "<md-secondary-tab has-icon></md-secondary-tab>"
+    ],
+    "description": "In SSR, set this to true when an icon is present."
+  },
+  "MD Secondary Tab Icon Only": {
+    "prefix": "md-secondary-tab:icon-only",
+    "body": [
+      "<md-secondary-tab icon-only></md-secondary-tab>"
+    ],
+    "description": "In SSR, set this to true when there is no label and only an icon."
+  },
+  "MD Secondary Tab Full Properties": {
+    "prefix": "md-secondary-tab:full-properties",
+    "body": [
+      "<md-secondary-tab ${1:md-tab} ${2:active} ${3:has-icon} ${4:icon-only}></md-secondary-tab>"
+    ],
+    "description": ""
+  },
+  "MD Text Field": {
+    "prefix": "md-text-field",
+    "body": [
+      "<md-${1|filled,outlined|}-text-field label=\"${2}\">",
+      "</md-${1|filled,outlined|}-text-field>"
+    ],
+    "description": "Filled and outlined text fields are functionally identical. See choosing a text field for guidance on which one to use."
+  },
+  "MD Text Field Disabled": {
+    "prefix": "md-text-field:disabled",
+    "body": [
+      "<md-${1|filled,outlined|}-text-field disabled></md-${1|filled,outlined|}-text-field>"
+    ],
+    "description": "Whether or not the text field is disabled."
+  },
+  "MD Text Field Error": {
+    "prefix": "md-text-field:error",
+    "body": [
+      "<md-${1|filled,outlined|}-text-field error></md-${1|filled,outlined|}-text-field>"
+    ],
+    "description": "Gets or sets whether or not the text field is in a visually invalid state. This error state overrides the error state controlled by reportValidity()."
+  },
+  "MD Text Field Error Text": {
+    "prefix": "md-text-field:error-text",
+    "body": [
+      "<md-${1|filled,outlined|}-text-field error-text=\"${2}\"></md-${1|filled,outlined|}-text-field>"
+    ],
+    "description": "The error message that replaces supporting text when error is true. If errorText is an empty string, then the supporting text will continue to show. This error message overrides the error message displayed by reportValidity()."
+  },
+  "MD Text Field Label": {
+    "prefix": "md-text-field:label",
+    "body": [
+      "<md-${1|filled,outlined|}-text-field label=\"${2}\"></md-${1|filled,outlined|}-text-field>"
+    ],
+    "description": "The floating Material label of the textfield component."
+  },
+  "MD Text Field No Asterisk": {
+    "prefix": "md-text-field:no-asterisk",
+    "body": [
+      "<md-${1|filled,outlined|}-text-field no-asterisk></md-${1|filled,outlined|}-text-field>"
+    ],
+    "description": "Disables the asterisk on the floating label, when the text field is required."
+  },
+  "MD Text Field Required": {
+    "prefix": "md-text-field:required",
+    "body": [
+      "<md-${1|filled,outlined|}-text-field required></md-${1|filled,outlined|}-text-field>"
+    ],
+    "description": "Indicates that the user must specify a value for the input before the owning form can be submitted."
+  },
+  "MD Text Field Value": {
+    "prefix": "md-text-field:value",
+    "body": [
+      "<md-${1|filled,outlined|}-text-field value=\"${2}\"></md-${1|filled,outlined|}-text-field>"
+    ],
+    "description": "The current value of the text field. It is always a string."
+  },
+  "MD Text Field Prefix Text": {
+    "prefix": "md-text-field:prefix-text",
+    "body": [
+      "<md-${1|filled,outlined|}-text-field prefix-text=\"${2}\"></md-${1|filled,outlined|}-text-field>"
+    ],
+    "description": "An optional prefix to display before the input value."
+  },
+  "MD Text Field Suffix Text": {
+    "prefix": "md-text-field:suffix-text",
+    "body": [
+      "<md-${1|filled,outlined|}-text-field suffix-text=\"${2}\"></md-${1|filled,outlined|}-text-field>"
+    ],
+    "description": "An optional suffix to display after the input value."
+  },
+  "MD Text Field Has Leading Icon": {
+    "prefix": "md-text-field:has-leading-icon",
+    "body": [
+      "<md-${1|filled,outlined|}-text-field has-leading-icon></md-${1|filled,outlined|}-text-field>"
+    ],
+    "description": "Whether or not the text field has a leading icon. Used for SSR."
+  },
+  "MD Text Field Has Trailing Icon": {
+    "prefix": "md-text-field:has-trailing-icon",
+    "body": [
+      "<md-${1|filled,outlined|}-text-field has-trailing-icon></md-${1|filled,outlined|}-text-field>"
+    ],
+    "description": "Whether or not the text field has a trailing icon. Used for SSR."
+  },
+  "MD Text Field Supporting Text": {
+    "prefix": "md-text-field:supporting-text",
+    "body": [
+      "<md-${1|filled,outlined|}-text-field supporting-text=\"${2}\"></md-${1|filled,outlined|}-text-field>"
+    ],
+    "description": "Conveys additional information below the text field."
+  },
+  "MD Text Field Text Direction": {
+    "prefix": "md-text-field:text-direction",
+    "body": [
+      "<md-${1|filled,outlined|}-text-field text-direction=\"${2}\"></md-${1|filled,outlined|}-text-field>"
+    ],
+    "description": "Override the input text CSS `direction`."
+  },
+  "MD Text Field Rows": {
+    "prefix": "md-text-field:rows",
+    "body": [
+      "<md-${1|filled,outlined|}-text-field rows=\"${2}\"></md-${1|filled,outlined|}-text-field>"
+    ],
+    "description": "The number of rows to display for a `type=\"textarea\"` text field."
+  },
+  "MD Text Field Cols": {
+    "prefix": "md-text-field:cols",
+    "body": [
+      "<md-${1|filled,outlined|}-text-field cols=\"${2}\"></md-${1|filled,outlined|}-text-field>"
+    ],
+    "description": "The number of cols to display for a `type=\"textarea\"` text field."
+  },
+  "MD Text Field Inputmode": {
+    "prefix": "md-text-field:inputmode",
+    "body": [
+      "<md-${1|filled,outlined|}-text-field inputmode=\"${2}\"></md-${1|filled,outlined|}-text-field>"
+    ],
+    "description": "The input mode (keyboard type) for the text field."
+  },
+  "MD Text Field Max": {
+    "prefix": "md-text-field:max",
+    "body": [
+      "<md-${1|filled,outlined|}-text-field max=\"${2}\"></md-${1|filled,outlined|}-text-field>"
+    ],
+    "description": "Defines the greatest value in the range of permitted values."
+  },
+  "MD Text Field Maxlength": {
+    "prefix": "md-text-field:maxlength",
+    "body": [
+      "<md-${1|filled,outlined|}-text-field maxlength=\"${2}\"></md-${1|filled,outlined|}-text-field>"
+    ],
+    "description": "The maximum number of characters a user can enter into the text field."
+  },
+  "MD Text Field Min": {
+    "prefix": "md-text-field:min",
+    "body": [
+      "<md-${1|filled,outlined|}-text-field min=\"${2}\"></md-${1|filled,outlined|}-text-field>"
+    ],
+    "description": "Defines the most negative value in the range of permitted values."
+  },
+  "MD Text Field Minlength": {
+    "prefix": "md-text-field:minlength",
+    "body": [
+      "<md-${1|filled,outlined|}-text-field minlength=\"${2}\"></md-${1|filled,outlined|}-text-field>"
+    ],
+    "description": "The minimum number of characters a user can enter into the text field."
+  },
+  "MD Text Field Pattern": {
+    "prefix": "md-text-field:pattern",
+    "body": [
+      "<md-${1|filled,outlined|}-text-field pattern=\"${2}\"></md-${1|filled,outlined|}-text-field>"
+    ],
+    "description": "A regular expression that the text field's value must match."
+  },
+  "MD Text Field Placeholder": {
+    "prefix": "md-text-field:placeholder",
+    "body": [
+      "<md-${1|filled,outlined|}-text-field placeholder=\"${2}\"></md-${1|filled,outlined|}-text-field>"
+    ],
+    "description": "Defines the text displayed in the textfield when it has no value."
+  },
+  "MD Text Field Readonly": {
+    "prefix": "md-text-field:readonly",
+    "body": [
+      "<md-${1|filled,outlined|}-text-field readonly></md-${1|filled,outlined|}-text-field>"
+    ],
+    "description": "Indicates whether or not a user should be able to edit the text field."
+  },
+  "MD Text Field Multiple": {
+    "prefix": "md-text-field:multiple",
+    "body": [
+      "<md-${1|filled,outlined|}-text-field multiple></md-${1|filled,outlined|}-text-field>"
+    ],
+    "description": "Indicates that input accepts multiple email addresses."
+  },
+  "MD Text Field Step": {
+    "prefix": "md-text-field:step",
+    "body": [
+      "<md-${1|filled,outlined|}-text-field step=\"${2}\"></md-${1|filled,outlined|}-text-field>"
+    ],
+    "description": "Returns or sets the element's step attribute."
+  },
+  "MD Text Field Type": {
+    "prefix": "md-text-field:type",
+    "body": [
+      "<md-${1|filled,outlined|}-text-field type=\"${2|text,email,number,password,search,tel,url,textarea|}\"></md-${1|filled,outlined|}-text-field>"
+    ],
+    "description": "The `<input>` type to use, defaults to \"text\"."
+  },
+  "MD Text Field Autocomplete": {
+    "prefix": "md-text-field:autocomplete",
+    "body": [
+      "<md-${1|filled,outlined|}-text-field autocomplete=\"${2}\"></md-${1|filled,outlined|}-text-field>"
+    ],
+    "description": "Describes what, if any, type of autocomplete functionality the input provides."
+  },
+  "MD Text Field Name": {
+    "prefix": "md-text-field:name",
+    "body": [
+      "<md-${1|filled,outlined|}-text-field name=\"${2}\"></md-${1|filled,outlined|}-text-field>"
+    ],
+    "description": "The HTML name to use in form submission."
+  },
+  "MD Text Field Form": {
+    "prefix": "md-text-field:form",
+    "body": [
+      "<md-${1|filled,outlined|}-text-field form=\"${2}\"></md-${1|filled,outlined|}-text-field>"
+    ],
+    "description": "The ID of the form to associate the text field with."
+  },
+  "MD Text Field Full Properties": {
+    "prefix": "md-text-field:full-properties",
+    "body": [
+      "<md-${1|filled,outlined|}-text-field ${2:disabled} ${3:error} error-text=\"${4:}\" label=\"${5:}\" ${6:no-asterisk} ${7:required} value=\"${8:}\" prefix-text=\"${9:}\" suffix-text=\"${10:}\" ${11:has-leading-icon} ${12:has-trailing-icon} supporting-text=\"${13:}\" text-direction=\"${14:}\" rows=\"${15:}\" cols=\"${16:}\" inputmode=\"${17:}\" max=\"${18:}\" maxlength=\"${19:}\" min=\"${20:}\" minlength=\"${21:}\" pattern=\"${22:}\" placeholder=\"${23:}\" ${24:readonly} ${25:multiple} step=\"${26:}\" type=\"${27|text,email,number,password,search,tel,url,textarea|}\" autocomplete=\"${28:}\" name=\"${29:}\" form=\"${30:}\"></md-${1|filled,outlined|}-text-field>"
+    ],
+    "description": ""
+  },
+  "MD Filled Text Field": {
+    "prefix": "md-filled-text-field",
+    "body": [
+      "<md-filled-text-field></md-filled-text-field>"
+    ],
+    "description": "Filled and outlined text fields are functionally identical. See choosing a text field for guidance on which one to use."
+  },
+  "MD Outlined Text Field": {
+    "prefix": "md-outlined-text-field",
+    "body": [
+      "<md-outlined-text-field></md-outlined-text-field>"
+    ],
+    "description": "Filled and outlined text fields are functionally identical. See choosing a text field for guidance on which one to use."
+  }
 }

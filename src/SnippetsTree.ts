@@ -48,11 +48,11 @@ export class SnippetsTree implements vscode.TreeDataProvider<SnippetsItem> {
 
         // List
         new SnippetsItem('List', '<md-list></md-list>', 0),
-        new SnippetsItem('List SnippetsItem', '<md-list-item></md-list-item>', 0),
+        new SnippetsItem('List Item', '<md-list-item></md-list-item>', 0),
 
         // Menu
         new SnippetsItem('Menu', '<md-menu></md-menu>', 0),
-        new SnippetsItem('Menu SnippetsItem', '<md-menu-item></md-menu-item>', 0),
+        new SnippetsItem('Menu Item', '<md-menu-item></md-menu-item>', 0),
         new SnippetsItem('Sub Menu', '<md-sub-menu></md-sub-menu>', 0),
 
         // Progress Indicators
@@ -82,8 +82,35 @@ export class SnippetsTree implements vscode.TreeDataProvider<SnippetsItem> {
         new SnippetsItem('Secondary Tab', '<md-secondary-tab></md-secondary-tab>', 0),
 
         // Text Field
-        new SnippetsItem('Filled Textfield', '<md-filled-text-field></md-filled-text-field>', 0),
-        new SnippetsItem('Outlined Textfield', '<md-outlined-text-field></md-outlined-text-field>', 0),
+        new SnippetsItem('Filled Text Field', '<md-filled-text-field></md-filled-text-field>', 0),
+        new SnippetsItem('Outlined Text Field', '<md-outlined-text-field></md-outlined-text-field>', 0),
+
+        // Field
+        new SnippetsItem('Filled Field', '<md-filled-field></md-filled-field>', 0),
+        new SnippetsItem('Outlined Field', '<md-outlined-field></md-outlined-field>', 0),
+
+        // Badge
+        new SnippetsItem('Badge', '<md-badge></md-badge>', 0),
+
+        // Card
+        new SnippetsItem('Elevated Card', '<md-elevated-card></md-elevated-card>', 0),
+        new SnippetsItem('Filled Card', '<md-filled-card></md-filled-card>', 0),
+        new SnippetsItem('Outlined Card', '<md-outlined-card></md-outlined-card>', 0),
+
+        // Item
+        new SnippetsItem('Item', '<md-item></md-item>', 0),
+
+        // Navigation Bar
+        new SnippetsItem('Navigation Bar', '<md-navigation-bar></md-navigation-bar>', 0),
+        new SnippetsItem('Navigation Tab', '<md-navigation-tab></md-navigation-tab>', 0),
+
+        // Navigation Drawer
+        new SnippetsItem('Navigation Drawer', '<md-navigation-drawer></md-navigation-drawer>', 0),
+        new SnippetsItem('Navigation Drawer Modal', '<md-navigation-drawer-modal></md-navigation-drawer-modal>', 0),
+
+        // Segmented Button
+        new SnippetsItem('Segmented Button', '<md-outlined-segmented-button></md-outlined-segmented-button>', 0),
+        new SnippetsItem('Segmented Button Set', '<md-outlined-segmented-button-set></md-outlined-segmented-button-set>', 0),
 
         // template
         // new SnippetsItem('', '<md-></md->', 0),

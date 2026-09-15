@@ -2,29 +2,104 @@
   "version": 1.1,
   "tags": [
     {
+      "name": "md-focus-ring",
+      "description": "Focus rings are accessible outlines for components to show keyboard focus.",
+      "attributes": [
+        {
+          "name": "visible",
+          "description": "Makes the focus ring visible."
+        },
+        {
+          "name": "inward",
+          "description": "Makes the focus ring animate inwards instead of outwards."
+        },
+        {
+          "name": "for",
+          "description": "ID of the control element the focus ring attaches to."
+        }
+      ]
+    },
+    {
+      "name": "md-badge",
+      "description": "A badge shows a small count or status anchored to another UI element.",
+      "attributes": [
+        {
+          "name": "value",
+          "description": "The count or status text shown in the badge."
+        }
+      ]
+    },
+    {
       "name": "md-elevated-button",
       "description": "Elevated buttons are essentially filled tonal buttons with a shadow. To prevent shadow creep, only use them when absolutely necessary, such as when the button requires visual separation from a patterned background.",
       "attributes": [
-        { "name": "disabled" },
-        { "name": "href" },
-        { "name": "trailing-icon" },
-        { "name": "has-icon" },
-        { "name": "value" },
-        { "name": "name" },
-        { "name": "form" },
+        {
+          "name": "disabled",
+          "description": "Whether or not the button is disabled."
+        },
+        {
+          "name": "soft-disabled",
+          "description": "Whether or not the button is \"soft-disabled\" (disabled but still focusable)."
+        },
+        {
+          "name": "href",
+          "description": "The URL that the link button points to."
+        },
+        {
+          "name": "download",
+          "description": "The filename to use when downloading the linked resource."
+        },
+        {
+          "name": "trailing-icon",
+          "description": "Whether to render the icon at the inline end of the label rather than the start."
+        },
+        {
+          "name": "has-icon",
+          "description": "Whether to display the icon or not. An icon may optionally be added to a button to help communicate the button's action and help draw attention."
+        },
+        {
+          "name": "value",
+          "description": "The value of the button. When combined with a name, it is submitted with the form."
+        },
+        {
+          "name": "name",
+          "description": "The HTML name to use in form submission."
+        },
+        {
+          "name": "form",
+          "description": "The ID of the form to associate the button with."
+        },
         {
           "name": "type",
+          "description": "Submit is default.",
           "values": [
-            { "name": "submit" },
-            { "name": "button" },
-            { "name": "reset" }
+            {
+              "name": "submit"
+            },
+            {
+              "name": "button"
+            },
+            {
+              "name": "reset"
+            }
           ]
         },
         {
           "name": "target",
+          "description": "Where to display the linked href URL for a link button. Common options include _blank to open in a new tab.",
           "values": [
-            { "name": "" },
-            { "name": "_blank" }
+            {
+              "name": "_blank"
+            },
+            {
+              "name": "_parent"
+            },
+            {
+              "name": "_self"
+            },
+            {
+              "name": "_top"
+            }
           ]
         }
       ]
@@ -33,26 +108,73 @@
       "name": "md-filled-button",
       "description": "Filled buttons have the most visual impact after the FAB, and should be used for important, final actions that complete a flow, like Save, Join now, or Confirm.",
       "attributes": [
-        { "name": "disabled" },
-        { "name": "href" },
-        { "name": "trailing-icon" },
-        { "name": "has-icon" },
-        { "name": "value" },
-        { "name": "name" },
-        { "name": "form" },
+        {
+          "name": "disabled",
+          "description": "Whether or not the button is disabled."
+        },
+        {
+          "name": "soft-disabled",
+          "description": "Whether or not the button is \"soft-disabled\" (disabled but still focusable)."
+        },
+        {
+          "name": "href",
+          "description": "The URL that the link button points to."
+        },
+        {
+          "name": "download",
+          "description": "The filename to use when downloading the linked resource."
+        },
+        {
+          "name": "trailing-icon",
+          "description": "Whether to render the icon at the inline end of the label rather than the start."
+        },
+        {
+          "name": "has-icon",
+          "description": "Whether to display the icon or not. An icon may optionally be added to a button to help communicate the button's action and help draw attention."
+        },
+        {
+          "name": "value",
+          "description": "The value of the button. When combined with a name, it is submitted with the form."
+        },
+        {
+          "name": "name",
+          "description": "The HTML name to use in form submission."
+        },
+        {
+          "name": "form",
+          "description": "The ID of the form to associate the button with."
+        },
         {
           "name": "type",
+          "description": "Submit is default.",
           "values": [
-            { "name": "submit" },
-            { "name": "button" },
-            { "name": "reset" }
+            {
+              "name": "submit"
+            },
+            {
+              "name": "button"
+            },
+            {
+              "name": "reset"
+            }
           ]
         },
         {
           "name": "target",
+          "description": "Where to display the linked href URL for a link button. Common options include _blank to open in a new tab.",
           "values": [
-            { "name": "" },
-            { "name": "_blank" }
+            {
+              "name": "_blank"
+            },
+            {
+              "name": "_parent"
+            },
+            {
+              "name": "_self"
+            },
+            {
+              "name": "_top"
+            }
           ]
         }
       ]
@@ -61,26 +183,73 @@
       "name": "md-filled-tonal-button",
       "description": "A filled tonal button is an alternative middle ground between filled and outlined buttons. They're useful in contexts where a lower-priority button requires slightly more emphasis than an outline would give, such as \"Next\" in an onboarding flow.",
       "attributes": [
-        { "name": "disabled" },
-        { "name": "href" },
-        { "name": "trailing-icon" },
-        { "name": "has-icon" },
-        { "name": "value" },
-        { "name": "name" },
-        { "name": "form" },
+        {
+          "name": "disabled",
+          "description": "Whether or not the button is disabled."
+        },
+        {
+          "name": "soft-disabled",
+          "description": "Whether or not the button is \"soft-disabled\" (disabled but still focusable)."
+        },
+        {
+          "name": "href",
+          "description": "The URL that the link button points to."
+        },
+        {
+          "name": "download",
+          "description": "The filename to use when downloading the linked resource."
+        },
+        {
+          "name": "trailing-icon",
+          "description": "Whether to render the icon at the inline end of the label rather than the start."
+        },
+        {
+          "name": "has-icon",
+          "description": "Whether to display the icon or not. An icon may optionally be added to a button to help communicate the button's action and help draw attention."
+        },
+        {
+          "name": "value",
+          "description": "The value of the button. When combined with a name, it is submitted with the form."
+        },
+        {
+          "name": "name",
+          "description": "The HTML name to use in form submission."
+        },
+        {
+          "name": "form",
+          "description": "The ID of the form to associate the button with."
+        },
         {
           "name": "type",
+          "description": "Submit is default.",
           "values": [
-            { "name": "submit" },
-            { "name": "button" },
-            { "name": "reset" }
+            {
+              "name": "submit"
+            },
+            {
+              "name": "button"
+            },
+            {
+              "name": "reset"
+            }
           ]
         },
         {
           "name": "target",
+          "description": "Where to display the linked href URL for a link button. Common options include _blank to open in a new tab.",
           "values": [
-            { "name": "" },
-            { "name": "_blank" }
+            {
+              "name": "_blank"
+            },
+            {
+              "name": "_parent"
+            },
+            {
+              "name": "_self"
+            },
+            {
+              "name": "_top"
+            }
           ]
         }
       ]
@@ -89,26 +258,73 @@
       "name": "md-outlined-button",
       "description": "Outlined buttons are medium-emphasis buttons. They contain actions that are important, but aren't the primary action in an app.",
       "attributes": [
-        { "name": "disabled" },
-        { "name": "href" },
-        { "name": "trailing-icon" },
-        { "name": "has-icon" },
-        { "name": "value" },
-        { "name": "name" },
-        { "name": "form" },
+        {
+          "name": "disabled",
+          "description": "Whether or not the button is disabled."
+        },
+        {
+          "name": "soft-disabled",
+          "description": "Whether or not the button is \"soft-disabled\" (disabled but still focusable)."
+        },
+        {
+          "name": "href",
+          "description": "The URL that the link button points to."
+        },
+        {
+          "name": "download",
+          "description": "The filename to use when downloading the linked resource."
+        },
+        {
+          "name": "trailing-icon",
+          "description": "Whether to render the icon at the inline end of the label rather than the start."
+        },
+        {
+          "name": "has-icon",
+          "description": "Whether to display the icon or not. An icon may optionally be added to a button to help communicate the button's action and help draw attention."
+        },
+        {
+          "name": "value",
+          "description": "The value of the button. When combined with a name, it is submitted with the form."
+        },
+        {
+          "name": "name",
+          "description": "The HTML name to use in form submission."
+        },
+        {
+          "name": "form",
+          "description": "The ID of the form to associate the button with."
+        },
         {
           "name": "type",
+          "description": "Submit is default.",
           "values": [
-            { "name": "submit" },
-            { "name": "button" },
-            { "name": "reset" }
+            {
+              "name": "submit"
+            },
+            {
+              "name": "button"
+            },
+            {
+              "name": "reset"
+            }
           ]
         },
         {
           "name": "target",
+          "description": "Where to display the linked href URL for a link button. Common options include _blank to open in a new tab.",
           "values": [
-            { "name": "" },
-            { "name": "_blank" }
+            {
+              "name": "_blank"
+            },
+            {
+              "name": "_parent"
+            },
+            {
+              "name": "_self"
+            },
+            {
+              "name": "_top"
+            }
           ]
         }
       ]
@@ -117,161 +333,413 @@
       "name": "md-text-button",
       "description": "Text buttons are used for the lowest priority actions, especially when presenting multiple options.",
       "attributes": [
-        { "name": "disabled" },
-        { "name": "href" },
-        { "name": "trailing-icon" },
-        { "name": "has-icon" },
-        { "name": "value" },
-        { "name": "name" },
-        { "name": "form" },
+        {
+          "name": "disabled",
+          "description": "Whether or not the button is disabled."
+        },
+        {
+          "name": "soft-disabled",
+          "description": "Whether or not the button is \"soft-disabled\" (disabled but still focusable)."
+        },
+        {
+          "name": "href",
+          "description": "The URL that the link button points to."
+        },
+        {
+          "name": "download",
+          "description": "The filename to use when downloading the linked resource."
+        },
+        {
+          "name": "trailing-icon",
+          "description": "Whether to render the icon at the inline end of the label rather than the start."
+        },
+        {
+          "name": "has-icon",
+          "description": "Whether to display the icon or not. An icon may optionally be added to a button to help communicate the button's action and help draw attention."
+        },
+        {
+          "name": "value",
+          "description": "The value of the button. When combined with a name, it is submitted with the form."
+        },
+        {
+          "name": "name",
+          "description": "The HTML name to use in form submission."
+        },
+        {
+          "name": "form",
+          "description": "The ID of the form to associate the button with."
+        },
         {
           "name": "type",
+          "description": "Submit is default.",
           "values": [
-            { "name": "submit" },
-            { "name": "button" },
-            { "name": "reset" }
+            {
+              "name": "submit"
+            },
+            {
+              "name": "button"
+            },
+            {
+              "name": "reset"
+            }
           ]
         },
         {
           "name": "target",
+          "description": "Where to display the linked href URL for a link button. Common options include _blank to open in a new tab.",
           "values": [
-            { "name": "" },
-            { "name": "_blank" }
+            {
+              "name": "_blank"
+            },
+            {
+              "name": "_parent"
+            },
+            {
+              "name": "_self"
+            },
+            {
+              "name": "_top"
+            }
           ]
         }
       ]
     },
-
+    {
+      "name": "md-elevated-card",
+      "description": "Elevated cards display content in a container with a shadow."
+    },
+    {
+      "name": "md-filled-card",
+      "description": "Filled cards display content in a container with a fill color and no shadow."
+    },
+    {
+      "name": "md-outlined-card",
+      "description": "Outlined cards display content in a container with an outline border."
+    },
     {
       "name": "md-checkbox",
-      "description": "Checkboxes allow users to select one or more items from a set. Checkboxes can turn an option on or off. There's one type of checkbox in Material. Use this selection control when the user needs to select one or more options from a list. Checkboxes may be standalone, pre-checked, or indeterminate.",
+      "description": "Checkboxes allow users to select one or more items from a set. Checkboxes can turn an option on or off.",
       "attributes": [
-        { "name": "checked" },
-        { "name": "disabled" },
-        { "name": "indeterminate" },
-        { "name": "required" },
-        { "name": "value" },
-        { "name": "name" },
-        { "name": "form" },
-        { "name": "labels" }
+        {
+          "name": "checked",
+          "description": "Whether or not the checkbox is selected."
+        },
+        {
+          "name": "disabled",
+          "description": "Whether or not the checkbox is disabled."
+        },
+        {
+          "name": "indeterminate",
+          "description": "Whether or not the checkbox is indeterminate. https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox#indeterminate_state_checkboxes"
+        },
+        {
+          "name": "required",
+          "description": "When true, require the checkbox to be selected when participating in form submission. https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox#validation"
+        },
+        {
+          "name": "value",
+          "description": "The value of the checkbox that is submitted with a form when selected. https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox#value"
+        },
+        {
+          "name": "name",
+          "description": "The HTML name to use in form submission."
+        },
+        {
+          "name": "form",
+          "description": "The ID of the form to associate the checkbox with."
+        }
       ]
     },
-
     {
       "name": "md-chip-set",
-      "description": "Chips help people enter information, make selections, filter content, or trigger actions.",
-      "attributes": [
-        { "name": "chips" }
-      ]
+      "description": "Chips help people enter information, make selections, filter content, or trigger actions."
     },
     {
       "name": "md-assist-chip",
       "description": "Assist chips represent smart or automated actions that can span multiple apps, such as opening a calendar event from the home screen. Assist chips function as though the user asked an assistant to complete the action. They should appear dynamically and contextually in a UI.",
       "attributes": [
-        { "name": "elevated" },
-        { "name": "href" },
-        { "name": "target" },
-        { "name": "disabled" },
-        { "name": "always-focusable" },
-        { "name": "label" }
+        {
+          "name": "elevated"
+        },
+        {
+          "name": "href",
+          "description": "Sets the underlying HTMLAnchorElement's href resource attribute."
+        },
+        {
+          "name": "download",
+          "description": "The filename to use when downloading the linked resource. If not specified, the browser will determine a filename."
+        },
+        {
+          "name": "target",
+          "description": "Sets the underlying HTMLAnchorElement's target attribute.",
+          "values": [
+            {
+              "name": "_blank"
+            },
+            {
+              "name": "_parent"
+            },
+            {
+              "name": "_self"
+            },
+            {
+              "name": "_top"
+            }
+          ]
+        },
+        {
+          "name": "disabled",
+          "description": "Whether or not the chip is disabled. Disabled chips are not focusable, unless `always-focusable` is set."
+        },
+        {
+          "name": "soft-disabled",
+          "description": "Whether or not the chip is \"soft-disabled\" (disabled but still focusable)."
+        },
+        {
+          "name": "always-focusable",
+          "description": "When true, allow disabled chips to be focused with arrow keys. Add this when a chip needs increased visibility when disabled. See https://www.w3.org/WAI/ARIA/apg/practices/keyboard-interface/#kbd_disabled_controls for more guidance on when this is needed."
+        },
+        {
+          "name": "label",
+          "description": "The label of the chip."
+        }
       ]
     },
     {
       "name": "md-filter-chip",
       "description": "Filter chips use tags or descriptive words to filter content. They can be a good alternative to toggle buttons or checkboxes.",
       "attributes": [
-        { "name": "elevated" },
-        { "name": "removable" },
-        { "name": "selected" },
-        { "name": "disabled" },
-        { "name": "always-focusable" },
-        { "name": "label" },
-        { "name": "handle-trailing-action-focus" },
-        { "name": "aria-label-remove" }
+        {
+          "name": "elevated"
+        },
+        {
+          "name": "removable"
+        },
+        {
+          "name": "selected"
+        },
+        {
+          "name": "disabled",
+          "description": "Whether or not the chip is disabled. Disabled chips are not focusable, unless `always-focusable` is set."
+        },
+        {
+          "name": "soft-disabled",
+          "description": "Whether or not the chip is \"soft-disabled\" (disabled but still focusable)."
+        },
+        {
+          "name": "always-focusable",
+          "description": "When true, allow disabled chips to be focused with arrow keys. Add this when a chip needs increased visibility when disabled. See https://www.w3.org/WAI/ARIA/apg/practices/keyboard-interface/#kbd_disabled_controls for more guidance on when this is needed."
+        },
+        {
+          "name": "label",
+          "description": "The label of the chip."
+        },
+        {
+          "name": "aria-label-remove"
+        }
       ]
     },
     {
       "name": "md-input-chip",
       "description": "Input chips represent discrete pieces of information entered by a user, such as Gmail contacts or filter options within a search field. Input chips whose icons are user images may add the avatar attribute to display the image in a larger circle.",
       "attributes": [
-        { "name": "avatar" },
-        { "name": "href" },
-        { "name": "target" },
-        { "name": "remove-only" },
-        { "name": "selected" },
-        { "name": "disabled" },
-        { "name": "always-focusable" },
-        { "name": "label" },
-        { "name": "handle-trailing-action-focus" },
-        { "name": "aria-label-remove" }
+        {
+          "name": "avatar"
+        },
+        {
+          "name": "href",
+          "description": "Sets the underlying HTMLAnchorElement's href resource attribute."
+        },
+        {
+          "name": "target",
+          "description": "Sets the underlying HTMLAnchorElement's target attribute.",
+          "values": [
+            {
+              "name": "_blank"
+            },
+            {
+              "name": "_parent"
+            },
+            {
+              "name": "_self"
+            },
+            {
+              "name": "_top"
+            }
+          ]
+        },
+        {
+          "name": "remove-only"
+        },
+        {
+          "name": "selected"
+        },
+        {
+          "name": "disabled",
+          "description": "Whether or not the chip is disabled. Disabled chips are not focusable, unless `always-focusable` is set."
+        },
+        {
+          "name": "soft-disabled",
+          "description": "Whether or not the chip is \"soft-disabled\" (disabled but still focusable)."
+        },
+        {
+          "name": "always-focusable",
+          "description": "When true, allow disabled chips to be focused with arrow keys. Add this when a chip needs increased visibility when disabled. See https://www.w3.org/WAI/ARIA/apg/practices/keyboard-interface/#kbd_disabled_controls for more guidance on when this is needed."
+        },
+        {
+          "name": "label",
+          "description": "The label of the chip."
+        },
+        {
+          "name": "aria-label-remove"
+        }
       ]
     },
     {
       "name": "md-suggestion-chip",
       "description": "Suggestion chips help narrow a user's intent by presenting dynamically generated suggestions, such as possible responses or search filters.",
       "attributes": [
-        { "name": "elevated" },
-        { "name": "href" },
-        { "name": "target" },
-        { "name": "disabled" },
-        { "name": "always-focusable" },
-        { "name": "label" }
+        {
+          "name": "elevated"
+        },
+        {
+          "name": "href",
+          "description": "Sets the underlying HTMLAnchorElement's href resource attribute."
+        },
+        {
+          "name": "download",
+          "description": "The filename to use when downloading the linked resource. If not specified, the browser will determine a filename."
+        },
+        {
+          "name": "target",
+          "description": "Sets the underlying HTMLAnchorElement's target attribute.",
+          "values": [
+            {
+              "name": "_blank"
+            },
+            {
+              "name": "_parent"
+            },
+            {
+              "name": "_self"
+            },
+            {
+              "name": "_top"
+            }
+          ]
+        },
+        {
+          "name": "disabled",
+          "description": "Whether or not the chip is disabled. Disabled chips are not focusable, unless `always-focusable` is set."
+        },
+        {
+          "name": "soft-disabled",
+          "description": "Whether or not the chip is \"soft-disabled\" (disabled but still focusable)."
+        },
+        {
+          "name": "always-focusable",
+          "description": "When true, allow disabled chips to be focused with arrow keys. Add this when a chip needs increased visibility when disabled. See https://www.w3.org/WAI/ARIA/apg/practices/keyboard-interface/#kbd_disabled_controls for more guidance on when this is needed."
+        },
+        {
+          "name": "label",
+          "description": "The label of the chip."
+        }
       ]
     },
-
     {
       "name": "md-dialog",
       "description": "Dialogs behave like <dialog> elements, and can be closed with a <form method=\"dialog\"> element. Dialogs have three optional sections: the headline title, the main content, and action buttons.",
       "attributes": [
-        { "name": "return-value" },
+        {
+          "name": "open",
+          "description": "Opens the dialog when set to `true` and closes it when set to `false`."
+        },
+        {
+          "name": "quick",
+          "description": "Skips the opening and closing animations."
+        },
         {
           "name": "type",
+          "description": "The type of dialog for accessibility. Set this to `alert` to announce a dialog as an alert dialog.",
           "values": [
-            { "name": "alert" }
+            {
+              "name": "alert"
+            }
           ]
         },
-        { "name": "open" }
+        {
+          "name": "no-focus-trap",
+          "description": "Disables focus trapping, which by default keeps keyboard Tab navigation within the dialog."
+        }
       ]
     },
-
     {
       "name": "md-divider",
       "description": "Dividers can reinforce tapability, such as when used to separate list items or define tappable regions in an accordion.",
       "attributes": [
-        { "name": "inset" },
-        { "name": "inset-start" },
-        { "name": "inset-end" }
+        {
+          "name": "inset",
+          "description": "Indents the divider with equal padding on both sides."
+        },
+        {
+          "name": "inset-start",
+          "description": "Indents the divider with padding on the leading side."
+        },
+        {
+          "name": "inset-end",
+          "description": "Indents the divider with padding on the trailing side."
+        }
       ]
     },
-
     {
       "name": "md-elevation",
       "description": "Material's elevation system is deliberately limited to just a handful of levels. This creative constraint means you need to make thoughtful decisions about your UI's elevation story."
     },
-
     {
       "name": "md-fab",
       "description": "FAB represents the most important action on a screen. It puts key actions within reach.",
       "attributes": [
         {
           "name": "variant",
+          "description": "The FAB color variant to render.",
           "values": [
-            { "name": "surface" },
-            { "name": "primary" },
-            { "name": "secondary" },
-            { "name": "tertiary" }
+            {
+              "name": "surface"
+            },
+            {
+              "name": "primary"
+            },
+            {
+              "name": "secondary"
+            },
+            {
+              "name": "tertiary"
+            }
           ]
         },
-        { 
+        {
           "name": "size",
+          "description": "The size of the FAB.",
           "values": [
-            { "name": "small" },
-            { "name": "medium" },
-            { "name": "large" }
+            {
+              "name": "small"
+            },
+            {
+              "name": "medium"
+            },
+            {
+              "name": "large"
+            }
           ]
         },
-        { "name": "label" },
-        { "name": "lowered" }
+        {
+          "name": "label",
+          "description": "The text to display on the FAB."
+        },
+        {
+          "name": "lowered",
+          "description": "Lowers the FAB's elevation."
+        }
       ]
     },
     {
@@ -280,467 +748,1706 @@
       "attributes": [
         {
           "name": "variant",
+          "description": "The FAB color variant to render.",
           "values": [
-            { "name": "surface" },
-            { "name": "primary" },
-            { "name": "secondary" },
-            { "name": "tertiary" }
+            {
+              "name": "surface"
+            },
+            {
+              "name": "primary"
+            },
+            {
+              "name": "secondary"
+            },
+            {
+              "name": "tertiary"
+            }
           ]
         },
-        { 
+        {
           "name": "size",
+          "description": "The size of the FAB. NOTE: Branded FABs cannot be sized to small.",
           "values": [
-            { "name": "medium" },
-            { "name": "large" }
+            {
+              "name": "medium"
+            },
+            {
+              "name": "large"
+            }
           ]
         },
-        { "name": "label" },
-        { "name": "lowered" }
+        {
+          "name": "label",
+          "description": "The text to display on the FAB."
+        },
+        {
+          "name": "lowered",
+          "description": "Lowers the FAB's elevation."
+        }
       ]
     },
-
     {
-      "name": "md-focus-ring",
-      "description": "Focus rings are accessible outlines for components to show keyboard focus.",
+      "name": "md-filled-field",
+      "description": "Filled container for form field content such as labels and supporting text.",
       "attributes": [
-        { "name": "visivle" },
-        { "name": "inward" },
-        { "name": "htmlFor" },
-        { "name": "control" }
+        {
+          "name": "disabled",
+          "description": "Whether or not the field is disabled."
+        },
+        {
+          "name": "error",
+          "description": "Whether or not the field is in an error state."
+        },
+        {
+          "name": "focused",
+          "description": "Whether or not the field is focused."
+        },
+        {
+          "name": "label",
+          "description": "The floating label of the field."
+        },
+        {
+          "name": "no-asterisk",
+          "description": "Disables the asterisk on the floating label, when the field is required."
+        },
+        {
+          "name": "populated",
+          "description": "Whether or not the field has a value."
+        },
+        {
+          "name": "required",
+          "description": "Whether or not the field is required."
+        },
+        {
+          "name": "resizable",
+          "description": "Whether or not the field is resizable."
+        },
+        {
+          "name": "supporting-text",
+          "description": "Conveys additional information below the field."
+        },
+        {
+          "name": "error-text",
+          "description": "The error message shown when the field is in an error state."
+        },
+        {
+          "name": "count",
+          "description": "The current character count of the field."
+        },
+        {
+          "name": "max",
+          "description": "The maximum character count of the field."
+        },
+        {
+          "name": "has-start",
+          "description": "Whether or not the field has leading content."
+        },
+        {
+          "name": "has-end",
+          "description": "Whether or not the field has trailing content."
+        }
       ]
     },
-
+    {
+      "name": "md-outlined-field",
+      "description": "Outlined container for form field content such as labels and supporting text.",
+      "attributes": [
+        {
+          "name": "disabled",
+          "description": "Whether or not the field is disabled."
+        },
+        {
+          "name": "error",
+          "description": "Whether or not the field is in an error state."
+        },
+        {
+          "name": "focused",
+          "description": "Whether or not the field is focused."
+        },
+        {
+          "name": "label",
+          "description": "The floating label of the field."
+        },
+        {
+          "name": "no-asterisk",
+          "description": "Disables the asterisk on the floating label, when the field is required."
+        },
+        {
+          "name": "populated",
+          "description": "Whether or not the field has a value."
+        },
+        {
+          "name": "required",
+          "description": "Whether or not the field is required."
+        },
+        {
+          "name": "resizable",
+          "description": "Whether or not the field is resizable."
+        },
+        {
+          "name": "supporting-text",
+          "description": "Conveys additional information below the field."
+        },
+        {
+          "name": "error-text",
+          "description": "The error message shown when the field is in an error state."
+        },
+        {
+          "name": "count",
+          "description": "The current character count of the field."
+        },
+        {
+          "name": "max",
+          "description": "The maximum character count of the field."
+        },
+        {
+          "name": "has-start",
+          "description": "Whether or not the field has leading content."
+        },
+        {
+          "name": "has-end",
+          "description": "Whether or not the field has trailing content."
+        }
+      ]
+    },
+    {
+      "name": "md-icon",
+      "description": "Icons can be used to represent common actions. Material Symbols are a set of variable icon fonts created at seven weights across three different styles."
+    },
     {
       "name": "md-icon-button",
       "description": "Icon buttons can be grouped together or they can stand alone.",
       "attributes": [
-        { "name": "disabled" },
-        { "name": "filp-icon-in-rtl" },
-        { "name": "href" },
-        { "name": "target" },
-        { "name": "aria-label-selected" },
-        { "name": "toggle" },
-        { "name": "selected" },
-        { "name": "type" },
-        { "name": "value" },
-        { "name": "name" },
-        { "name": "form" },
-        { "name": "labels" }
+        {
+          "name": "disabled",
+          "description": "Disables the icon button and makes it non-interactive."
+        },
+        {
+          "name": "soft-disabled",
+          "description": "\"Soft-disables\" the icon button (disabled but still focusable)."
+        },
+        {
+          "name": "flip-icon-in-rtl",
+          "description": "Flips the icon if it is in an RTL context at startup."
+        },
+        {
+          "name": "href",
+          "description": "Sets the underlying HTMLAnchorElement's href resource attribute."
+        },
+        {
+          "name": "download",
+          "description": "The filename to use when downloading the linked resource."
+        },
+        {
+          "name": "target",
+          "description": "Sets the underlying HTMLAnchorElement's target attribute.",
+          "values": [
+            {
+              "name": "_blank"
+            },
+            {
+              "name": "_parent"
+            },
+            {
+              "name": "_self"
+            },
+            {
+              "name": "_top"
+            }
+          ]
+        },
+        {
+          "name": "aria-label-selected",
+          "description": "The `aria-label` of the button when the button is toggleable and selected."
+        },
+        {
+          "name": "toggle",
+          "description": "When true, the button will toggle between selected and unselected states"
+        },
+        {
+          "name": "selected",
+          "description": "Sets the selected state. When false, displays the default icon. When true, displays the selected icon, or the default icon If no slot=\"selected\" icon is provided."
+        },
+        {
+          "name": "type",
+          "description": "Submit is default.",
+          "values": [
+            {
+              "name": "submit"
+            },
+            {
+              "name": "button"
+            },
+            {
+              "name": "reset"
+            }
+          ]
+        },
+        {
+          "name": "value",
+          "description": "The value of the button. When combined with a name, it is submitted with the form."
+        },
+        {
+          "name": "name",
+          "description": "The HTML name to use in form submission."
+        },
+        {
+          "name": "form",
+          "description": "The ID of the form to associate the button with."
+        }
       ]
     },
     {
       "name": "md-filled-icon-button",
       "description": "Filled icon buttons have higher visual impact and are best for high emphasis actions.",
       "attributes": [
-        { "name": "disabled" },
-        { "name": "filp-icon-in-rtl" },
-        { "name": "href" },
-        { "name": "target" },
-        { "name": "aria-label-selected" },
-        { "name": "toggle" },
-        { "name": "selected" },
-        { "name": "type" },
-        { "name": "value" },
-        { "name": "name" },
-        { "name": "form" },
-        { "name": "labels" }
+        {
+          "name": "disabled",
+          "description": "Disables the icon button and makes it non-interactive."
+        },
+        {
+          "name": "soft-disabled",
+          "description": "\"Soft-disables\" the icon button (disabled but still focusable)."
+        },
+        {
+          "name": "flip-icon-in-rtl",
+          "description": "Flips the icon if it is in an RTL context at startup."
+        },
+        {
+          "name": "href",
+          "description": "Sets the underlying HTMLAnchorElement's href resource attribute."
+        },
+        {
+          "name": "download",
+          "description": "The filename to use when downloading the linked resource."
+        },
+        {
+          "name": "target",
+          "description": "Sets the underlying HTMLAnchorElement's target attribute.",
+          "values": [
+            {
+              "name": "_blank"
+            },
+            {
+              "name": "_parent"
+            },
+            {
+              "name": "_self"
+            },
+            {
+              "name": "_top"
+            }
+          ]
+        },
+        {
+          "name": "aria-label-selected",
+          "description": "The `aria-label` of the button when the button is toggleable and selected."
+        },
+        {
+          "name": "toggle",
+          "description": "When true, the button will toggle between selected and unselected states"
+        },
+        {
+          "name": "selected",
+          "description": "Sets the selected state. When false, displays the default icon. When true, displays the selected icon, or the default icon If no slot=\"selected\" icon is provided."
+        },
+        {
+          "name": "type",
+          "description": "Submit is default.",
+          "values": [
+            {
+              "name": "submit"
+            },
+            {
+              "name": "button"
+            },
+            {
+              "name": "reset"
+            }
+          ]
+        },
+        {
+          "name": "value",
+          "description": "The value of the button. When combined with a name, it is submitted with the form."
+        },
+        {
+          "name": "name",
+          "description": "The HTML name to use in form submission."
+        },
+        {
+          "name": "form",
+          "description": "The ID of the form to associate the button with."
+        }
       ]
     },
     {
       "name": "md-filled-tonal-icon-button",
       "description": "Filled tonal icon buttons are a middle ground between filled and outlined icon buttons. They're useful in contexts where the button requires slightly more emphasis than an outline would give, such as a secondary action paired with a high emphasis action.",
       "attributes": [
-        { "name": "disabled" },
-        { "name": "filp-icon-in-rtl" },
-        { "name": "href" },
-        { "name": "target" },
-        { "name": "aria-label-selected" },
-        { "name": "toggle" },
-        { "name": "selected" },
-        { "name": "type" },
-        { "name": "value" },
-        { "name": "name" },
-        { "name": "form" },
-        { "name": "labels" }
+        {
+          "name": "disabled",
+          "description": "Disables the icon button and makes it non-interactive."
+        },
+        {
+          "name": "soft-disabled",
+          "description": "\"Soft-disables\" the icon button (disabled but still focusable)."
+        },
+        {
+          "name": "flip-icon-in-rtl",
+          "description": "Flips the icon if it is in an RTL context at startup."
+        },
+        {
+          "name": "href",
+          "description": "Sets the underlying HTMLAnchorElement's href resource attribute."
+        },
+        {
+          "name": "download",
+          "description": "The filename to use when downloading the linked resource."
+        },
+        {
+          "name": "target",
+          "description": "Sets the underlying HTMLAnchorElement's target attribute.",
+          "values": [
+            {
+              "name": "_blank"
+            },
+            {
+              "name": "_parent"
+            },
+            {
+              "name": "_self"
+            },
+            {
+              "name": "_top"
+            }
+          ]
+        },
+        {
+          "name": "aria-label-selected",
+          "description": "The `aria-label` of the button when the button is toggleable and selected."
+        },
+        {
+          "name": "toggle",
+          "description": "When true, the button will toggle between selected and unselected states"
+        },
+        {
+          "name": "selected",
+          "description": "Sets the selected state. When false, displays the default icon. When true, displays the selected icon, or the default icon If no slot=\"selected\" icon is provided."
+        },
+        {
+          "name": "type",
+          "description": "Submit is default.",
+          "values": [
+            {
+              "name": "submit"
+            },
+            {
+              "name": "button"
+            },
+            {
+              "name": "reset"
+            }
+          ]
+        },
+        {
+          "name": "value",
+          "description": "The value of the button. When combined with a name, it is submitted with the form."
+        },
+        {
+          "name": "name",
+          "description": "The HTML name to use in form submission."
+        },
+        {
+          "name": "form",
+          "description": "The ID of the form to associate the button with."
+        }
       ]
     },
     {
       "name": "md-outlined-icon-button",
       "description": "Outlined icon buttons are medium-emphasis buttons. They're useful when an icon button needs more emphasis than a standard icon button but less than a filled or filled tonal icon button.",
       "attributes": [
-        { "name": "disabled" },
-        { "name": "filp-icon-in-rtl" },
-        { "name": "href" },
-        { "name": "target" },
-        { "name": "aria-label-selected" },
-        { "name": "toggle" },
-        { "name": "selected" },
-        { "name": "type" },
-        { "name": "value" },
-        { "name": "name" },
-        { "name": "form" },
-        { "name": "labels" }
+        {
+          "name": "disabled",
+          "description": "Disables the icon button and makes it non-interactive."
+        },
+        {
+          "name": "soft-disabled",
+          "description": "\"Soft-disables\" the icon button (disabled but still focusable)."
+        },
+        {
+          "name": "flip-icon-in-rtl",
+          "description": "Flips the icon if it is in an RTL context at startup."
+        },
+        {
+          "name": "href",
+          "description": "Sets the underlying HTMLAnchorElement's href resource attribute."
+        },
+        {
+          "name": "download",
+          "description": "The filename to use when downloading the linked resource."
+        },
+        {
+          "name": "target",
+          "description": "Sets the underlying HTMLAnchorElement's target attribute.",
+          "values": [
+            {
+              "name": "_blank"
+            },
+            {
+              "name": "_parent"
+            },
+            {
+              "name": "_self"
+            },
+            {
+              "name": "_top"
+            }
+          ]
+        },
+        {
+          "name": "aria-label-selected",
+          "description": "The `aria-label` of the button when the button is toggleable and selected."
+        },
+        {
+          "name": "toggle",
+          "description": "When true, the button will toggle between selected and unselected states"
+        },
+        {
+          "name": "selected",
+          "description": "Sets the selected state. When false, displays the default icon. When true, displays the selected icon, or the default icon If no slot=\"selected\" icon is provided."
+        },
+        {
+          "name": "type",
+          "description": "Submit is default.",
+          "values": [
+            {
+              "name": "submit"
+            },
+            {
+              "name": "button"
+            },
+            {
+              "name": "reset"
+            }
+          ]
+        },
+        {
+          "name": "value",
+          "description": "The value of the button. When combined with a name, it is submitted with the form."
+        },
+        {
+          "name": "name",
+          "description": "The HTML name to use in form submission."
+        },
+        {
+          "name": "form",
+          "description": "The ID of the form to associate the button with."
+        }
       ]
     },
-
     {
-      "name": "md-icon",
-      "description": "Icons can be used to represent common actions. Material Symbols are a set of variable icon fonts created at seven weights across three different styles."
+      "name": "md-item",
+      "description": "An item layout component that can be used inside list items to give them their customizable structure.",
+      "attributes": [
+        {
+          "name": "multiline",
+          "description": "Only needed for SSR. Add this attribute when an item has two lines to avoid a Flash Of Unstyled Content."
+        }
+      ]
     },
-
     {
       "name": "md-list",
-      "description": "Lists are continuous, vertical indexes of text and images",
-      "attributes": [
-        { "name": "items" }
-      ]
+      "description": "Lists are continuous, vertical indexes of text and images"
     },
     {
       "name": "md-list-item",
       "description": "<md-list> is a container composed of <md-list-item>s of different types.",
       "attributes": [
-        { "name": "disabled" },
+        {
+          "name": "disabled",
+          "description": "Disables the item and makes it non-selectable and non-interactive."
+        },
         {
           "name": "type",
+          "description": "Sets the behavior of the list item, defaults to \"text\". Change to \"link\" or \"button\" for interactive items.",
           "values": [
-            { "name": "text" },
-            { "name": "link" },
-            { "name": "button" }
+            {
+              "name": "text"
+            },
+            {
+              "name": "link"
+            },
+            {
+              "name": "button"
+            }
           ]
         },
-        { "name": "href" },
-        { "name": "target" }
+        {
+          "name": "href",
+          "description": "Sets the underlying HTMLAnchorElement's href resource attribute."
+        },
+        {
+          "name": "target",
+          "description": "Sets the underlying HTMLAnchorElement's target attribute when href is set.",
+          "values": [
+            {
+              "name": "_blank"
+            },
+            {
+              "name": "_parent"
+            },
+            {
+              "name": "_self"
+            },
+            {
+              "name": "_top"
+            }
+          ]
+        }
       ]
     },
-
     {
       "name": "md-menu",
       "description": "Menus display a list of choices on a temporary surface.",
       "attributes": [
-        { "name": "anchor" },
+        {
+          "name": "anchor",
+          "description": "The ID of the element the menu anchors to."
+        },
         {
           "name": "positioning",
+          "description": "How the menu is positioned.",
           "values": [
-            { "name": "absolute" },
-            { "name": "fixed" },
-            { "name": "relative" }
+            {
+              "name": "absolute"
+            },
+            {
+              "name": "fixed"
+            },
+            {
+              "name": "document"
+            },
+            {
+              "name": "popover"
+            }
           ]
         },
-        { "name": "quick" },
-        { "name": "has-overflow" },
-        { "name": "x-offset" },
-        { "name": "y-offset" },
-        { "name": "typehead-delay" },
-        { "name": "anchor-corner" },
-        { "name": "menu-corner" },
-        { "name": "stay-open-on-outside-click" },
-        { "name": "stay-open-on-focusout" },
-        { "name": "skip-restore-focus" },
-        { "name": "default-focus" }
+        {
+          "name": "quick",
+          "description": "Skips the opening and closing animations."
+        },
+        {
+          "name": "has-overflow",
+          "description": "Displays overflow content like a submenu."
+        },
+        {
+          "name": "open",
+          "description": "Opens the menu and makes it visible."
+        },
+        {
+          "name": "x-offset",
+          "description": "Offsets the menu's inline alignment from the anchor."
+        },
+        {
+          "name": "y-offset",
+          "description": "Offsets the menu's block alignment from the anchor."
+        },
+        {
+          "name": "no-horizontal-flip",
+          "description": "Disable the `flip` behavior that usually happens on the horizontal axis when the surface would render outside the viewport."
+        },
+        {
+          "name": "no-vertical-flip",
+          "description": "Disable the `flip` behavior that usually happens on the vertical axis when the surface would render outside the viewport."
+        },
+        {
+          "name": "typeahead-delay",
+          "description": "The max time between the keystrokes of the typeahead menu behavior before it clears the typeahead buffer."
+        },
+        {
+          "name": "anchor-corner",
+          "description": "The corner of the anchor which to align the menu in the standard logical property style of <block>-<inline>.",
+          "values": [
+            {
+              "name": "end-start"
+            },
+            {
+              "name": "end-end"
+            },
+            {
+              "name": "start-start"
+            },
+            {
+              "name": "start-end"
+            }
+          ]
+        },
+        {
+          "name": "menu-corner",
+          "description": "The corner of the menu which to align the anchor in the standard logical property style of <block>-<inline>.",
+          "values": [
+            {
+              "name": "end-start"
+            },
+            {
+              "name": "end-end"
+            },
+            {
+              "name": "start-start"
+            },
+            {
+              "name": "start-end"
+            }
+          ]
+        },
+        {
+          "name": "stay-open-on-outside-click",
+          "description": "Keeps the user clicks outside the menu."
+        },
+        {
+          "name": "stay-open-on-focusout",
+          "description": "Keeps the menu open when focus leaves the menu's composed subtree."
+        },
+        {
+          "name": "skip-restore-focus",
+          "description": "After closing, does not restore focus to the last focused element before the menu was opened."
+        },
+        {
+          "name": "default-focus",
+          "description": "The element that should be focused by default once opened.",
+          "values": [
+            {
+              "name": "none"
+            },
+            {
+              "name": "list-root"
+            },
+            {
+              "name": "first-item"
+            },
+            {
+              "name": "last-item"
+            }
+          ]
+        },
+        {
+          "name": "no-navigation-wrap",
+          "description": "Turns off navigation wrapping."
+        }
       ]
     },
     {
       "name": "md-menu-item",
       "description": "Menus also render menu items such as md-menu-item and handle keyboard navigation between md-menu-items as well as typeahead functionality. Additionally, md-menu interacts with md-menu-items to help you determine how a menu was closed. Listen for and inspect the close-menu custom event's details to determine what action and items closed the menu.",
       "attributes": [
-        { "name": "disabled" },
+        {
+          "name": "disabled",
+          "description": "Disables the item and makes it non-selectable and non-interactive."
+        },
         {
           "name": "type",
+          "description": "Sets the behavior and role of the menu item, defaults to \"menuitem\".",
           "values": [
-            { "name": "menuitem" },
-            { "name": "combobox" }
+            {
+              "name": "menuitem"
+            },
+            {
+              "name": "option"
+            },
+            {
+              "name": "button"
+            },
+            {
+              "name": "link"
+            }
           ]
         },
-        { "name": "href" },
-        { "name": "target" },
-        { "name": "keep-open" },
-        { "name": "selected" }
+        {
+          "name": "href",
+          "description": "Sets the underlying HTMLAnchorElement's href resource attribute."
+        },
+        {
+          "name": "target",
+          "description": "Sets the underlying HTMLAnchorElement's target attribute when href is set.",
+          "values": [
+            {
+              "name": "_blank"
+            },
+            {
+              "name": "_parent"
+            },
+            {
+              "name": "_self"
+            },
+            {
+              "name": "_top"
+            }
+          ]
+        },
+        {
+          "name": "keep-open",
+          "description": "Keeps the menu open if clicked or keyboard selected."
+        },
+        {
+          "name": "selected",
+          "description": "Sets the item in the selected visual state when a submenu is opened."
+        }
       ]
     },
     {
       "name": "md-sub-menu",
       "description": "You can compose <md-menu>s inside of an <md-sub-menu>'s menu slot, but first the has-overflow attribute must be set on the root <md-menu> to disable overflow scrolling and display the nested submenus.",
       "attributes": [
-        { "name": "anchor-corner" },
-        { "name": "menu-corner" },
-        { "name": "hover-open-delay" },
-        { "name": "hover-close-delay" },
-        { "name": "md-sub-menu" }
+        {
+          "name": "anchor-corner",
+          "description": "The anchorCorner to set on the submenu.",
+          "values": [
+            {
+              "name": "end-start"
+            },
+            {
+              "name": "end-end"
+            },
+            {
+              "name": "start-start"
+            },
+            {
+              "name": "start-end"
+            }
+          ]
+        },
+        {
+          "name": "menu-corner",
+          "description": "The menuCorner to set on the submenu.",
+          "values": [
+            {
+              "name": "end-start"
+            },
+            {
+              "name": "end-end"
+            },
+            {
+              "name": "start-start"
+            },
+            {
+              "name": "start-end"
+            }
+          ]
+        },
+        {
+          "name": "hover-open-delay",
+          "description": "The delay between mouseenter and submenu opening."
+        },
+        {
+          "name": "hover-close-delay",
+          "description": "The delay between pointerleave and the submenu closing."
+        }
       ]
     },
-
+    {
+      "name": "md-navigation-bar",
+      "description": "Navigation bars offer a persistent and convenient way to switch between primary destinations in an app.",
+      "attributes": [
+        {
+          "name": "active-index",
+          "description": "The index of the currently active tab."
+        },
+        {
+          "name": "hide-inactive-labels",
+          "description": "Whether or not to hide the labels of inactive tabs."
+        }
+      ]
+    },
+    {
+      "name": "md-navigation-drawer",
+      "description": "Navigation drawers provide access to destinations in an app.",
+      "attributes": [
+        {
+          "name": "opened",
+          "description": "Whether or not the drawer is opened."
+        },
+        {
+          "name": "pivot",
+          "description": "Which side the drawer pivots from.",
+          "values": [
+            {
+              "name": "start"
+            },
+            {
+              "name": "end"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "md-navigation-drawer-modal",
+      "description": "A modal navigation drawer blocks interaction with the rest of the screen while open.",
+      "attributes": [
+        {
+          "name": "opened",
+          "description": "Whether or not the drawer is opened."
+        },
+        {
+          "name": "pivot",
+          "description": "Which side the drawer pivots from.",
+          "values": [
+            {
+              "name": "start"
+            },
+            {
+              "name": "end"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "md-navigation-tab",
+      "description": "A tab destination inside a navigation bar.",
+      "attributes": [
+        {
+          "name": "disabled",
+          "description": "Whether or not the navigation tab is disabled."
+        },
+        {
+          "name": "active",
+          "description": "Whether or not the navigation tab is active."
+        },
+        {
+          "name": "hide-inactive-label",
+          "description": "Hides the label when the tab is inactive."
+        },
+        {
+          "name": "label",
+          "description": "The text label of the navigation tab."
+        },
+        {
+          "name": "badge-value",
+          "description": "The value shown in the tab badge."
+        },
+        {
+          "name": "show-badge",
+          "description": "Whether or not to show the badge."
+        }
+      ]
+    },
     {
       "name": "md-circular-progress",
       "description": "Circular progress indicators display progress by animating along an invisible circular track in a clockwise direction.",
       "attributes": [
-        { "name": "value" },
-        { "name": "max" },
-        { "name": "indeterminate" },
-        { "name": "four-color" }
+        {
+          "name": "value",
+          "description": "Progress to display, a fraction between 0 and max."
+        },
+        {
+          "name": "max",
+          "description": "Maximum progress to display, defaults to 1."
+        },
+        {
+          "name": "indeterminate",
+          "description": "Whether or not to display indeterminate progress, which gives no indication to how long an activity will take."
+        },
+        {
+          "name": "four-color",
+          "description": "Whether or not to render indeterminate mode using 4 colors instead of one."
+        }
       ]
     },
     {
       "name": "md-linear-progress",
       "description": "Linear progress indicators display progress by animating along the length of a fixed, visible track.",
       "attributes": [
-        { "name": "buffer" },
-        { "name": "value" },
-        { "name": "max" },
-        { "name": "indeterminate" },
-        { "name": "four-color" }
+        {
+          "name": "buffer"
+        },
+        {
+          "name": "value",
+          "description": "Progress to display, a fraction between 0 and max."
+        },
+        {
+          "name": "max",
+          "description": "Maximum progress to display, defaults to 1."
+        },
+        {
+          "name": "indeterminate",
+          "description": "Whether or not to display indeterminate progress, which gives no indication to how long an activity will take."
+        },
+        {
+          "name": "four-color",
+          "description": "Whether or not to render indeterminate mode using 4 colors instead of one."
+        }
       ]
     },
-
     {
       "name": "md-radio",
       "description": "Radios behave like <input type=\"radio\"> elements and form a group with the same name attribute. Only one radio can be selected in a group.",
       "attributes": [
-        { "name": "disabled" },
-        { "name": "value" },
-        { "name": "checked" },
-        { "name": "name" },
-        { "name": "form" },
-        { "name": "labels" }
+        {
+          "name": "disabled",
+          "description": "Whether or not the radio is disabled."
+        },
+        {
+          "name": "required",
+          "description": "Whether or not the radio is required."
+        },
+        {
+          "name": "value",
+          "description": "The element value to use in form submission when checked."
+        },
+        {
+          "name": "checked",
+          "description": "Whether or not the radio is selected."
+        },
+        {
+          "name": "name",
+          "description": "The HTML name to use in form submission."
+        },
+        {
+          "name": "form",
+          "description": "The ID of the form to associate the radio with."
+        }
       ]
     },
-
     {
       "name": "md-ripple",
       "description": "Ripples display on hover and press pointer interactions. They may be attached to a control in one of three ways.",
       "attributes": [
-        { "name": "disabled" },
-        { "name": "htmlFor" },
-        { "name": "control" }
+        {
+          "name": "disabled",
+          "description": "Disables the ripple."
+        },
+        {
+          "name": "for",
+          "description": "ID of the control element the ripple attaches to."
+        }
       ]
     },
-
+    {
+      "name": "md-outlined-segmented-button",
+      "description": "MdOutlinedSegmentedButton is the custom element for the Material Design outlined segmented button component. It is intended only for use as a child of a segmented button set.",
+      "attributes": [
+        {
+          "name": "disabled",
+          "description": "Whether or not the segmented button is disabled."
+        },
+        {
+          "name": "selected",
+          "description": "Whether or not the segmented button is selected."
+        },
+        {
+          "name": "label",
+          "description": "The text label of the segmented button."
+        },
+        {
+          "name": "no-checkmark",
+          "description": "Hides the checkmark shown on selected buttons."
+        },
+        {
+          "name": "has-icon",
+          "description": "Set this to true when an icon is present."
+        }
+      ]
+    },
+    {
+      "name": "md-outlined-segmented-button-set",
+      "description": "MdOutlinedSegmentedButtonSet is the custom element for the Material Design outlined segmented button set component. Only segmented button components may be used as children.",
+      "attributes": [
+        {
+          "name": "multiselect",
+          "description": "Whether or not the set allows selecting multiple buttons."
+        }
+      ]
+    },
     {
       "name": "md-filled-select",
       "description": "Select menus display a list of choices on temporary surfaces and display the currently selected menu item above the menu.",
       "attributes": [
-        { "name": "quick" },
-        { "name": "required" },
-        { "name": "disabled" },
-        { "name": "error-text" },
-        { "name": "label" },
-        { "name": "supporting-text" },
-        { "name": "error" },
+        {
+          "name": "quick",
+          "description": "Opens the menu synchronously with no animation."
+        },
+        {
+          "name": "required",
+          "description": "Whether or not the select is required."
+        },
+        {
+          "name": "disabled",
+          "description": "Disables the select."
+        },
+        {
+          "name": "error-text",
+          "description": "The error message that replaces supporting text when `error` is true. If `errorText` is an empty string, then the supporting text will continue to show."
+        },
+        {
+          "name": "label",
+          "description": "The floating label for the field."
+        },
+        {
+          "name": "no-asterisk",
+          "description": "Disables the asterisk on the floating label, when the select is required."
+        },
+        {
+          "name": "supporting-text",
+          "description": "Conveys additional information below the select, such as how it should be used."
+        },
+        {
+          "name": "error",
+          "description": "Gets or sets whether or not the select is in a visually invalid state."
+        },
         {
           "name": "menu-positioning",
+          "description": "Whether or not the underlying md-menu should be position: fixed to display in a top-level manner, or position: absolute.",
           "values": [
-            { "name": "absolute" },
-            { "name": "fixed" }
+            {
+              "name": "absolute"
+            },
+            {
+              "name": "fixed"
+            },
+            {
+              "name": "popover"
+            }
           ]
         },
-        { "name": "typeahead-delay" },
-        { "name": "has-leading-icon" },
-        { "name": "display-text" },
-        { "name": "value" },
-        { "name": "selected-index" },
-        { "name": "name" },
-        { "name": "form" },
-        { "name": "labels" }
+        {
+          "name": "clamp-menu-width",
+          "description": "Clamps the menu-width to the width of the select."
+        },
+        {
+          "name": "typeahead-delay",
+          "description": "The max time between the keystrokes of the typeahead select / menu behavior before it clears the typeahead buffer."
+        },
+        {
+          "name": "has-leading-icon",
+          "description": "Whether or not the text field has a leading icon. Used for SSR."
+        },
+        {
+          "name": "display-text",
+          "description": "Text to display in the field. Only set for SSR."
+        },
+        {
+          "name": "menu-align",
+          "description": "Whether the menu should be aligned to the start or the end of the select's textbox.",
+          "values": [
+            {
+              "name": "start"
+            },
+            {
+              "name": "end"
+            }
+          ]
+        },
+        {
+          "name": "value",
+          "description": "The value of the currently selected option."
+        },
+        {
+          "name": "selected-index",
+          "description": "The index of the currently selected option."
+        },
+        {
+          "name": "name",
+          "description": "The HTML name to use in form submission."
+        },
+        {
+          "name": "form",
+          "description": "The ID of the form to associate the select with."
+        }
       ]
     },
     {
       "name": "md-outlined-select",
       "description": "Select menus display a list of choices on temporary surfaces and display the currently selected menu item above the menu.",
       "attributes": [
-        { "name": "quick" },
-        { "name": "required" },
-        { "name": "disabled" },
-        { "name": "error-text" },
-        { "name": "label" },
-        { "name": "supporting-text" },
-        { "name": "error" },
+        {
+          "name": "quick",
+          "description": "Opens the menu synchronously with no animation."
+        },
+        {
+          "name": "required",
+          "description": "Whether or not the select is required."
+        },
+        {
+          "name": "disabled",
+          "description": "Disables the select."
+        },
+        {
+          "name": "error-text",
+          "description": "The error message that replaces supporting text when `error` is true. If `errorText` is an empty string, then the supporting text will continue to show."
+        },
+        {
+          "name": "label",
+          "description": "The floating label for the field."
+        },
+        {
+          "name": "no-asterisk",
+          "description": "Disables the asterisk on the floating label, when the select is required."
+        },
+        {
+          "name": "supporting-text",
+          "description": "Conveys additional information below the select, such as how it should be used."
+        },
+        {
+          "name": "error",
+          "description": "Gets or sets whether or not the select is in a visually invalid state."
+        },
         {
           "name": "menu-positioning",
+          "description": "Whether or not the underlying md-menu should be position: fixed to display in a top-level manner, or position: absolute.",
           "values": [
-            { "name": "absolute" },
-            { "name": "fixed" }
+            {
+              "name": "absolute"
+            },
+            {
+              "name": "fixed"
+            },
+            {
+              "name": "popover"
+            }
           ]
         },
-        { "name": "typeahead-delay" },
-        { "name": "has-leading-icon" },
-        { "name": "display-text" },
-        { "name": "value" },
-        { "name": "selected-index" },
-        { "name": "name" },
-        { "name": "form" },
-        { "name": "labels" }
+        {
+          "name": "clamp-menu-width",
+          "description": "Clamps the menu-width to the width of the select."
+        },
+        {
+          "name": "typeahead-delay",
+          "description": "The max time between the keystrokes of the typeahead select / menu behavior before it clears the typeahead buffer."
+        },
+        {
+          "name": "has-leading-icon",
+          "description": "Whether or not the text field has a leading icon. Used for SSR."
+        },
+        {
+          "name": "display-text",
+          "description": "Text to display in the field. Only set for SSR."
+        },
+        {
+          "name": "menu-align",
+          "description": "Whether the menu should be aligned to the start or the end of the select's textbox.",
+          "values": [
+            {
+              "name": "start"
+            },
+            {
+              "name": "end"
+            }
+          ]
+        },
+        {
+          "name": "value",
+          "description": "The value of the currently selected option."
+        },
+        {
+          "name": "selected-index",
+          "description": "The index of the currently selected option."
+        },
+        {
+          "name": "name",
+          "description": "The HTML name to use in form submission."
+        },
+        {
+          "name": "form",
+          "description": "The ID of the form to associate the select with."
+        }
       ]
     },
     {
       "name": "md-select-option",
       "description": "Select (also referred to as a dropdown menu) allows choosing a value from a fixed list of available options. It is analogous to the native HTML <select> element.",
       "attributes": [
-        { "name": "disabled" },
-        { "name": "selected" },
-        { "name": "value" },
-        { "name": "type" }
+        {
+          "name": "disabled",
+          "description": "Disables the item and makes it non-selectable and non-interactive."
+        },
+        {
+          "name": "selected",
+          "description": "Whether or not the SelectOption is selected."
+        },
+        {
+          "name": "value",
+          "description": "The form value associated with the Select Option."
+        }
       ]
     },
-
     {
       "name": "md-slider",
       "description": "Sliders allow users to view and select a value (or range) along a track. They're ideal for adjusting settings such as volume and brightness, or for applying image filters.",
       "attributes": [
-        { "name": "disabled" },
-        { "name": "min" },
-        { "name": "max" },
-        { "name": "value" },
-        { "name": "value-start" },
-        { "name": "value-end" },
-        { "name": "value-label" },
-        { "name": "value-label-start" },
-        { "name": "value-label-end" },
-        { "name": "aria-label-start" },
-        { "name": "aria-label-end" },
-        { "name": "aria-valuetext-start" },
-        { "name": "aria-valuetext-end" },
-        { "name": "step" },
-        { "name": "ticks" },
-        { "name": "labeled" },
-        { "name": "range" },
-        { "name": "name" },
-        { "name": "form" }
+        {
+          "name": "disabled",
+          "description": "Whether or not the slider is disabled."
+        },
+        {
+          "name": "min",
+          "description": "The slider minimum value"
+        },
+        {
+          "name": "max",
+          "description": "The slider maximum value"
+        },
+        {
+          "name": "value",
+          "description": "The slider value displayed when range is false."
+        },
+        {
+          "name": "value-start",
+          "description": "The slider start value displayed when range is true."
+        },
+        {
+          "name": "value-end",
+          "description": "The slider end value displayed when range is true."
+        },
+        {
+          "name": "value-label",
+          "description": "An optional label for the slider's value."
+        },
+        {
+          "name": "value-label-start",
+          "description": "An optional label for the slider's start value."
+        },
+        {
+          "name": "value-label-end",
+          "description": "An optional label for the slider's end value."
+        },
+        {
+          "name": "aria-label-start",
+          "description": "Aria label for the slider's start handle."
+        },
+        {
+          "name": "aria-label-end",
+          "description": "Aria label for the slider's end handle."
+        },
+        {
+          "name": "aria-valuetext-start",
+          "description": "Aria value text for the slider's start value."
+        },
+        {
+          "name": "aria-valuetext-end",
+          "description": "Aria value text for the slider's end value."
+        },
+        {
+          "name": "step",
+          "description": "The step between values."
+        },
+        {
+          "name": "ticks",
+          "description": "Whether or not to show tick marks."
+        },
+        {
+          "name": "labeled",
+          "description": "Whether or not to show a value label when activated."
+        },
+        {
+          "name": "range",
+          "description": "Whether or not to show a value range."
+        },
+        {
+          "name": "name",
+          "description": "The HTML name to use in form submission."
+        },
+        {
+          "name": "form",
+          "description": "The ID of the form to associate the slider with."
+        }
       ]
     },
-
     {
       "name": "md-switch",
       "description": "Switches toggle the state of an item on or off.",
       "attributes": [
-        { "name": "disabled" },
-        { "name": "selected" },
-        { "name": "icon" },
-        { "name": "show-only-selected-icon" },
-        { "name": "required" },
-        { "name": "value" },
-        { "name": "name" },
-        { "name": "form" }
+        {
+          "name": "disabled",
+          "description": "Disables the switch and makes it non-interactive."
+        },
+        {
+          "name": "selected",
+          "description": "Puts the switch in the selected state and sets the form submission value to the value property."
+        },
+        {
+          "name": "icons",
+          "description": "Shows both the selected and deselected icons."
+        },
+        {
+          "name": "show-only-selected-icon",
+          "description": "Shows only the selected icon, and not the deselected icon. If true, overrides the behavior of the icons property."
+        },
+        {
+          "name": "required",
+          "description": "When true, require the switch to be selected when participating in form submission. https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox#validation"
+        },
+        {
+          "name": "value",
+          "description": "The value associated with this switch on form submission."
+        },
+        {
+          "name": "name",
+          "description": "The HTML name to use in form submission."
+        },
+        {
+          "name": "form",
+          "description": "The ID of the form to associate the switch with."
+        }
       ]
     },
-
     {
       "name": "md-tabs",
       "description": "Tabs organize groups of related content that are at the same level of hierarchy.",
       "attributes": [
-        { "name": "auto-activate" }
+        {
+          "name": "auto-activate",
+          "description": "Whether or not to automatically select a tab when it is focused."
+        },
+        {
+          "name": "active-tab-index",
+          "description": "The index of the currently active tab."
+        }
       ]
     },
     {
       "name": "md-primary-tab",
       "description": "Primary tabs are placed at the top of the content pane under a top app bar. They display the main content destinations.",
       "attributes": [
-        { "name": "inline-icon" },
-        { "name": "md-tab" },
-        { "name": "active" },
-        { "name": "has-icon" },
-        { "name": "icon-only" },
-        { "name": "selected" }
+        {
+          "name": "inline-icon"
+        },
+        {
+          "name": "md-tab",
+          "description": "Indicates that the element is a tab for the parent `<md-tabs>`."
+        },
+        {
+          "name": "active",
+          "description": "Whether or not the tab is selected."
+        },
+        {
+          "name": "has-icon",
+          "description": "In SSR, set this to true when an icon is present."
+        },
+        {
+          "name": "icon-only",
+          "description": "In SSR, set this to true when there is no label and only an icon."
+        }
       ]
     },
     {
       "name": "md-secondary-tab",
       "description": "Secondary tabs are used within a content area to further separate related content and establish hierarchy.",
       "attributes": [
-        { "name": "md-tab" },
-        { "name": "active" },
-        { "name": "has-icon" },
-        { "name": "icon-only" },
-        { "name": "selected" }
+        {
+          "name": "md-tab",
+          "description": "Indicates that the element is a tab for the parent `<md-tabs>`."
+        },
+        {
+          "name": "active",
+          "description": "Whether or not the tab is selected."
+        },
+        {
+          "name": "has-icon",
+          "description": "In SSR, set this to true when an icon is present."
+        },
+        {
+          "name": "icon-only",
+          "description": "In SSR, set this to true when there is no label and only an icon."
+        }
       ]
     },
-
     {
       "name": "md-filled-text-field",
       "description": "Filled and outlined text fields are functionally identical. See choosing a text field for guidance on which one to use.",
       "attributes": [
-        { "name": "disabled" },
-        { "name": "error" },
-        { "name": "error-text" },
-        { "name": "label" },
-        { "name": "required" },
-        { "name": "value" },
-        { "name": "prefix-text" },
-        { "name": "suffix-text" },
-        { "name": "has-leading-icon" },
-        { "name": "has-trailing-icon" },
-        { "name": "supporting-text" },
-        { "name": "text-direction" },
-        { "name": "rows" },
-        { "name": "inputmode" },
-        { "name": "max" },
-        { "name": "maxlength" },
-        { "name": "min" },
-        { "name": "minlength" },
-        { "name": "pattern" },
-        { "name": "placeholder" },
-        { "name": "readonly" },
-        { "name": "step" },
+        {
+          "name": "disabled",
+          "description": "Whether or not the text field is disabled."
+        },
+        {
+          "name": "error",
+          "description": "Gets or sets whether or not the text field is in a visually invalid state. This error state overrides the error state controlled by reportValidity()."
+        },
+        {
+          "name": "error-text",
+          "description": "The error message that replaces supporting text when error is true. If errorText is an empty string, then the supporting text will continue to show. This error message overrides the error message displayed by reportValidity()."
+        },
+        {
+          "name": "label",
+          "description": "The floating Material label of the textfield component."
+        },
+        {
+          "name": "no-asterisk",
+          "description": "Disables the asterisk on the floating label, when the text field is required."
+        },
+        {
+          "name": "required",
+          "description": "Indicates that the user must specify a value for the input before the owning form can be submitted."
+        },
+        {
+          "name": "value",
+          "description": "The current value of the text field. It is always a string."
+        },
+        {
+          "name": "prefix-text",
+          "description": "An optional prefix to display before the input value."
+        },
+        {
+          "name": "suffix-text",
+          "description": "An optional suffix to display after the input value."
+        },
+        {
+          "name": "has-leading-icon",
+          "description": "Whether or not the text field has a leading icon. Used for SSR."
+        },
+        {
+          "name": "has-trailing-icon",
+          "description": "Whether or not the text field has a trailing icon. Used for SSR."
+        },
+        {
+          "name": "supporting-text",
+          "description": "Conveys additional information below the text field."
+        },
+        {
+          "name": "text-direction",
+          "description": "Override the input text CSS `direction`."
+        },
+        {
+          "name": "rows",
+          "description": "The number of rows to display for a `type=\"textarea\"` text field."
+        },
+        {
+          "name": "cols",
+          "description": "The number of cols to display for a `type=\"textarea\"` text field."
+        },
+        {
+          "name": "inputmode",
+          "description": "The input mode (keyboard type) for the text field."
+        },
+        {
+          "name": "max",
+          "description": "Defines the greatest value in the range of permitted values."
+        },
+        {
+          "name": "maxlength",
+          "description": "The maximum number of characters a user can enter into the text field."
+        },
+        {
+          "name": "min",
+          "description": "Defines the most negative value in the range of permitted values."
+        },
+        {
+          "name": "minlength",
+          "description": "The minimum number of characters a user can enter into the text field."
+        },
+        {
+          "name": "pattern",
+          "description": "A regular expression that the text field's value must match."
+        },
+        {
+          "name": "placeholder",
+          "description": "Defines the text displayed in the textfield when it has no value."
+        },
+        {
+          "name": "readonly",
+          "description": "Indicates whether or not a user should be able to edit the text field."
+        },
+        {
+          "name": "multiple",
+          "description": "Indicates that input accepts multiple email addresses."
+        },
+        {
+          "name": "step",
+          "description": "Returns or sets the element's step attribute."
+        },
         {
           "name": "type",
+          "description": "The `<input>` type to use, defaults to \"text\".",
           "values": [
-            { "name": "text" },
-            { "name": "email" },
-            { "name": "number" },
-            { "name": "password" },
-            { "name": "search" },
-            { "name": "tel" },
-            { "name": "url" },
-            { "name": "textarea" }
+            {
+              "name": "text"
+            },
+            {
+              "name": "email"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "password"
+            },
+            {
+              "name": "search"
+            },
+            {
+              "name": "tel"
+            },
+            {
+              "name": "url"
+            },
+            {
+              "name": "textarea"
+            }
           ]
         },
-        { "name": "autocomplete" },
-        { "name": "name" },
-        { "name": "form" }
+        {
+          "name": "autocomplete",
+          "description": "Describes what, if any, type of autocomplete functionality the input provides."
+        },
+        {
+          "name": "name",
+          "description": "The HTML name to use in form submission."
+        },
+        {
+          "name": "form",
+          "description": "The ID of the form to associate the text field with."
+        }
       ]
     },
     {
       "name": "md-outlined-text-field",
       "description": "Filled and outlined text fields are functionally identical. See choosing a text field for guidance on which one to use.",
       "attributes": [
-        { "name": "disabled" },
-        { "name": "error" },
-        { "name": "error-text" },
-        { "name": "label" },
-        { "name": "required" },
-        { "name": "value" },
-        { "name": "prefix-text" },
-        { "name": "suffix-text" },
-        { "name": "has-leading-icon" },
-        { "name": "has-trailing-icon" },
-        { "name": "supporting-text" },
-        { "name": "text-direction" },
-        { "name": "rows" },
-        { "name": "inputmode" },
-        { "name": "max" },
-        { "name": "maxlength" },
-        { "name": "min" },
-        { "name": "minlength" },
-        { "name": "pattern" },
-        { "name": "placeholder" },
-        { "name": "readonly" },
-        { "name": "step" },
+        {
+          "name": "disabled",
+          "description": "Whether or not the text field is disabled."
+        },
+        {
+          "name": "error",
+          "description": "Gets or sets whether or not the text field is in a visually invalid state. This error state overrides the error state controlled by reportValidity()."
+        },
+        {
+          "name": "error-text",
+          "description": "The error message that replaces supporting text when error is true. If errorText is an empty string, then the supporting text will continue to show. This error message overrides the error message displayed by reportValidity()."
+        },
+        {
+          "name": "label",
+          "description": "The floating Material label of the textfield component."
+        },
+        {
+          "name": "no-asterisk",
+          "description": "Disables the asterisk on the floating label, when the text field is required."
+        },
+        {
+          "name": "required",
+          "description": "Indicates that the user must specify a value for the input before the owning form can be submitted."
+        },
+        {
+          "name": "value",
+          "description": "The current value of the text field. It is always a string."
+        },
+        {
+          "name": "prefix-text",
+          "description": "An optional prefix to display before the input value."
+        },
+        {
+          "name": "suffix-text",
+          "description": "An optional suffix to display after the input value."
+        },
+        {
+          "name": "has-leading-icon",
+          "description": "Whether or not the text field has a leading icon. Used for SSR."
+        },
+        {
+          "name": "has-trailing-icon",
+          "description": "Whether or not the text field has a trailing icon. Used for SSR."
+        },
+        {
+          "name": "supporting-text",
+          "description": "Conveys additional information below the text field."
+        },
+        {
+          "name": "text-direction",
+          "description": "Override the input text CSS `direction`."
+        },
+        {
+          "name": "rows",
+          "description": "The number of rows to display for a `type=\"textarea\"` text field."
+        },
+        {
+          "name": "cols",
+          "description": "The number of cols to display for a `type=\"textarea\"` text field."
+        },
+        {
+          "name": "inputmode",
+          "description": "The input mode (keyboard type) for the text field."
+        },
+        {
+          "name": "max",
+          "description": "Defines the greatest value in the range of permitted values."
+        },
+        {
+          "name": "maxlength",
+          "description": "The maximum number of characters a user can enter into the text field."
+        },
+        {
+          "name": "min",
+          "description": "Defines the most negative value in the range of permitted values."
+        },
+        {
+          "name": "minlength",
+          "description": "The minimum number of characters a user can enter into the text field."
+        },
+        {
+          "name": "pattern",
+          "description": "A regular expression that the text field's value must match."
+        },
+        {
+          "name": "placeholder",
+          "description": "Defines the text displayed in the textfield when it has no value."
+        },
+        {
+          "name": "readonly",
+          "description": "Indicates whether or not a user should be able to edit the text field."
+        },
+        {
+          "name": "multiple",
+          "description": "Indicates that input accepts multiple email addresses."
+        },
+        {
+          "name": "step",
+          "description": "Returns or sets the element's step attribute."
+        },
         {
           "name": "type",
+          "description": "The `<input>` type to use, defaults to \"text\".",
           "values": [
-            { "name": "text" },
-            { "name": "email" },
-            { "name": "number" },
-            { "name": "password" },
-            { "name": "search" },
-            { "name": "tel" },
-            { "name": "url" },
-            { "name": "textarea" }
+            {
+              "name": "text"
+            },
+            {
+              "name": "email"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "password"
+            },
+            {
+              "name": "search"
+            },
+            {
+              "name": "tel"
+            },
+            {
+              "name": "url"
+            },
+            {
+              "name": "textarea"
+            }
           ]
         },
-        { "name": "autocomplete" },
-        { "name": "name" },
-        { "name": "form" }
+        {
+          "name": "autocomplete",
+          "description": "Describes what, if any, type of autocomplete functionality the input provides."
+        },
+        {
+          "name": "name",
+          "description": "The HTML name to use in form submission."
+        },
+        {
+          "name": "form",
+          "description": "The ID of the form to associate the text field with."
+        }
       ]
     }
-
   ]
 }

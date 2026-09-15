@@ -1,0 +1,263 @@
+// GENERATED - do not edit by hand.
+// Source: schema/css-tokens.ts  |  Regenerate: npm run generate
+{
+  "MD CSS --md-sys-color-primary": {
+    "prefix": "--md-sys-color-primary",
+    "body": [
+      "--md-sys-color-primary"
+    ],
+    "description": ""
+  },
+  "MD CSS --md-sys-color-on-primary": {
+    "prefix": "--md-sys-color-on-primary",
+    "body": [
+      "--md-sys-color-on-primary"
+    ],
+    "description": ""
+  },
+  "MD CSS --md-sys-color-primary-container": {
+    "prefix": "--md-sys-color-primary-container",
+    "body": [
+      "--md-sys-color-primary-container"
+    ],
+    "description": ""
+  },
+  "MD CSS --md-sys-color-on-primary-container": {
+    "prefix": "--md-sys-color-on-primary-container",
+    "body": [
+      "--md-sys-color-on-primary-container"
+    ],
+    "description": ""
+  },
+  "MD CSS --md-sys-color-secondary": {
+    "prefix": "--md-sys-color-secondary",
+    "body": [
+      "--md-sys-color-secondary"
+    ],
+    "description": ""
+  },
+  "MD CSS --md-sys-color-on-secondary": {
+    "prefix": "--md-sys-color-on-secondary",
+    "body": [
+      "--md-sys-color-on-secondary"
+    ],
+    "description": ""
+  },
+  "MD CSS --md-sys-color-secondary-container": {
+    "prefix": "--md-sys-color-secondary-container",
+    "body": [
+      "--md-sys-color-secondary-container"
+    ],
+    "description": ""
+  },
+  "MD CSS --md-sys-color-on-secondary-container": {
+    "prefix": "--md-sys-color-on-secondary-container",
+    "body": [
+      "--md-sys-color-on-secondary-container"
+    ],
+    "description": ""
+  },
+  "MD CSS --md-sys-color-tertiary": {
+    "prefix": "--md-sys-color-tertiary",
+    "body": [
+      "--md-sys-color-tertiary"
+    ],
+    "description": ""
+  },
+  "MD CSS --md-sys-color-on-tertiary": {
+    "prefix": "--md-sys-color-on-tertiary",
+    "body": [
+      "--md-sys-color-on-tertiary"
+    ],
+    "description": ""
+  },
+  "MD CSS --md-sys-color-tertiary-container": {
+    "prefix": "--md-sys-color-tertiary-container",
+    "body": [
+      "--md-sys-color-tertiary-container"
+    ],
+    "description": ""
+  },
+  "MD CSS --md-sys-color-on-tertiary-container": {
+    "prefix": "--md-sys-color-on-tertiary-container",
+    "body": [
+      "--md-sys-color-on-tertiary-container"
+    ],
+    "description": ""
+  },
+  "MD CSS --md-sys-color-error": {
+    "prefix": "--md-sys-color-error",
+    "body": [
+      "--md-sys-color-error"
+    ],
+    "description": ""
+  },
+  "MD CSS --md-sys-color-error-container": {
+    "prefix": "--md-sys-color-error-container",
+    "body": [
+      "--md-sys-color-error-container"
+    ],
+    "description": ""
+  },
+  "MD CSS --md-sys-color-on-error": {
+    "prefix": "--md-sys-color-on-error",
+    "body": [
+      "--md-sys-color-on-error"
+    ],
+    "description": ""
+  },
+  "MD CSS --md-sys-color-on-error-container": {
+    "prefix": "--md-sys-color-on-error-container",
+    "body": [
+      "--md-sys-color-on-error-container"
+    ],
+    "description": ""
+  },
+  "MD CSS --md-sys-color-background": {
+    "prefix": "--md-sys-color-background",
+    "body": [
+      "--md-sys-color-background"
+    ],
+    "description": ""
+  },
+  "MD CSS --md-sys-color-on-background": {
+    "prefix": "--md-sys-color-on-background",
+    "body": [
+      "--md-sys-color-on-background"
+    ],
+    "description": ""
+  },
+  "MD CSS --md-sys-color-surface": {
+    "prefix": "--md-sys-color-surface",
+    "body": [
+      "--md-sys-color-surface"
+    ],
+    "description": ""
+  },
+  "MD CSS --md-sys-color-on-surface": {
+    "prefix": "--md-sys-color-on-surface",
+    "body": [
+      "--md-sys-color-on-surface"
+    ],
+    "description": ""
+  },
+  "MD CSS --md-sys-color-surface-variant": {
+    "prefix": "--md-sys-color-surface-variant",
+    "body": [
+      "--md-sys-color-surface-variant"
+    ],
+    "description": ""
+  },
+  "MD CSS --md-sys-color-on-surface-variant": {
+    "prefix": "--md-sys-color-on-surface-variant",
+    "body": [
+      "--md-sys-color-on-surface-variant"
+    ],
+    "description": ""
+  },
+  "MD CSS --md-sys-color-outline": {
+    "prefix": "--md-sys-color-outline",
+    "body": [
+      "--md-sys-color-outline"
+    ],
+    "description": ""
+  },
+  "MD CSS --md-sys-color-inverse-on-surface": {
+    "prefix": "--md-sys-color-inverse-on-surface",
+    "body": [
+      "--md-sys-color-inverse-on-surface"
+    ],
+    "description": ""
+  },
+  "MD CSS --md-sys-color-inverse-surface": {
+    "prefix": "--md-sys-color-inverse-surface",
+    "body": [
+      "--md-sys-color-inverse-surface"
+    ],
+    "description": ""
+  },
+  "MD CSS --md-sys-color-inverse-primary": {
+    "prefix": "--md-sys-color-inverse-primary",
+    "body": [
+      "--md-sys-color-inverse-primary"
+    ],
+    "description": ""
+  },
+  "MD CSS --md-sys-color-shadow": {
+    "prefix": "--md-sys-color-shadow",
+    "body": [
+      "--md-sys-color-shadow"
+    ],
+    "description": ""
+  },
+  "MD CSS --md-sys-color-surface-tint": {
+    "prefix": "--md-sys-color-surface-tint",
+    "body": [
+      "--md-sys-color-surface-tint"
+    ],
+    "description": ""
+  },
+  "MD CSS --md-sys-color-outline-variant": {
+    "prefix": "--md-sys-color-outline-variant",
+    "body": [
+      "--md-sys-color-outline-variant"
+    ],
+    "description": ""
+  },
+  "MD CSS --md-sys-color-scrim": {
+    "prefix": "--md-sys-color-scrim",
+    "body": [
+      "--md-sys-color-scrim"
+    ],
+    "description": ""
+  },
+  "MD CSS --md-sys-color-surface-dim": {
+    "prefix": "--md-sys-color-surface-dim",
+    "body": [
+      "--md-sys-color-surface-dim"
+    ],
+    "description": ""
+  },
+  "MD CSS --md-sys-color-surface-bright": {
+    "prefix": "--md-sys-color-surface-bright",
+    "body": [
+      "--md-sys-color-surface-bright"
+    ],
+    "description": ""
+  },
+  "MD CSS --md-sys-color-surface-container-lowest": {
+    "prefix": "--md-sys-color-surface-container-lowest",
+    "body": [
+      "--md-sys-color-surface-container-lowest"
+    ],
+    "description": ""
+  },
+  "MD CSS --md-sys-color-surface-container-low": {
+    "prefix": "--md-sys-color-surface-container-low",
+    "body": [
+      "--md-sys-color-surface-container-low"
+    ],
+    "description": ""
+  },
+  "MD CSS --md-sys-color-surface-container": {
+    "prefix": "--md-sys-color-surface-container",
+    "body": [
+      "--md-sys-color-surface-container"
+    ],
+    "description": ""
+  },
+  "MD CSS --md-sys-color-surface-container-high": {
+    "prefix": "--md-sys-color-surface-container-high",
+    "body": [
+      "--md-sys-color-surface-container-high"
+    ],
+    "description": ""
+  },
+  "MD CSS --md-sys-color-surface-container-highest": {
+    "prefix": "--md-sys-color-surface-container-highest",
+    "body": [
+      "--md-sys-color-surface-container-highest"
+    ],
+    "description": ""
+  }
+}

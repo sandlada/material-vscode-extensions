@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "module": "nodenext",
+        "moduleResolution": "nodenext",
+        "target": "ESNext",
+        "lib": ["ESNext", "dom"],
+        "outDir": "tools-dist",
+        "rootDir": ".",
+        "strict": true,
+        "sourceMap": false,
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "types": ["node"]
+    },
+    "include": [
+        "schema",
+        "scripts"
+    ]
+}
