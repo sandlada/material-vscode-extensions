@@ -502,6 +502,10 @@
         {
           "name": "label",
           "description": "The label of the chip."
+        },
+        {
+          "name": "has-icon",
+          "description": "Only needed for SSR. Add this attribute when a chip has a `slot=\"icon\"` to avoid a Flash Of Unstyled Content."
         }
       ]
     },
@@ -536,6 +540,14 @@
         },
         {
           "name": "aria-label-remove"
+        },
+        {
+          "name": "has-icon",
+          "description": "Only needed for SSR. Add this attribute when a chip has a `slot=\"icon\"` to avoid a Flash Of Unstyled Content."
+        },
+        {
+          "name": "has-selected-icon",
+          "description": "Only needed for SSR. Add this attribute when a filter chip has a `slot=\"selected-icon\"` to avoid a Flash Of Unstyled Content."
         }
       ]
     },
@@ -592,6 +604,10 @@
         },
         {
           "name": "aria-label-remove"
+        },
+        {
+          "name": "has-icon",
+          "description": "Only needed for SSR. Add this attribute when a chip has a `slot=\"icon\"` to avoid a Flash Of Unstyled Content."
         }
       ]
     },
@@ -643,6 +659,10 @@
         {
           "name": "label",
           "description": "The label of the chip."
+        },
+        {
+          "name": "has-icon",
+          "description": "Only needed for SSR. Add this attribute when a chip has a `slot=\"icon\"` to avoid a Flash Of Unstyled Content."
         }
       ]
     },
@@ -1492,6 +1512,10 @@
         {
           "name": "selected",
           "description": "Sets the item in the selected visual state when a submenu is opened."
+        },
+        {
+          "name": "typeahead-text",
+          "description": "The text that is selectable via typeahead. If not set, defaults to the innerText of the item slotted into the `\"headline\"` slot."
         }
       ]
     },
@@ -1969,6 +1993,14 @@
         {
           "name": "value",
           "description": "The form value associated with the Select Option."
+        },
+        {
+          "name": "typeahead-text",
+          "description": "The text that is selectable via typeahead. If not set, defaults to the innerText of the item slotted into the `\"headline\"` slot."
+        },
+        {
+          "name": "display-text",
+          "description": "The text that is displayed in the select field when selected. If not set, defaults to the textContent of the item slotted into the `\"headline\"` slot."
         }
       ]
     },
@@ -2114,10 +2146,6 @@
           "name": "inline-icon"
         },
         {
-          "name": "md-tab",
-          "description": "Indicates that the element is a tab for the parent `<md-tabs>`."
-        },
-        {
           "name": "active",
           "description": "Whether or not the tab is selected."
         },
@@ -2135,10 +2163,6 @@
       "name": "md-secondary-tab",
       "description": "Secondary tabs are used within a content area to further separate related content and establish hierarchy.",
       "attributes": [
-        {
-          "name": "md-tab",
-          "description": "Indicates that the element is a tab for the parent `<md-tabs>`."
-        },
         {
           "name": "active",
           "description": "Whether or not the tab is selected."
@@ -2256,6 +2280,10 @@
         {
           "name": "step",
           "description": "Returns or sets the element's step attribute."
+        },
+        {
+          "name": "no-spinner",
+          "description": "When true, hide the spinner for `type=\"number\"` text fields."
         },
         {
           "name": "type",
@@ -2404,6 +2432,10 @@
         {
           "name": "step",
           "description": "Returns or sets the element's step attribute."
+        },
+        {
+          "name": "no-spinner",
+          "description": "When true, hide the spinner for `type=\"number\"` text fields."
         },
         {
           "name": "type",

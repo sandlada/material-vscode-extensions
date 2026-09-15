@@ -15,7 +15,7 @@
 
 - `npm run compile`：`tsc -p ./`，`src/` → `out/`（`vscode:prepublish` 會自動跑）。根 `tsconfig.json` 的 `exclude` 已含 `schema`、`scripts`、`tools-dist`，工具鏈不會污染擴展構建。
 - `npm run generate`：從 `schema/` 寫出 `snippets/*.code-snippets` 與 `custom-data/html.html-data.json`（另有全元件 `md-components` 索引）；新 family 在 `schema/` 加檔註冊後跑它即可。
-- `npm run generate:check`：比對產出與檔案是否一致（有漂移就 exit 1）；`--stdout` 可印 JSON 審閱不寫檔。
+- `npm run generate:check`：比對產出與檔案是否一致（有漂移就 exit 1）；`npm run generate:stdout` 可印 JSON 審閱不寫檔。
 - `npm run verify`：測落地檔案——shape、`$` placeholder 語法、tabstop 展開（如 `:for` → `for="controlId"`）、開閉標籤配對、schema 覆蓋率。
 - `npm run watch`：開發時監看編譯。
 - F5（`.vscode/launch.json` → Extension Host）：UI 層手動驗證；邏輯層用 `verify` 自動測。
@@ -27,7 +27,7 @@
 - `out/` 已被 commit，不要手改，只改 `src/` 後跑 `compile`。
 - `snippets.code-snippets`、`html.html-data.json` 是產生器寫出的（檔頭有 GENERATED 標記）：不要手改，改 `schema/` 後跑 `generate`；`--check` 會擋漂移。
 - 絕對不要加回 `contributes.css`：該命名空間已被上游 proposed-API 的 CSS extension point 佔用，一加就會跳 `The 'css' contribution point is proposed API` 告警（microsoft/vscode#287871）。CSS token 走 `language: css` 的 snippets。
-- 資料來源：`@material/web` 在 `devDependencies`，`node_modules/@material/web` 可用。但上游 `custom-elements.json` 的 `attributes` 是空的，真正的 prop 定義在各元件 `internal/*.d.ts` 的 JSDoc；`schema/` 是手寫精選，`.d.ts` 只當撰寫參考。attr 名以編譯後 `.js` 的 `attribute:` 宣告為準（如 dialog 的 `returnValue` 是 `attribute: false` 就不能收；小心 JSDoc 示例代碼裡的假 `@property`）。只收使用者會手寫的 attr：readonly 自標識（如 `md-tab`、`isListItem`、`isMenuItem`）與 `@deprecated`（如 tab 的 `selected`，用 `active`）不收。
+- 資料來源以 `node_modules/@material/web`（已安裝版）為準，npm 發佈版比 Github main 舊，不要拿 main 的新 attr（如 `rel`）往回填。但上游 `custom-elements.json` 的 `attributes` 是空的，真正的 prop 定義在各元件 `internal/*.d.ts` 的 JSDoc；`schema/` 是手寫精選，`.d.ts` 只當撰寫參考。attr 名以編譯後 `.js` 的 `attribute:` 宣告為準（如 dialog 的 `returnValue` 是 `attribute: false` 就不能收；小心 JSDoc 示例代碼裡的假 `@property`）。只收使用者會手寫的 attr：readonly 自標識（如 `md-tab`、`isListItem`、`isMenuItem`）與 `@deprecated`（如 tab 的 `selected`，用 `active`）不收。
 - 每個組件 schema 檔頭註釋用 `{@link <github tree url>}` 標上游地址（如 focus-ring → `material-components/material-web/tree/main/focus`）。
 - 多 tag 共用 attr 用 `tagTemplate: 'md-{variant}-x'` + `variants` 群組展開（button、icon-button、text-field、select）；attr 各異的 tag 各寫一條 entry（如 chips、menu、tabs），不要硬湊共用。
 - `baseBody` 只放元件自身結構（自身 slot、inner tabstop）；override 亦同，不放其他 md 家族。

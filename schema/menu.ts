@@ -145,16 +145,6 @@ export const menuItem: ComponentSchema = {
             values: [{ name: '_blank' }, { name: '_parent' }, { name: '_self' }, { name: '_top' }],
         },
         {
-            name: 'rel',
-            description: 'Sets the underlying `HTMLAnchorElement`\'s `rel` attribute when `href` is set.',
-            kind: 'string',
-        },
-        {
-            name: 'referrerpolicy',
-            description: 'Sets the underlying `HTMLAnchorElement`\'s `referrerpolicy` attribute when `href` is set.',
-            kind: 'string',
-        },
-        {
             name: 'keep-open',
             description: 'Keeps the menu open if clicked or keyboard selected.',
             kind: 'boolean',

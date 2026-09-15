@@ -58,16 +58,6 @@ export const button: ComponentSchema = {
             kind: 'string',
         },
         {
-            name: 'rel',
-            description: 'Sets the underlying `HTMLAnchorElement`\'s `rel` attribute when `href` is set.',
-            kind: 'string',
-        },
-        {
-            name: 'referrerpolicy',
-            description: 'Sets the underlying `HTMLAnchorElement`\'s `referrerpolicy` attribute when `href` is set.',
-            kind: 'string',
-        },
-        {
             name: 'trailing-icon',
             description: 'Whether to render the icon at the inline end of the label rather than the start.',
             kind: 'boolean',

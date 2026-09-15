@@ -64,6 +64,7 @@
     "compile": "tsc -p ./",
     "generate": "tsc -p tsconfig.tools.json && node tools-dist/scripts/generate.js --write",
     "generate:check": "tsc -p tsconfig.tools.json && node tools-dist/scripts/generate.js --check",
+    "generate:stdout": "tsc -p tsconfig.tools.json && node tools-dist/scripts/generate.js --stdout",
     "verify": "tsc -p tsconfig.tools.json && node tools-dist/scripts/verify.js",
     "watch": "tsc -watch -p ./"
   },

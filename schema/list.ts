@@ -52,16 +52,6 @@ export const listItem: ComponentSchema = {
             kind: 'enum',
             values: [{ name: '_blank' }, { name: '_parent' }, { name: '_self' }, { name: '_top' }],
         },
-        {
-            name: 'rel',
-            description: 'Sets the underlying `HTMLAnchorElement`\'s `rel` attribute when `href` is set.',
-            kind: 'string',
-        },
-        {
-            name: 'referrerpolicy',
-            description: 'Sets the underlying `HTMLAnchorElement`\'s `referrerpolicy` attribute when `href` is set.',
-            kind: 'string',
-        },
     ],
     snippetOverrides: [
         {

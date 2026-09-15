@@ -382,10 +382,17 @@
     ],
     "description": "The label of the chip."
   },
+  "MD Assist Chip Has Icon": {
+    "prefix": "md-assist-chip:has-icon",
+    "body": [
+      "<md-assist-chip has-icon></md-assist-chip>"
+    ],
+    "description": "Only needed for SSR. Add this attribute when a chip has a `slot=\"icon\"` to avoid a Flash Of Unstyled Content."
+  },
   "MD Assist Chip Full Properties": {
     "prefix": "md-assist-chip:full-properties",
     "body": [
-      "<md-assist-chip ${1:elevated} href=\"${2:}\" download=\"${3:}\" target=\"${4|_blank,_parent,_self,_top|}\" ${5:disabled} ${6:soft-disabled} ${7:always-focusable} label=\"${8:}\"></md-assist-chip>"
+      "<md-assist-chip ${1:elevated} href=\"${2:}\" download=\"${3:}\" target=\"${4|_blank,_parent,_self,_top|}\" ${5:disabled} ${6:soft-disabled} ${7:always-focusable} label=\"${8:}\" ${9:has-icon}></md-assist-chip>"
     ],
     "description": ""
   },
@@ -452,10 +459,24 @@
     ],
     "description": ""
   },
+  "MD Filter Chip Has Icon": {
+    "prefix": "md-filter-chip:has-icon",
+    "body": [
+      "<md-filter-chip has-icon></md-filter-chip>"
+    ],
+    "description": "Only needed for SSR. Add this attribute when a chip has a `slot=\"icon\"` to avoid a Flash Of Unstyled Content."
+  },
+  "MD Filter Chip Has Selected Icon": {
+    "prefix": "md-filter-chip:has-selected-icon",
+    "body": [
+      "<md-filter-chip has-selected-icon></md-filter-chip>"
+    ],
+    "description": "Only needed for SSR. Add this attribute when a filter chip has a `slot=\"selected-icon\"` to avoid a Flash Of Unstyled Content."
+  },
   "MD Filter Chip Full Properties": {
     "prefix": "md-filter-chip:full-properties",
     "body": [
-      "<md-filter-chip ${1:elevated} ${2:removable} ${3:selected} ${4:disabled} ${5:soft-disabled} ${6:always-focusable} label=\"${7:}\" aria-label-remove=\"${8:}\"></md-filter-chip>"
+      "<md-filter-chip ${1:elevated} ${2:removable} ${3:selected} ${4:disabled} ${5:soft-disabled} ${6:always-focusable} label=\"${7:}\" aria-label-remove=\"${8:}\" ${9:has-icon} ${10:has-selected-icon}></md-filter-chip>"
     ],
     "description": ""
   },
@@ -536,10 +557,17 @@
     ],
     "description": ""
   },
+  "MD Input Chip Has Icon": {
+    "prefix": "md-input-chip:has-icon",
+    "body": [
+      "<md-input-chip has-icon></md-input-chip>"
+    ],
+    "description": "Only needed for SSR. Add this attribute when a chip has a `slot=\"icon\"` to avoid a Flash Of Unstyled Content."
+  },
   "MD Input Chip Full Properties": {
     "prefix": "md-input-chip:full-properties",
     "body": [
-      "<md-input-chip ${1:avatar} href=\"${2:}\" target=\"${3|_blank,_parent,_self,_top|}\" ${4:remove-only} ${5:selected} ${6:disabled} ${7:soft-disabled} ${8:always-focusable} label=\"${9:}\" aria-label-remove=\"${10:}\"></md-input-chip>"
+      "<md-input-chip ${1:avatar} href=\"${2:}\" target=\"${3|_blank,_parent,_self,_top|}\" ${4:remove-only} ${5:selected} ${6:disabled} ${7:soft-disabled} ${8:always-focusable} label=\"${9:}\" aria-label-remove=\"${10:}\" ${11:has-icon}></md-input-chip>"
     ],
     "description": ""
   },
@@ -606,10 +634,17 @@
     ],
     "description": "The label of the chip."
   },
+  "MD Suggestion Chip Has Icon": {
+    "prefix": "md-suggestion-chip:has-icon",
+    "body": [
+      "<md-suggestion-chip has-icon></md-suggestion-chip>"
+    ],
+    "description": "Only needed for SSR. Add this attribute when a chip has a `slot=\"icon\"` to avoid a Flash Of Unstyled Content."
+  },
   "MD Suggestion Chip Full Properties": {
     "prefix": "md-suggestion-chip:full-properties",
     "body": [
-      "<md-suggestion-chip ${1:elevated} href=\"${2:}\" download=\"${3:}\" target=\"${4|_blank,_parent,_self,_top|}\" ${5:disabled} ${6:soft-disabled} ${7:always-focusable} label=\"${8:}\"></md-suggestion-chip>"
+      "<md-suggestion-chip ${1:elevated} href=\"${2:}\" download=\"${3:}\" target=\"${4|_blank,_parent,_self,_top|}\" ${5:disabled} ${6:soft-disabled} ${7:always-focusable} label=\"${8:}\" ${9:has-icon}></md-suggestion-chip>"
     ],
     "description": ""
   },
@@ -1355,10 +1390,17 @@
     ],
     "description": "Sets the item in the selected visual state when a submenu is opened."
   },
+  "MD Menu Item Typeahead Text": {
+    "prefix": "md-menu-item:typeahead-text",
+    "body": [
+      "<md-menu-item typeahead-text=\"${1}\"></md-menu-item>"
+    ],
+    "description": "The text that is selectable via typeahead. If not set, defaults to the innerText of the item slotted into the `\"headline\"` slot."
+  },
   "MD Menu Item Full Properties": {
     "prefix": "md-menu-item:full-properties",
     "body": [
-      "<md-menu-item ${1:disabled} type=\"${2|menuitem,option,button,link|}\" href=\"${3:}\" target=\"${4|_blank,_parent,_self,_top|}\" ${5:keep-open} ${6:selected}></md-menu-item>"
+      "<md-menu-item ${1:disabled} type=\"${2|menuitem,option,button,link|}\" href=\"${3:}\" target=\"${4|_blank,_parent,_self,_top|}\" ${5:keep-open} ${6:selected} typeahead-text=\"${7:}\"></md-menu-item>"
     ],
     "description": ""
   },
@@ -1984,10 +2026,24 @@
     ],
     "description": "The form value associated with the Select Option."
   },
+  "MD Select Option Typeahead Text": {
+    "prefix": "md-select-option:typeahead-text",
+    "body": [
+      "<md-select-option typeahead-text=\"${1}\"></md-select-option>"
+    ],
+    "description": "The text that is selectable via typeahead. If not set, defaults to the innerText of the item slotted into the `\"headline\"` slot."
+  },
+  "MD Select Option Display Text": {
+    "prefix": "md-select-option:display-text",
+    "body": [
+      "<md-select-option display-text=\"${1}\"></md-select-option>"
+    ],
+    "description": "The text that is displayed in the select field when selected. If not set, defaults to the textContent of the item slotted into the `\"headline\"` slot."
+  },
   "MD Select Option Full Properties": {
     "prefix": "md-select-option:full-properties",
     "body": [
-      "<md-select-option ${1:disabled} ${2:selected} value=\"${3:}\"></md-select-option>"
+      "<md-select-option ${1:disabled} ${2:selected} value=\"${3:}\" typeahead-text=\"${4:}\" display-text=\"${5:}\"></md-select-option>"
     ],
     "description": ""
   },
@@ -2273,13 +2329,6 @@
     ],
     "description": ""
   },
-  "MD Primary Tab Md Tab": {
-    "prefix": "md-primary-tab:md-tab",
-    "body": [
-      "<md-primary-tab md-tab></md-primary-tab>"
-    ],
-    "description": "Indicates that the element is a tab for the parent `<md-tabs>`."
-  },
   "MD Primary Tab Active": {
     "prefix": "md-primary-tab:active",
     "body": [
@@ -2304,7 +2353,7 @@
   "MD Primary Tab Full Properties": {
     "prefix": "md-primary-tab:full-properties",
     "body": [
-      "<md-primary-tab ${1:inline-icon} ${2:md-tab} ${3:active} ${4:has-icon} ${5:icon-only}></md-primary-tab>"
+      "<md-primary-tab ${1:inline-icon} ${2:active} ${3:has-icon} ${4:icon-only}></md-primary-tab>"
     ],
     "description": ""
   },
@@ -2314,13 +2363,6 @@
       "<md-secondary-tab></md-secondary-tab>"
     ],
     "description": "Secondary tabs are used within a content area to further separate related content and establish hierarchy."
-  },
-  "MD Secondary Tab Md Tab": {
-    "prefix": "md-secondary-tab:md-tab",
-    "body": [
-      "<md-secondary-tab md-tab></md-secondary-tab>"
-    ],
-    "description": "Indicates that the element is a tab for the parent `<md-tabs>`."
   },
   "MD Secondary Tab Active": {
     "prefix": "md-secondary-tab:active",
@@ -2346,7 +2388,7 @@
   "MD Secondary Tab Full Properties": {
     "prefix": "md-secondary-tab:full-properties",
     "body": [
-      "<md-secondary-tab ${1:md-tab} ${2:active} ${3:has-icon} ${4:icon-only}></md-secondary-tab>"
+      "<md-secondary-tab ${1:active} ${2:has-icon} ${3:icon-only}></md-secondary-tab>"
     ],
     "description": ""
   },
@@ -2533,6 +2575,13 @@
     ],
     "description": "Returns or sets the element's step attribute."
   },
+  "MD Text Field No Spinner": {
+    "prefix": "md-text-field:no-spinner",
+    "body": [
+      "<md-${1|filled,outlined|}-text-field no-spinner></md-${1|filled,outlined|}-text-field>"
+    ],
+    "description": "When true, hide the spinner for `type=\"number\"` text fields."
+  },
   "MD Text Field Type": {
     "prefix": "md-text-field:type",
     "body": [
@@ -2564,7 +2613,7 @@
   "MD Text Field Full Properties": {
     "prefix": "md-text-field:full-properties",
     "body": [
-      "<md-${1|filled,outlined|}-text-field ${2:disabled} ${3:error} error-text=\"${4:}\" label=\"${5:}\" ${6:no-asterisk} ${7:required} value=\"${8:}\" prefix-text=\"${9:}\" suffix-text=\"${10:}\" ${11:has-leading-icon} ${12:has-trailing-icon} supporting-text=\"${13:}\" text-direction=\"${14:}\" rows=\"${15:}\" cols=\"${16:}\" inputmode=\"${17:}\" max=\"${18:}\" maxlength=\"${19:}\" min=\"${20:}\" minlength=\"${21:}\" pattern=\"${22:}\" placeholder=\"${23:}\" ${24:readonly} ${25:multiple} step=\"${26:}\" type=\"${27|text,email,number,password,search,tel,url,textarea|}\" autocomplete=\"${28:}\" name=\"${29:}\" form=\"${30:}\"></md-${1|filled,outlined|}-text-field>"
+      "<md-${1|filled,outlined|}-text-field ${2:disabled} ${3:error} error-text=\"${4:}\" label=\"${5:}\" ${6:no-asterisk} ${7:required} value=\"${8:}\" prefix-text=\"${9:}\" suffix-text=\"${10:}\" ${11:has-leading-icon} ${12:has-trailing-icon} supporting-text=\"${13:}\" text-direction=\"${14:}\" rows=\"${15:}\" cols=\"${16:}\" inputmode=\"${17:}\" max=\"${18:}\" maxlength=\"${19:}\" min=\"${20:}\" minlength=\"${21:}\" pattern=\"${22:}\" placeholder=\"${23:}\" ${24:readonly} ${25:multiple} step=\"${26:}\" ${27:no-spinner} type=\"${28|text,email,number,password,search,tel,url,textarea|}\" autocomplete=\"${29:}\" name=\"${30:}\" form=\"${31:}\"></md-${1|filled,outlined|}-text-field>"
     ],
     "description": ""
   },

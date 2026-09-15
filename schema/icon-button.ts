@@ -58,16 +58,6 @@ export const iconButton: ComponentSchema = {
             kind: 'string',
         },
         {
-            name: 'rel',
-            description: 'Sets the underlying `HTMLAnchorElement`\'s `rel` attribute when `href` is set.',
-            kind: 'string',
-        },
-        {
-            name: 'referrerpolicy',
-            description: 'Sets the underlying `HTMLAnchorElement`\'s `referrerpolicy` attribute when `href` is set.',
-            kind: 'string',
-        },
-        {
             name: 'target',
             description: 'Sets the underlying HTMLAnchorElement\'s target attribute.',
             kind: 'enum',
