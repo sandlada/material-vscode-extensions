@@ -2,7 +2,7 @@ import * as assert from 'assert'
 import * as fs from 'fs'
 import * as path from 'path'
 import { components } from '../schema'
-import { cssTokens } from '../schema/css-tokens'
+import { cssTokens } from '../schema/tokens'
 import { buildCssSnippets, buildHtmlTags, buildSnippets } from './generate'
 
 // Validates the WRITTEN artifacts on disk (not the in-memory builder output):
@@ -148,9 +148,27 @@ function checkHtmlDataFile(root: string): void {
 function checkCssSnippetsFile(root: string): void {
     const raw = fs.readFileSync(path.join(root, 'packages/material-design-css-snippets/snippets/css.code-snippets'), 'utf8')
     const data = parseJsonc(raw) as Record<string, { prefix: unknown; body: unknown; description: unknown }>
-    assert.deepStrictEqual(data, buildCssSnippets(), 'css snippets differ from generator output')
-    assert.deepStrictEqual(Object.keys(data).length, cssTokens.length, 'css token count mismatch')
-    console.log(`css snippets OK: ${cssTokens.length} tokens`)
+    const expected = buildCssSnippets()
+    assert.deepStrictEqual(data, expected, 'css snippets differ from generator output')
+    assert.deepStrictEqual(Object.keys(data).length, Object.keys(expected).length, 'css snippet count mismatch')
+    const seen = new Map<string, string>()
+    for (const [key, def] of Object.entries(data)) {
+        const prefixes = Array.isArray(def.prefix) ? def.prefix : [def.prefix]
+        for (const p of prefixes) {
+            if (typeof p !== 'string' || p.length === 0) fail(`${key}: prefix must be a non-empty string`)
+            const prev = seen.get(p)
+            if (prev !== undefined) fail(`duplicate prefix ${JSON.stringify(p)} in ${prev} and ${key}`)
+            seen.set(p, key)
+        }
+        if (key.endsWith(' with fallback') && !String(prefixes[0]).endsWith(':fallback')) {
+            fail(`${key}: fallback snippet prefix must end with :fallback`)
+        }
+        if (key.endsWith(' value only') && !String(prefixes[0]).endsWith(':value')) {
+            fail(`${key}: value-only snippet prefix must end with :value`)
+        }
+    }
+    const fallbackCount = cssTokens.filter((t) => typeof t !== 'string').length
+    console.log(`css snippets OK: ${cssTokens.length} tokens, ${Object.keys(data).length} entries (${fallbackCount} with var() fallback + value only), ${seen.size} unique prefixes`)
 }
 
 function main(): void {

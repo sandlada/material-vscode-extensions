@@ -1,11 +1,11 @@
 # AGENTS.md
 
-> Monorepo（npm workspaces）：`packages/material-web-snippets`（`@material/web` 的 `md-*` Tag 補全與 `tag:attr` Snippets，有程式碼）＋ `packages/material-design-css-snippets`（`--md-sys-color-*` token Snippets，無程式碼）。兩包獨立發佈、獨立版本；`schema/`＋`scripts/` 在根目錄共用。
+> Monorepo（npm workspaces）：`packages/material-web-snippets`（`@material/web` 的 `md-*` Tag 補全與 `tag:attr` Snippets，有程式碼）＋ `packages/material-design-css-snippets`（設計 token Snippets：color、palette、typescale、shape、motion、space，無程式碼）。兩包獨立發佈、獨立版本；`schema/`＋`scripts/` 在根目錄共用。`schema/` 下分 `components/`（各 family 一檔）與 `tokens/`（各 token 群組一檔，經 `tokens/index.ts` 導出）。
 
 ## 三種補全機制（改 `schema/` 後在根目錄跑 `generate` 同步產出）
 
 - `packages/material-web-snippets/snippets/snippets.code-snippets`：HTML 系 Snippet 本體，`package.json` 同時掛給 `html`、`javascriptreact`、`typescriptreact`（同一檔案，不另建檔），`md-button` → `<md-button></md-button>` 即在此定義。
-- `packages/material-design-css-snippets/snippets/css.code-snippets`：`language: css` 的 `--md-sys-color-*` token 補全（由 `schema/css-tokens.ts` 產出，一 token 一條，body 即 token 本體）。
+- `packages/material-design-css-snippets/snippets/css.code-snippets`：`language: css` 的設計 token 補全（由 `schema/tokens/` 產出；每群組一檔，color 與 palette 的 fallback 取自根目錄 `color-mcu-mapping.css` 的 MCU 選取值；每 token 各有原始＋`var(--token, fallback)`＋只取值三條）。
 - `packages/material-web-snippets/custom-data/html.html-data.json`：Tag + attributes 定義，提供 tag 提示與 attr 提示（該包 `package.json` → `contributes.html.customData`）。
 - `packages/material-web-snippets/src/SnippetsTree.ts`：ActivityBar「Material Web Components」TreeView 的插入清單，`src/extension.ts` 只負責註冊與插入文字。
 

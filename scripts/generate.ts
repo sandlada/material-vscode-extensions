@@ -1,8 +1,8 @@
 import * as fs from 'fs'
 import * as path from 'path'
-import { ComponentAttr, ComponentSchema } from '../schema/types'
+import { ComponentAttr, ComponentSchema } from '../schema/components/types'
 import { components } from '../schema'
-import { cssTokens } from '../schema/css-tokens'
+import { cssTokens } from '../schema/tokens'
 
 export interface SnippetDef {
     prefix: string | string[]
@@ -187,22 +187,45 @@ function buildHtmlDataFile(): string {
     return JSON.stringify({ version: 1.1, tags }, null, 2) + '\n'
 }
 
-/** snippets/css.code-snippets entries: one per system color token (body is the bare token,
- * matching the old css.customData property-name completion) */
+/** snippets/css.code-snippets entries: three forms per design token —
+ * var() (`var(--token)`), var() with fallback (`var(--token, fallback)`),
+ * and value only (`fallback`). All three bodies are directly usable as CSS
+ * values. The three forms share one token name, so their prefixes use the
+ * HTML-side `prefix:variant` convention to stay unique in the completion
+ * list: `--token`, `--token:fallback`, `--token:value`. */
 export function buildCssSnippets(): Record<string, SnippetDef> {
     const out: Record<string, SnippetDef> = {}
     for (const token of cssTokens) {
-        out[`MD CSS ${token}`] = {
-            prefix: token,
-            body: [token],
+        if (typeof token === 'string') {
+            out[`MD CSS ${token}`] = {
+                prefix: token,
+                body: [`var(${token})`],
+                description: '',
+            }
+            continue
+        }
+        out[`MD CSS ${token.name}`] = {
+            prefix: token.name,
+            body: [`var(${token.name})`],
             description: '',
+        }
+        const invocation = `var(${token.name}, ${token.fallback})`
+        out[`MD CSS ${token.name} with fallback`] = {
+            prefix: `${token.name}:fallback`,
+            body: [invocation],
+            description: `Fallback: ${token.fallback}`,
+        }
+        out[`MD CSS ${token.name} value only`] = {
+            prefix: `${token.name}:value`,
+            body: [token.fallback],
+            description: 'Value only',
         }
     }
     return out
 }
 
 function buildCssSnippetsFile(): string {
-    const header = ['// GENERATED - do not edit by hand.', '// Source: schema/css-tokens.ts  |  Regenerate: npm run generate', ''].join('\n')
+    const header = ['// GENERATED - do not edit by hand.', '// Source: schema/tokens/  |  Regenerate: npm run generate', ''].join('\n')
     return header + JSON.stringify(buildCssSnippets(), null, 2) + '\n'
 }
 

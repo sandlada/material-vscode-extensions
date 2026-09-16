@@ -1,28 +1,34 @@
 {
-  "private": true,
-  "name": "material-vscode-extension-monorepo",
-  "version": "0.0.0",
-  "description": "Monorepo for the Material Web Snippets and Material Design CSS Snippets VS Code extensions.",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/sandlada/material-vscode-extensions"
-  },
-  "workspaces": [
-    "packages/*"
-  ],
-  "scripts": {
-    "compile": "npm run compile -w packages/material-web-snippets",
-    "watch": "npm run watch -w packages/material-web-snippets",
-    "generate": "tsc -p tsconfig.tools.json && node tools-dist/scripts/generate.js --write",
-    "generate:check": "tsc -p tsconfig.tools.json && node tools-dist/scripts/generate.js --check",
-    "generate:stdout": "tsc -p tsconfig.tools.json && node tools-dist/scripts/generate.js --stdout",
-    "verify": "tsc -p tsconfig.tools.json && node tools-dist/scripts/verify.js"
-  },
-  "devDependencies": {
-    "@material/web": "^2.5.0",
-    "@types/node": "^26.5.1",
-    "@types/vscode": "^1.137.0",
-    "@vscode/vsce": "^4.0.0",
-    "typescript": "^7.0.2"
-  }
+    "author": "Kai Orion & Sandlada",
+    "bugs": {
+        "url": "https://github.com/sandlada/material-vscode-extensions/issues"
+    },
+    "description": "Monorepo for the Material Web Snippets and Material Design CSS Snippets VS Code extensions (md-* components + Material Design 3 CSS design tokens: color, palette, typescale, shape, motion, space).",
+    "devDependencies": {
+        "@material/web": "^2.5.0",
+        "@types/node": "^26.5.1",
+        "@types/vscode": "^1.137.0",
+        "@vscode/vsce": "^4.0.0",
+        "typescript": "^7.0.2"
+    },
+    "homepage": "https://github.com/sandlada/material-vscode-extensions",
+    "license": "MIT",
+    "name": "material-vscode-extension-monorepo",
+    "private": true,
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/sandlada/material-vscode-extensions"
+    },
+    "scripts": {
+        "compile": "npm run compile -w packages/material-web-snippets",
+        "generate": "tsc -p tsconfig.tools.json && node tools-dist/scripts/generate.js --write",
+        "generate:check": "tsc -p tsconfig.tools.json && node tools-dist/scripts/generate.js --check",
+        "generate:stdout": "tsc -p tsconfig.tools.json && node tools-dist/scripts/generate.js --stdout",
+        "verify": "tsc -p tsconfig.tools.json && node tools-dist/scripts/verify.js",
+        "watch": "npm run watch -w packages/material-web-snippets"
+    },
+    "version": "0.0.0",
+    "workspaces": [
+        "packages/*"
+    ]
 }
