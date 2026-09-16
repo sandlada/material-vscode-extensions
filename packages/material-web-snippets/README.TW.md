@@ -9,42 +9,42 @@
 ![Visual Studio Marketplace Installs](https://img.shields.io/visual-studio-marketplace/i/sandlada.material-web-snippets)
 ![Visual Studio Marketplace Version (including pre-releases)](https://img.shields.io/visual-studio-marketplace/v/sandlada.material-web-snippets)
 
-[Traditional Chinese](./README.TW.md)
+[English](./README.md)
 
 </div>
 
-Snippets for [Material Design 3 (`@material/web`)](https://github.com/material-components/material-web) Web Components in Visual Studio Code.
+為 [Material Design 3（`@material/web`）](https://github.com/material-components/material-web) Web Components 提供的 Visual Studio Code Snippets 擴展。
 
-## Features
+## 功能
 
-- **HTML snippets (368):** type `md-` to insert a component, e.g. `md-filled-button` → `<md-filled-button></md-filled-button>`.
-- **Attribute variants (309):** `md-<component>:<attr>` inserts the component with that attribute, e.g. `md-button:disabled`. Variant families (button, icon-button, text-field, select) let you pick `elevated / filled / outlined / …` with Tab.
-- **Full index:** `md-components` lists every available component.
-- **Tag + attribute IntelliSense:** 54 tags / 405 attributes via HTML custom data (tag hover docs and attribute suggestions in HTML files).
-- **Sidebar panel:** the *Material Web Components* activity-bar view inserts any component with one click.
+- **HTML snippets（368 條）：**輸入 `md-` 即可插入元件，例如 `md-filled-button` → `<md-filled-button></md-filled-button>`。
+- **屬性變體（309 條）：**`md-<component>:<attr>` 會帶上該屬性插入元件（例如 `md-button:disabled`）；同 family 的變體可用 Tab 切換（如 elevated / filled / outlined）。
+- **完整索引：**`md-components` 可列出所有可用元件。
+- **標籤＋屬性 IntelliSense：**透過 HTML custom data 提供 54 個標籤 / 405 個屬性的標籤提示與屬性建議（HTML 檔）。
+- **側邊欄面板：***Material Web Components* 活動列檢視可一點即插入任一元件。
 
-| Properties                                                                                                                                                    | Pick a variant                                                                                                                                                 | Full components                                                                                                                                                |
+| 常用屬性                                                                                                                                                      | 選擇變體                                                                                                                                                       | 完整元件                                                                                                                                                       |
 | :------------------------------------------------------------------------------------------------------------------------------------------------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | ![properties](https://raw.githubusercontent.com/sandlada/material-vscode-extensions/main/packages/material-web-snippets/src/images/resources/intro-fab.png) | ![variants](https://raw.githubusercontent.com/sandlada/material-vscode-extensions/main/packages/material-web-snippets/src/images/resources/intro-button.png) | ![components](https://raw.githubusercontent.com/sandlada/material-vscode-extensions/main/packages/material-web-snippets/src/images/resources/intro-code.png) |
 
-## Usage
+## 用法
 
-| Prefix             | Expands to                                    |
-| :----------------- | :-------------------------------------------- |
-| `md-filled-button` | `<md-filled-button></md-filled-button>`       |
-| `md-button:disabled` | variant picker + `disabled` attribute       |
-| `md-text-field:type` | text-field with `type="…"`                  |
-| `md-components`    | index of all components                       |
+| 前綴                 | 展開結果                              |
+| :------------------- | :------------------------------------ |
+| `md-filled-button`   | `<md-filled-button></md-filled-button>` |
+| `md-button:disabled` | 變體選擇＋`disabled` 屬性             |
+| `md-text-field:type` | 帶 `type` 的 text-field               |
+| `md-components`      | 所有元件索引                          |
 
-Supported languages: `html`, `javascriptreact` (JSX), `typescriptreact` (TSX).
+支援的語言：`html`、`javascriptreact`（JSX）、`typescriptreact`（TSX）。
 
-> Note: tag / attribute IntelliSense (custom data) only works in HTML files; in JSX/TSX the `md-*` snippets still work, but attribute suggestions do not.
+> 注意：標籤／屬性 IntelliSense（custom data）僅在 HTML 檔生效；JSX/TSX 中 `md-*` snippets 照常用，唯獨沒有屬性建議。
 
-## Support status
+## 支援狀況
 
-Coverage follows the installed `@material/web` version; only attributes users actually write are included (readonly markers and `@deprecated` aliases are excluded).
+覆蓋範圍以已安裝的 `@material/web` 版本為準；只收使用者會手寫的屬性（readonly 標識與 `@deprecated` 別名不收）。
 
-- ✅ Supported
+- ✅ 已支援
 
 | Family            | Example tags                                         | Snippet | Custom data |
 | :---------------- | :--------------------------------------------------- | :------ | :---------- |
@@ -77,24 +77,24 @@ Coverage follows the installed `@material/web` version; only attributes users ac
 | Tabs              | `md-tabs`, `md-primary-tab`, `md-secondary-tab`      | ✅       | ✅           |
 | Text Field        | `md-filled-text-field`, `md-outlined-text-field`     | ✅       | ✅           |
 
-## Requirements
+## 需求
 
 - VS Code `^1.82.0`
-- To render the components, install [`@material/web`](https://www.npmjs.com/package/@material/web) in your own project; this extension only provides snippets.
+- 要實際渲染元件，請在自己的專案安裝 [`@material/web`](https://www.npmjs.com/package/@material/web)；本擴展只提供 snippets。
 
-## Contributing
+## 參與貢獻
 
-Snippets are generated from `schema/` in this package — never edit the generated files by hand.
+Snippets 由本包的 `schema/` 產生，請勿手改產出檔。
 
 ```sh
-npm run generate        # regenerate snippets + custom data
-npm run generate:check  # fail on drift
-npm run verify          # validate generated files
-npm run compile         # build the extension
+npm run generate        # 重新產生 snippets 與 custom data
+npm run generate:check  # 有漂移即報錯
+npm run verify          # 驗證產出檔
+npm run compile         # 構建擴展
 ```
 
-## Release Notes / License
+## 更新日誌／授權
 
-See [CHANGELOG.md](./CHANGELOG.md).
+詳見 [CHANGELOG.md](./CHANGELOG.md)。
 
 [MIT](./LICENSE)

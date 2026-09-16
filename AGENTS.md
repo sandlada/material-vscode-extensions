@@ -43,7 +43,7 @@
 - 兩包身份：web 包 `name: material-web-snippets`（新短 ID，已斷開舊 `material-web-vscode-snippets` 的老用戶更新，需重裝）；CSS 包 `name: material-design-css-snippets`。兩包版本各自獨立（皆從 `1.0.0` 起）；根 `package.json` 是 `private`＋`workspaces: [packages/*]`，不發佈。
 - `package.json` 必備欄位：英文一句話 `description`、擴充 `keywords`（material-design、web-components、html、css 等）、`galleryBanner`（M3 主色 `#6750A4`、`dark`）。
 - Snippet 語言掛載：`snippets.code-snippets` 同時掛 `html`、`javascriptreact`、`typescriptreact`；`css.code-snippets` 只掛 `css`。HTML custom data 只在 HTML 檔生效是上游限制（JSX/TSX 只有 snippets、沒有 attr 建議），README 的 Note 要保留這句。
-- README 中英雙語（英文為主、中文緊隨）；支援狀況表只列 web 包 `schema/` 實際有的 family，不列上游沒有的元件（如 Snackbar、Tooltip）。
+- README 中英分檔（`README.md` 英文、`README.TW.md` 繁中，檔頭互鏈；市集顯示英文版），根與各包一律照此辦理；支援狀況表只列 web 包 `schema/` 實際有的 family，不列上游沒有的元件（如 Snackbar、Tooltip）。
 - README 的數量口徑（HTML 條數、attr 變體數、CSS token 條數、tags / attrs 數）以落地檔案實測為準，改各包 `schema/` 後重算，不要沿用舊數字。
 
 ## 上游地址一覽（各 schema 檔頭 `{@link}` 的完整清單）
