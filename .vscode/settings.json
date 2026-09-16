@@ -1,0 +1,15 @@
+{
+    "editor.codeActionsOnSave": {
+        "source.fixAll": "always",
+        "source.organizeImports": "always",
+        "source.organizeLinkDefinitions": "always",
+        "source.removeUnusedImports": "always",
+        "source.sort.json": "always",
+        "source.sortImports": "always"
+    },
+    "editor.formatOnSave": true,
+    "editor.insertSpaces": true,
+    "editor.tabSize": 4,
+    "files.encoding": "utf8",
+    "files.eol": "\n"
+}
