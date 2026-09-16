@@ -23,7 +23,7 @@
     },
     "displayName": "Material Design CSS Snippets",
     "engines": {
-        "vscode": "^1.82.0"
+        "vscode": "^1.137.0"
     },
     "galleryBanner": {
         "color": "#6750A4",
