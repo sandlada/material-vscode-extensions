@@ -1,4 +1,8 @@
 .vscode-test/**
 vsc-extension-quickstart.md
 tsconfig.json
+tsconfig.tools.json
 src/images/resources/**
+schema/**
+scripts/**
+tools-dist/**

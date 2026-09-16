@@ -92,7 +92,7 @@ Coverage follows the installed `@material/web` version; only attributes users ac
 
 ## Contributing 參與貢獻
 
-Snippets are generated from `schema/` at the repo root — never edit the generated files by hand. Snippets 由 repo 根目錄的 `schema/` 產生，請勿手改產出檔。
+Snippets are generated from `schema/` in this package — never edit the generated files by hand. Snippets 由本包的 `schema/` 產生，請勿手改產出檔。
 
 ```sh
 npm run generate        # regenerate snippets + custom data 重新產生 snippets 與 custom data

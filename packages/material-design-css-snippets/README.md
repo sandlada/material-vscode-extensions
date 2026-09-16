@@ -33,14 +33,14 @@ Material Design 3 CSS design token snippets for Visual Studio Code: system color
 }
 ```
 
-Type `--md-` and pick from the completion list. Colors and palette follow the repo-root `color-mcu-mapping.css` MCU selection; typescale / shape / motion / space follow `@sandlada/material-design-css` (`variables.css` + tailwind v4 `tw.css`), cross-checked against `@sandlada/mdk`.
-輸入 `--md-` 再從補全清單挑選；color 與 palette 以 repo 根目錄 `color-mcu-mapping.css` 的 MCU 選取值為準，typescale／shape／motion／space 以 `@sandlada/material-design-css` 為準（另以 `@sandlada/mdk` 交叉核對）。
+Type `--md-` and pick from the completion list. Colors and palette follow this package's `color-mcu-mapping.css` MCU selection; typescale / shape / motion / space follow `@sandlada/material-design-css` (`variables.css` + tailwind v4 `tw.css`), cross-checked against `@sandlada/mdk`.
+輸入 `--md-` 再從補全清單挑選；color 與 palette 以本包 `color-mcu-mapping.css` 的 MCU 選取值為準，typescale／shape／motion／space 以 `@sandlada/material-design-css` 為準（另以 `@sandlada/mdk` 交叉核對）。
 
 Supported languages 支援的語言：`css`.
 
 ## Contributing 參與貢獻
 
-Snippets are generated from `schema/tokens/` at the repo root — never edit the generated file by hand. Snippets 由 repo 根目錄的 `schema/tokens/` 產生，請勿手改產出檔。
+Snippets are generated from `schema/tokens/` in this package — never edit the generated file by hand. Snippets 由本包的 `schema/tokens/` 產生，請勿手改產出檔。
 
 ```sh
 npm run generate        # regenerate from schema 重新產生

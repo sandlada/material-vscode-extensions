@@ -11,6 +11,9 @@
 	"exclude": [
 		"node_modules",
 		".vscode-test",
-		"out"
+		"out",
+		"schema",
+		"scripts",
+		"tools-dist"
 	]
 }

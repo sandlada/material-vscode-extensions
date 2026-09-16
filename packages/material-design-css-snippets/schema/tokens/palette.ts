@@ -3,7 +3,7 @@ import { CssTokenWithFallback } from './types'
 /**
  * MCU palette ramp tokens, each with its selected hex value.
  *
- * Sourced from the repo-root color-mcu-mapping.css first :root block:
+ * Sourced from ../../color-mcu-mapping.css first :root block:
  * six families (primary, secondary, tertiary, error, neutral,
  * neutral-variant) times tones 0-100. Values below are copied from that
  * file; update both together.

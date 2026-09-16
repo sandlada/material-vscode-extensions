@@ -17,18 +17,19 @@ VS Code extensions for [Material Design 3](https://m3.material.io) & [`@material
 
 ```text
 packages/
-  material-web-snippets/        # sandlada.material-web-snippets (has code: src/ -> out/)
-  material-design-css-snippets/ # sandlada.material-design-css-snippets (snippets-only, no code)
-schema/                         # components/ per-family schemas + tokens/ per-group token files (single source of truth)
-scripts/                        # generate.ts / verify.ts (write into both packages)
+  material-web-snippets/        # sandlada.material-web-snippets (has code: src/ -> out/; own schema/ + scripts/)
+  material-design-css-snippets/ # sandlada.material-design-css-snippets (snippets-only, no code; own schema/ + scripts/)
+  material-snippets-tools/      # shared generator logic (private, build-time only)
 ```
 
 ## Commands
 
-Run at the repo root:
+Run at the repo root (each package can also run its own `generate` / `verify`):
 
 ```sh
-npm run generate        # schema/ -> both packages' snippets + custom data
+npm run build           # one-stop: generate -> verify -> compile
+npm run package:all     # build + package both extensions
+npm run generate        # each package's schema/ -> its snippets + custom data
 npm run generate:check  # fail on drift
 npm run verify          # validate the written artifacts
 npm run compile         # build packages/material-web-snippets (src/ -> out/)

@@ -15,6 +15,12 @@
         ]
     },
     "description": "Material Design 3 CSS design token snippets (color, palette, typescale, shape, motion, space) for Visual Studio Code.",
+    "devDependencies": {
+        "@types/node": "^26.5.1",
+        "@vscode/vsce": "^4.0.0",
+        "material-snippets-tools": "*",
+        "typescript": "^7.0.2"
+    },
     "displayName": "Material Design CSS Snippets",
     "engines": {
         "vscode": "^1.82.0"
@@ -42,7 +48,12 @@
         "url": "https://github.com/sandlada/material-vscode-extensions"
     },
     "scripts": {
-        "package": "vsce package --no-dependencies"
+        "build:tools": "tsc -p tsconfig.tools.json",
+        "generate": "npm run build:tools && node tools-dist/scripts/generate.js --write",
+        "generate:check": "npm run build:tools && node tools-dist/scripts/generate.js --check",
+        "generate:stdout": "npm run build:tools && node tools-dist/scripts/generate.js --stdout",
+        "package": "vsce package --no-dependencies",
+        "verify": "npm run build:tools && node tools-dist/scripts/verify.js"
     },
     "version": "0.0.2"
 }

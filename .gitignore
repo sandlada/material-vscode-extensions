@@ -1,4 +1,5 @@
 /node_modules
-/tools-dist
+packages/*/tools-dist
+packages/material-snippets-tools/dist
 *.vsix
 package-lock.json

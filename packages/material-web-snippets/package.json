@@ -46,6 +46,14 @@
         }
     },
     "description": "Snippets for Material Design 3 (@material/web) Web Components in Visual Studio Code.",
+    "devDependencies": {
+        "@material/web": "^2.5.0",
+        "@types/node": "^26.5.1",
+        "@types/vscode": "^1.137.0",
+        "@vscode/vsce": "^4.0.0",
+        "material-snippets-tools": "*",
+        "typescript": "^7.0.2"
+    },
     "displayName": "Material Web Snippets",
     "engines": {
         "vscode": "^1.82.0"
@@ -76,8 +84,13 @@
         "url": "https://github.com/sandlada/material-vscode-extensions"
     },
     "scripts": {
+        "build:tools": "tsc -p tsconfig.tools.json",
         "compile": "tsc -p ./",
+        "generate": "npm run build:tools && node tools-dist/scripts/generate.js --write",
+        "generate:check": "npm run build:tools && node tools-dist/scripts/generate.js --check",
+        "generate:stdout": "npm run build:tools && node tools-dist/scripts/generate.js --stdout",
         "package": "vsce package --no-dependencies",
+        "verify": "npm run build:tools && node tools-dist/scripts/verify.js",
         "vscode:prepublish": "npm run compile",
         "watch": "tsc -watch -p ./"
     },

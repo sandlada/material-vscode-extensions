@@ -1,2 +1,7 @@
 .vscode-test/**
 vsc-extension-quickstart.md
+tsconfig.tools.json
+color-mcu-mapping.css
+schema/**
+scripts/**
+tools-dist/**

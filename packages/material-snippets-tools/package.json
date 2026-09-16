@@ -1,0 +1,16 @@
+{
+    "description": "Shared snippet-builder logic for the Material VS Code extensions monorepo (build-time only, never shipped in vsix).",
+    "devDependencies": {
+        "@types/node": "^26.5.1",
+        "typescript": "^7.0.2"
+    },
+    "license": "MIT",
+    "main": "./dist/index.js",
+    "name": "material-snippets-tools",
+    "private": true,
+    "scripts": {
+        "build": "tsc -p tsconfig.json"
+    },
+    "types": "./dist/index.d.ts",
+    "version": "0.0.0"
+}

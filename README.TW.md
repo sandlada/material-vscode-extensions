@@ -17,18 +17,19 @@
 
 ```text
 packages/
-  material-web-snippets/        # sandlada.material-web-snippets（有程式碼：src/ -> out/）
-  material-design-css-snippets/ # sandlada.material-design-css-snippets（純 snippets，無程式碼）
-schema/                         # components/ 各 family schemas＋tokens/ 各群組 token 檔（唯一真相來源）
-scripts/                        # generate.ts／verify.ts（寫入兩包產出檔）
+  material-web-snippets/        # sandlada.material-web-snippets（有程式碼：src/ -> out/；自帶 schema/＋scripts/）
+  material-design-css-snippets/ # sandlada.material-design-css-snippets（純 snippets，無程式碼；自帶 schema/＋scripts/）
+  material-snippets-tools/      # 共用產生器邏輯（private，僅 build-time）
 ```
 
 ## 指令
 
-在 repo 根目錄執行：
+在 repo 根目錄執行（各包亦可單跑自家的 `generate`／`verify`）：
 
 ```sh
-npm run generate        # schema/ -> 兩包 snippets＋custom data
+npm run build           # 一條龍：generate -> verify -> compile
+npm run package:all     # build＋打包兩個擴展
+npm run generate        # 各包 schema/ -> 自家 snippets＋custom data
 npm run generate:check  # 有漂移即報錯
 npm run verify          # 驗證產出檔
 npm run compile         # 建置 packages/material-web-snippets（src/ -> out/）

@@ -8,7 +8,7 @@ import { CssTokenWithFallback } from './types'
  * Upstream2 (self-hosted deployment, not the official m3.material.io): {@link https://material-theme-builder.sandlada.com/}
  *
  * Colors come from the MCU dynamic color system; only one selected value
- * per token is kept, sourced from the repo-root color-mcu-mapping.css
+ * per token is kept, sourced from ../../color-mcu-mapping.css
  * second :root block (sys colors plus palette-key-color tokens).
  */
 export const colorTokens: CssTokenWithFallback[] = [

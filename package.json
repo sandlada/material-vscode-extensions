@@ -20,11 +20,14 @@
         "url": "https://github.com/sandlada/material-vscode-extensions"
     },
     "scripts": {
+        "build": "npm run generate && npm run verify && npm run compile",
+        "build:tools": "npm run build -w packages/material-snippets-tools",
         "compile": "npm run compile -w packages/material-web-snippets",
-        "generate": "tsc -p tsconfig.tools.json && node tools-dist/scripts/generate.js --write",
-        "generate:check": "tsc -p tsconfig.tools.json && node tools-dist/scripts/generate.js --check",
-        "generate:stdout": "tsc -p tsconfig.tools.json && node tools-dist/scripts/generate.js --stdout",
-        "verify": "tsc -p tsconfig.tools.json && node tools-dist/scripts/verify.js",
+        "generate": "npm run build:tools && npm run generate -w packages/material-web-snippets && npm run generate -w packages/material-design-css-snippets",
+        "generate:check": "npm run build:tools && npm run generate:check -w packages/material-web-snippets && npm run generate:check -w packages/material-design-css-snippets",
+        "generate:stdout": "npm run build:tools && npm run generate:stdout -w packages/material-web-snippets && npm run generate:stdout -w packages/material-design-css-snippets",
+        "package:all": "npm run build && npm run package -w packages/material-web-snippets && npm run package -w packages/material-design-css-snippets",
+        "verify": "npm run build:tools && npm run verify -w packages/material-web-snippets && npm run verify -w packages/material-design-css-snippets",
         "watch": "npm run watch -w packages/material-web-snippets"
     },
     "version": "0.0.0",
