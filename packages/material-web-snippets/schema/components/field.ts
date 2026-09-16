@@ -11,12 +11,10 @@ export const field: ComponentSchema = {
         {
             name: 'md-filled-field',
             description: 'Filled container for form field content such as labels and supporting text.',
-            treeLabel: 'Filled Field',
         },
         {
             name: 'md-outlined-field',
             description: 'Outlined container for form field content such as labels and supporting text.',
-            treeLabel: 'Outlined Field',
         },
     ],
     tagTemplate: 'md-{variant}-field',

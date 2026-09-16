@@ -1,6 +1,6 @@
 import * as fs from 'fs'
 import * as path from 'path'
-import { buildHtmlTags, buildMegaSnippet, buildSnippets, buildTreeItems } from 'material-snippets-tools'
+import { buildHtmlTags, buildMegaSnippet, buildSnippets } from 'material-snippets-tools'
 import type { SnippetDef } from 'material-snippets-tools'
 import { components } from '../schema'
 
@@ -61,7 +61,6 @@ function printStdout(): void {
         result[c.family] = {
             htmlTags: buildHtmlTags(c),
             snippets: buildSnippets(c),
-            treeItems: buildTreeItems(c),
         }
     }
     console.log(JSON.stringify(result, null, 2))

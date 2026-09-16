@@ -11,7 +11,6 @@ export const elevation: ComponentSchema = {
         {
             name: 'md-elevation',
             description: 'Material\'s elevation system is deliberately limited to just a handful of levels. This creative constraint means you need to make thoughtful decisions about your UI\'s elevation story.',
-            treeLabel: 'Elevation',
         },
     ],
     attributes: [

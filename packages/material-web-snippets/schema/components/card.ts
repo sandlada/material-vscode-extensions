@@ -11,7 +11,6 @@ export const elevatedCard: ComponentSchema = {
         {
             name: 'md-elevated-card',
             description: 'Elevated cards display content in a container with a shadow.',
-            treeLabel: 'Elevated Card',
         },
     ],
     baseBody: ['<md-elevated-card>', '\t${1}', '</md-elevated-card>'],
@@ -26,7 +25,6 @@ export const filledCard: ComponentSchema = {
         {
             name: 'md-filled-card',
             description: 'Filled cards display content in a container with a fill color and no shadow.',
-            treeLabel: 'Filled Card',
         },
     ],
     baseBody: ['<md-filled-card>', '\t${1}', '</md-filled-card>'],
@@ -41,7 +39,6 @@ export const outlinedCard: ComponentSchema = {
         {
             name: 'md-outlined-card',
             description: 'Outlined cards display content in a container with an outline border.',
-            treeLabel: 'Outlined Card',
         },
     ],
     baseBody: ['<md-outlined-card>', '\t${1}', '</md-outlined-card>'],

@@ -11,7 +11,6 @@ export const dialog: ComponentSchema = {
         {
             name: 'md-dialog',
             description: 'Dialogs behave like <dialog> elements, and can be closed with a <form method="dialog"> element. Dialogs have three optional sections: the headline title, the main content, and action buttons.',
-            treeLabel: 'Dialog',
         },
     ],
     attributes: [

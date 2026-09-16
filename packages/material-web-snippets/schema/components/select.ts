@@ -11,12 +11,10 @@ export const select: ComponentSchema = {
         {
             name: 'md-filled-select',
             description: 'Select menus display a list of choices on temporary surfaces and display the currently selected menu item above the menu.',
-            treeLabel: 'Filled Select',
         },
         {
             name: 'md-outlined-select',
             description: 'Select menus display a list of choices on temporary surfaces and display the currently selected menu item above the menu.',
-            treeLabel: 'Outlined Select',
         },
     ],
     tagTemplate: 'md-{variant}-select',
@@ -125,7 +123,6 @@ export const selectOption: ComponentSchema = {
         {
             name: 'md-select-option',
             description: 'Select (also referred to as a dropdown menu) allows choosing a value from a fixed list of available options. It is analogous to the native HTML <select> element.',
-            treeLabel: 'Select Option',
         },
     ],
     attributes: [
@@ -159,6 +156,7 @@ export const selectOption: ComponentSchema = {
         {
             key: 'MD Select Option Slot',
             prefix: 'md-select-option:slot',
+            description: 'Select option with headline slot.',
             body: ['<md-select-option value="${1}">', '\t<div slot="headline">${2}</div>', '</md-select-option>'],
         },
     ],

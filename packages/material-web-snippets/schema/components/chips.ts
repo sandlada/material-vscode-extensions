@@ -14,7 +14,6 @@ export const chipSet: ComponentSchema = {
         {
             name: 'md-chip-set',
             description: 'Chips help people enter information, make selections, filter content, or trigger actions.',
-            treeLabel: 'Chip Set',
         },
     ],
     baseBody: ['<md-chip-set>', '\t${1}', '</md-chip-set>'],
@@ -29,12 +28,12 @@ export const assistChip: ComponentSchema = {
         {
             name: 'md-assist-chip',
             description: 'Assist chips represent smart or automated actions that can span multiple apps, such as opening a calendar event from the home screen. Assist chips function as though the user asked an assistant to complete the action. They should appear dynamically and contextually in a UI.',
-            treeLabel: 'Assist Chip',
         },
     ],
     attributes: [
         {
             name: 'elevated',
+            description: 'Whether or not the chip is elevated (renders with a shadow).',
             kind: 'boolean',
         },
         {
@@ -88,20 +87,22 @@ export const filterChip: ComponentSchema = {
         {
             name: 'md-filter-chip',
             description: 'Filter chips use tags or descriptive words to filter content. They can be a good alternative to toggle buttons or checkboxes.',
-            treeLabel: 'Filter Chip',
         },
     ],
     attributes: [
         {
             name: 'elevated',
+            description: 'Whether or not the chip is elevated (renders with a shadow).',
             kind: 'boolean',
         },
         {
             name: 'removable',
+            description: 'Whether or not the chip shows a trailing remove button.',
             kind: 'boolean',
         },
         {
             name: 'selected',
+            description: 'Whether or not the chip is selected.',
             kind: 'boolean',
         },
         {
@@ -126,6 +127,7 @@ export const filterChip: ComponentSchema = {
         },
         {
             name: 'aria-label-remove',
+            description: 'The accessible label for the chip remove button.',
             kind: 'string',
         },
         {
@@ -148,12 +150,12 @@ export const inputChip: ComponentSchema = {
         {
             name: 'md-input-chip',
             description: 'Input chips represent discrete pieces of information entered by a user, such as Gmail contacts or filter options within a search field. Input chips whose icons are user images may add the avatar attribute to display the image in a larger circle.',
-            treeLabel: 'Input Chip',
         },
     ],
     attributes: [
         {
             name: 'avatar',
+            description: 'Whether or not the chip icon is displayed as a larger circular avatar image.',
             kind: 'boolean',
         },
         {
@@ -169,10 +171,12 @@ export const inputChip: ComponentSchema = {
         },
         {
             name: 'remove-only',
+            description: 'Whether or not the chip only shows the trailing remove action.',
             kind: 'boolean',
         },
         {
             name: 'selected',
+            description: 'Whether or not the chip is selected.',
             kind: 'boolean',
         },
         {
@@ -197,6 +201,7 @@ export const inputChip: ComponentSchema = {
         },
         {
             name: 'aria-label-remove',
+            description: 'The accessible label for the chip remove button.',
             kind: 'string',
         },
         {
@@ -214,12 +219,12 @@ export const suggestionChip: ComponentSchema = {
         {
             name: 'md-suggestion-chip',
             description: 'Suggestion chips help narrow a user\'s intent by presenting dynamically generated suggestions, such as possible responses or search filters.',
-            treeLabel: 'Suggestion Chip',
         },
     ],
     attributes: [
         {
             name: 'elevated',
+            description: 'Whether or not the chip is elevated (renders with a shadow).',
             kind: 'boolean',
         },
         {

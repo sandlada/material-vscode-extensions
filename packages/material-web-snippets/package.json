@@ -25,31 +25,12 @@
                 "language": "typescriptreact",
                 "path": "./snippets/snippets.code-snippets"
             }
-        ],
-        "views": {
-            "material-web-components-snippets": [
-                {
-                    "id": "tree",
-                    "name": "Code Snippets",
-                    "type": "tree"
-                }
-            ]
-        },
-        "viewsContainers": {
-            "activitybar": [
-                {
-                    "icon": "src/images/icon/extension-icon-32-outlined.svg",
-                    "id": "material-web-components-snippets",
-                    "title": "Material Web Components"
-                }
-            ]
-        }
+        ]
     },
     "description": "Snippets for Material Design 3 (@material/web) Web Components in Visual Studio Code.",
     "devDependencies": {
         "@material/web": "^2.5.0",
         "@types/node": "^26.5.1",
-        "@types/vscode": "^1.137.0",
         "@vscode/vsce": "^4.0.0",
         "material-snippets-tools": "*",
         "typescript": "^7.0.2"
@@ -63,7 +44,7 @@
         "theme": "dark"
     },
     "homepage": "https://github.com/sandlada/material-vscode-extensions/tree/main/packages/material-web-snippets",
-    "icon": "src/images/icon/extension-icon-128.png",
+    "icon": "images/icon/extension-icon-128.png",
     "keywords": [
         "material",
         "material-design",
@@ -75,7 +56,6 @@
         "html"
     ],
     "license": "MIT",
-    "main": "./out/extension.js",
     "name": "material-web-snippets",
     "publisher": "sandlada",
     "repository": {
@@ -85,14 +65,11 @@
     },
     "scripts": {
         "build:tools": "tsc -p tsconfig.tools.json",
-        "compile": "tsc -p ./",
         "generate": "npm run build:tools && node tools-dist/scripts/generate.js --write",
         "generate:check": "npm run build:tools && node tools-dist/scripts/generate.js --check",
         "generate:stdout": "npm run build:tools && node tools-dist/scripts/generate.js --stdout",
         "package": "vsce package --no-dependencies",
-        "verify": "npm run build:tools && node tools-dist/scripts/verify.js",
-        "vscode:prepublish": "npm run compile",
-        "watch": "tsc -watch -p ./"
+        "verify": "npm run build:tools && node tools-dist/scripts/verify.js"
     },
-    "version": "1.0.0"
+    "version": "0.1.0"
 }

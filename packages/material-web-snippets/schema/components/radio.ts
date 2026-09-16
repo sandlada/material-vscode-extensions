@@ -11,7 +11,6 @@ export const radio: ComponentSchema = {
         {
             name: 'md-radio',
             description: 'Radios behave like <input type="radio"> elements and form a group with the same name attribute. Only one radio can be selected in a group.',
-            treeLabel: 'Radio',
         },
     ],
     attributes: [

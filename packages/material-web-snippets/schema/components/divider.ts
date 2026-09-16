@@ -11,7 +11,6 @@ export const divider: ComponentSchema = {
         {
             name: 'md-divider',
             description: 'Dividers can reinforce tapability, such as when used to separate list items or define tappable regions in an accordion.',
-            treeLabel: 'Divider',
         },
     ],
     attributes: [

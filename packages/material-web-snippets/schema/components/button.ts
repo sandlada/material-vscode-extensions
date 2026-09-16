@@ -11,27 +11,22 @@ export const button: ComponentSchema = {
         {
             name: 'md-elevated-button',
             description: 'Elevated buttons are essentially filled tonal buttons with a shadow. To prevent shadow creep, only use them when absolutely necessary, such as when the button requires visual separation from a patterned background.',
-            treeLabel: 'Elevated Button',
         },
         {
             name: 'md-filled-button',
             description: 'Filled buttons have the most visual impact after the FAB, and should be used for important, final actions that complete a flow, like Save, Join now, or Confirm.',
-            treeLabel: 'Filled Button',
         },
         {
             name: 'md-filled-tonal-button',
             description: 'A filled tonal button is an alternative middle ground between filled and outlined buttons. They\'re useful in contexts where a lower-priority button requires slightly more emphasis than an outline would give, such as "Next" in an onboarding flow.',
-            treeLabel: 'Filled Tonal Button',
         },
         {
             name: 'md-outlined-button',
             description: 'Outlined buttons are medium-emphasis buttons. They contain actions that are important, but aren\'t the primary action in an app.',
-            treeLabel: 'Outlined Button',
         },
         {
             name: 'md-text-button',
             description: 'Text buttons are used for the lowest priority actions, especially when presenting multiple options.',
-            treeLabel: 'Text Button',
         },
     ],
     tagTemplate: 'md-{variant}-button',

@@ -11,7 +11,6 @@ export const tabs: ComponentSchema = {
         {
             name: 'md-tabs',
             description: 'Tabs organize groups of related content that are at the same level of hierarchy.',
-            treeLabel: 'Tabs',
         },
     ],
     baseBody: ['<md-tabs>', '\t${1}', '</md-tabs>'],
@@ -31,6 +30,7 @@ export const tabs: ComponentSchema = {
         {
             key: 'MD Tabs Tab Panel',
             prefix: 'md-tabs:tab-panel',
+            description: 'Tabs bar with a linked tab panel section.',
             body: ['<md-tabs>', '\t<md-primary-tab id="${1:tabId}" aria-controls="${1:tabId}-panel">${2}</md-primary-tab>', '</md-tabs>', '<div id="${1:tabId}-panel" role="tabpanel" aria-labelledby="${1:tabId}-tab">', '\t${3}', '</div>'],
         },
     ],
@@ -43,12 +43,12 @@ export const primaryTab: ComponentSchema = {
         {
             name: 'md-primary-tab',
             description: 'Primary tabs are placed at the top of the content pane under a top app bar. They display the main content destinations.',
-            treeLabel: 'Primary Tab',
         },
     ],
     attributes: [
         {
             name: 'inline-icon',
+            description: 'Whether or not the icon renders inline with the label or stacked vertically.',
             kind: 'boolean',
         },
         {
@@ -76,7 +76,6 @@ export const secondaryTab: ComponentSchema = {
         {
             name: 'md-secondary-tab',
             description: 'Secondary tabs are used within a content area to further separate related content and establish hierarchy.',
-            treeLabel: 'Secondary Tab',
         },
     ],
     attributes: [

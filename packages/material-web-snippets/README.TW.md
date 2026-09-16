@@ -1,6 +1,6 @@
 <div align="center">
 
-![Material Web Components Snippets](https://raw.githubusercontent.com/sandlada/material-vscode-extensions/main/packages/material-web-snippets/src/images/icon/extension-icon-128.png)
+![Material Web Components Snippets](https://raw.githubusercontent.com/sandlada/material-vscode-extensions/main/packages/material-web-snippets/images/icon/extension-icon-128.png)
 
 # Material Web Snippets
 
@@ -17,15 +17,15 @@
 
 ## 功能
 
-- **HTML snippets（368 條）：**輸入 `md-` 即可插入元件，例如 `md-filled-button` → `<md-filled-button></md-filled-button>`。
-- **屬性變體（309 條）：**`md-<component>:<attr>` 會帶上該屬性插入元件（例如 `md-button:disabled`）；同 family 的變體可用 Tab 切換（如 elevated / filled / outlined）。
+- **HTML snippets（361 條）：**輸入 `md-` 即可插入元件，例如 `md-filled-button` → `<md-filled-button></md-filled-button>`。
+- **屬性變體（302 條）：**`md-<component>:<attr>` 會帶上該屬性插入元件（例如 `md-button:disabled`）；同 family 的變體可用 Tab 切換（如 elevated / filled / outlined）。
 - **完整索引：**`md-components` 可列出所有可用元件。
 - **標籤＋屬性 IntelliSense：**透過 HTML custom data 提供 54 個標籤 / 405 個屬性的標籤提示與屬性建議（HTML 檔）。
-- **側邊欄面板：***Material Web Components* 活動列檢視可一點即插入任一元件。
+- **補全說明：**每條 snippet 在補全列表都有 description 說明；`:full-properties` 可一次插入該元件的全部屬性。
 
 | 常用屬性                                                                                                                                                      | 選擇變體                                                                                                                                                       | 完整元件                                                                                                                                                       |
 | :------------------------------------------------------------------------------------------------------------------------------------------------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ![properties](https://raw.githubusercontent.com/sandlada/material-vscode-extensions/main/packages/material-web-snippets/src/images/resources/intro-fab.png) | ![variants](https://raw.githubusercontent.com/sandlada/material-vscode-extensions/main/packages/material-web-snippets/src/images/resources/intro-button.png) | ![components](https://raw.githubusercontent.com/sandlada/material-vscode-extensions/main/packages/material-web-snippets/src/images/resources/intro-code.png) |
+| ![properties](https://raw.githubusercontent.com/sandlada/material-vscode-extensions/main/packages/material-web-snippets/images/resources/intro-fab.png) | ![variants](https://raw.githubusercontent.com/sandlada/material-vscode-extensions/main/packages/material-web-snippets/images/resources/intro-button.png) | ![components](https://raw.githubusercontent.com/sandlada/material-vscode-extensions/main/packages/material-web-snippets/images/resources/intro-code.png) |
 
 ## 用法
 
@@ -90,7 +90,6 @@ Snippets 由本包的 `schema/` 產生，請勿手改產出檔。
 npm run generate        # 重新產生 snippets 與 custom data
 npm run generate:check  # 有漂移即報錯
 npm run verify          # 驗證產出檔
-npm run compile         # 構建擴展
 ```
 
 ## 更新日誌／授權

@@ -13,7 +13,6 @@ export {
     buildHtmlTags,
     buildMegaSnippet,
     buildSnippets,
-    buildTreeItems,
     titleCase,
 } from './html'
 export { buildCssSnippets } from './css'

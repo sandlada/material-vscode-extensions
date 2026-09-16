@@ -13,7 +13,6 @@ export const menu: ComponentSchema = {
         {
             name: 'md-menu',
             description: 'Menus display a list of choices on a temporary surface.',
-            treeLabel: 'Menu',
         },
     ],
     baseBody: ['<md-menu>', '\t${1}', '</md-menu>'],
@@ -117,7 +116,6 @@ export const menuItem: ComponentSchema = {
         {
             name: 'md-menu-item',
             description: 'Menus also render menu items such as md-menu-item and handle keyboard navigation between md-menu-items as well as typeahead functionality. Additionally, md-menu interacts with md-menu-items to help you determine how a menu was closed. Listen for and inspect the close-menu custom event\'s details to determine what action and items closed the menu.',
-            treeLabel: 'Menu Item',
         },
     ],
     baseBody: ['<md-menu-item>', '\t<div slot="headline">${1}</div>', '</md-menu-item>'],
@@ -169,7 +167,6 @@ export const subMenu: ComponentSchema = {
         {
             name: 'md-sub-menu',
             description: 'You can compose <md-menu>s inside of an <md-sub-menu>\'s menu slot, but first the has-overflow attribute must be set on the root <md-menu> to disable overflow scrolling and display the nested submenus.',
-            treeLabel: 'Sub Menu',
         },
     ],
     attributes: [
@@ -200,6 +197,7 @@ export const subMenu: ComponentSchema = {
         {
             key: 'MD Sub Menu',
             prefix: 'md-sub-menu',
+            description: 'Sub menu with trigger item and nested menu slots.',
             body: ['<md-sub-menu>', '\t<md-menu-item slot="item">${1}</md-menu-item>', '\t<md-menu slot="menu">${2}</md-menu>', '</md-sub-menu>'],
         },
     ],

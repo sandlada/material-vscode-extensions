@@ -15,7 +15,6 @@ export const focusRing: ComponentSchema = {
         {
             name: 'md-focus-ring',
             description: 'Focus rings are accessible outlines for components to show keyboard focus.',
-            treeLabel: 'Focus Ring',
         },
     ],
     attributes: [

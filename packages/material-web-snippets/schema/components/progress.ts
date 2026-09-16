@@ -11,7 +11,6 @@ export const circularProgress: ComponentSchema = {
         {
             name: 'md-circular-progress',
             description: 'Circular progress indicators display progress by animating along an invisible circular track in a clockwise direction.',
-            treeLabel: 'Circular Progress',
         },
     ],
     attributes: [
@@ -45,12 +44,12 @@ export const linearProgress: ComponentSchema = {
         {
             name: 'md-linear-progress',
             description: 'Linear progress indicators display progress by animating along the length of a fixed, visible track.',
-            treeLabel: 'Linear Progress',
         },
     ],
     attributes: [
         {
             name: 'buffer',
+            description: 'Buffer amount to display, a fraction between 0 and max. If the value is 0 or negative, the buffer is not displayed.',
             kind: 'string',
         },
         {

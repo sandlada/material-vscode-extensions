@@ -1,6 +1,6 @@
 <div align="center">
 
-![Material Web Components Snippets](https://raw.githubusercontent.com/sandlada/material-vscode-extensions/main/packages/material-web-snippets/src/images/icon/extension-icon-128.png)
+![Material Web Components Snippets](https://raw.githubusercontent.com/sandlada/material-vscode-extensions/main/packages/material-web-snippets/images/icon/extension-icon-128.png)
 
 # Material Web Snippets
 
@@ -17,15 +17,15 @@ Snippets for [Material Design 3 (`@material/web`)](https://github.com/material-c
 
 ## Features
 
-- **HTML snippets (368):** type `md-` to insert a component, e.g. `md-filled-button` → `<md-filled-button></md-filled-button>`.
-- **Attribute variants (309):** `md-<component>:<attr>` inserts the component with that attribute, e.g. `md-button:disabled`. Variant families (button, icon-button, text-field, select) let you pick `elevated / filled / outlined / …` with Tab.
+- **HTML snippets (361):** type `md-` to insert a component, e.g. `md-filled-button` → `<md-filled-button></md-filled-button>`.
+- **Attribute variants (302):** `md-<component>:<attr>` inserts the component with that attribute, e.g. `md-button:disabled`. Variant families (button, icon-button, text-field, select) let you pick `elevated / filled / outlined / …` with Tab.
 - **Full index:** `md-components` lists every available component.
 - **Tag + attribute IntelliSense:** 54 tags / 405 attributes via HTML custom data (tag hover docs and attribute suggestions in HTML files).
-- **Sidebar panel:** the *Material Web Components* activity-bar view inserts any component with one click.
+- **Completion docs:** every snippet shows a description in the completion list, and `:full-properties` inserts all attributes of a component at once.
 
 | Properties                                                                                                                                                    | Pick a variant                                                                                                                                                 | Full components                                                                                                                                                |
 | :------------------------------------------------------------------------------------------------------------------------------------------------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ![properties](https://raw.githubusercontent.com/sandlada/material-vscode-extensions/main/packages/material-web-snippets/src/images/resources/intro-fab.png) | ![variants](https://raw.githubusercontent.com/sandlada/material-vscode-extensions/main/packages/material-web-snippets/src/images/resources/intro-button.png) | ![components](https://raw.githubusercontent.com/sandlada/material-vscode-extensions/main/packages/material-web-snippets/src/images/resources/intro-code.png) |
+| ![properties](https://raw.githubusercontent.com/sandlada/material-vscode-extensions/main/packages/material-web-snippets/images/resources/intro-fab.png) | ![variants](https://raw.githubusercontent.com/sandlada/material-vscode-extensions/main/packages/material-web-snippets/images/resources/intro-button.png) | ![components](https://raw.githubusercontent.com/sandlada/material-vscode-extensions/main/packages/material-web-snippets/images/resources/intro-code.png) |
 
 ## Usage
 
@@ -90,7 +90,6 @@ Snippets are generated from `schema/` in this package — never edit the generat
 npm run generate        # regenerate snippets + custom data
 npm run generate:check  # fail on drift
 npm run verify          # validate generated files
-npm run compile         # build the extension
 ```
 
 ## Release Notes / License

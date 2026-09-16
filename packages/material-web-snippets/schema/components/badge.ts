@@ -11,7 +11,6 @@ export const badge: ComponentSchema = {
         {
             name: 'md-badge',
             description: 'A badge shows a small count or status anchored to another UI element.',
-            treeLabel: 'Badge',
         },
     ],
     attributes: [

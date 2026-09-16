@@ -459,7 +459,8 @@
       "description": "Assist chips represent smart or automated actions that can span multiple apps, such as opening a calendar event from the home screen. Assist chips function as though the user asked an assistant to complete the action. They should appear dynamically and contextually in a UI.",
       "attributes": [
         {
-          "name": "elevated"
+          "name": "elevated",
+          "description": "Whether or not the chip is elevated (renders with a shadow)."
         },
         {
           "name": "href",
@@ -514,13 +515,16 @@
       "description": "Filter chips use tags or descriptive words to filter content. They can be a good alternative to toggle buttons or checkboxes.",
       "attributes": [
         {
-          "name": "elevated"
+          "name": "elevated",
+          "description": "Whether or not the chip is elevated (renders with a shadow)."
         },
         {
-          "name": "removable"
+          "name": "removable",
+          "description": "Whether or not the chip shows a trailing remove button."
         },
         {
-          "name": "selected"
+          "name": "selected",
+          "description": "Whether or not the chip is selected."
         },
         {
           "name": "disabled",
@@ -539,7 +543,8 @@
           "description": "The label of the chip."
         },
         {
-          "name": "aria-label-remove"
+          "name": "aria-label-remove",
+          "description": "The accessible label for the chip remove button."
         },
         {
           "name": "has-icon",
@@ -556,7 +561,8 @@
       "description": "Input chips represent discrete pieces of information entered by a user, such as Gmail contacts or filter options within a search field. Input chips whose icons are user images may add the avatar attribute to display the image in a larger circle.",
       "attributes": [
         {
-          "name": "avatar"
+          "name": "avatar",
+          "description": "Whether or not the chip icon is displayed as a larger circular avatar image."
         },
         {
           "name": "href",
@@ -581,10 +587,12 @@
           ]
         },
         {
-          "name": "remove-only"
+          "name": "remove-only",
+          "description": "Whether or not the chip only shows the trailing remove action."
         },
         {
-          "name": "selected"
+          "name": "selected",
+          "description": "Whether or not the chip is selected."
         },
         {
           "name": "disabled",
@@ -603,7 +611,8 @@
           "description": "The label of the chip."
         },
         {
-          "name": "aria-label-remove"
+          "name": "aria-label-remove",
+          "description": "The accessible label for the chip remove button."
         },
         {
           "name": "has-icon",
@@ -616,7 +625,8 @@
       "description": "Suggestion chips help narrow a user's intent by presenting dynamically generated suggestions, such as possible responses or search filters.",
       "attributes": [
         {
-          "name": "elevated"
+          "name": "elevated",
+          "description": "Whether or not the chip is elevated (renders with a shadow)."
         },
         {
           "name": "href",
@@ -1684,7 +1694,8 @@
       "description": "Linear progress indicators display progress by animating along the length of a fixed, visible track.",
       "attributes": [
         {
-          "name": "buffer"
+          "name": "buffer",
+          "description": "Buffer amount to display, a fraction between 0 and max. If the value is 0 or negative, the buffer is not displayed."
         },
         {
           "name": "value",
@@ -2143,7 +2154,8 @@
       "description": "Primary tabs are placed at the top of the content pane under a top app bar. They display the main content destinations.",
       "attributes": [
         {
-          "name": "inline-icon"
+          "name": "inline-icon",
+          "description": "Whether or not the icon renders inline with the label or stacked vertically."
         },
         {
           "name": "active",

@@ -11,7 +11,6 @@ export const item: ComponentSchema = {
         {
             name: 'md-item',
             description: 'An item layout component that can be used inside list items to give them their customizable structure.',
-            treeLabel: 'Item',
         },
     ],
     baseBody: ['<md-item>', '\t${1}', '</md-item>'],

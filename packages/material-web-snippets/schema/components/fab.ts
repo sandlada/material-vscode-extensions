@@ -11,7 +11,6 @@ export const fab: ComponentSchema = {
         {
             name: 'md-fab',
             description: 'FAB represents the most important action on a screen. It puts key actions within reach.',
-            treeLabel: 'Fab',
         },
     ],
     attributes: [
@@ -47,7 +46,6 @@ export const brandedFab: ComponentSchema = {
         {
             name: 'md-branded-fab',
             description: 'Branded FABs use a brightly colored logo for their icon. Unlike FAB, branded FABs do not have color variants.',
-            treeLabel: 'Branded Fab',
         },
     ],
     attributes: [

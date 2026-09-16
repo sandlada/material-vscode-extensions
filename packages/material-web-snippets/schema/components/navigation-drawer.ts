@@ -11,7 +11,6 @@ export const navigationDrawer: ComponentSchema = {
         {
             name: 'md-navigation-drawer',
             description: 'Navigation drawers provide access to destinations in an app.',
-            treeLabel: 'Navigation Drawer',
         },
     ],
     baseBody: ['<md-navigation-drawer>', '\t${1}', '</md-navigation-drawer>'],
@@ -37,7 +36,6 @@ export const navigationDrawerModal: ComponentSchema = {
         {
             name: 'md-navigation-drawer-modal',
             description: 'A modal navigation drawer blocks interaction with the rest of the screen while open.',
-            treeLabel: 'Navigation Drawer Modal',
         },
     ],
     baseBody: ['<md-navigation-drawer-modal>', '\t${1}', '</md-navigation-drawer-modal>'],

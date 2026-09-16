@@ -11,7 +11,6 @@ export const navigationTab: ComponentSchema = {
         {
             name: 'md-navigation-tab',
             description: 'A tab destination inside a navigation bar.',
-            treeLabel: 'Navigation Tab',
         },
     ],
     attributes: [

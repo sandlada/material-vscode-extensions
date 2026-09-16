@@ -11,7 +11,6 @@ export const slider: ComponentSchema = {
         {
             name: 'md-slider',
             description: 'Sliders allow users to view and select a value (or range) along a track. They\'re ideal for adjusting settings such as volume and brightness, or for applying image filters.',
-            treeLabel: 'Slider',
         },
     ],
     attributes: [

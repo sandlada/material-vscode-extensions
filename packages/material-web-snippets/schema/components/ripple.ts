@@ -11,7 +11,6 @@ export const ripple: ComponentSchema = {
         {
             name: 'md-ripple',
             description: 'Ripples display on hover and press pointer interactions. They may be attached to a control in one of three ways.',
-            treeLabel: 'Ripple',
         },
     ],
     attributes: [

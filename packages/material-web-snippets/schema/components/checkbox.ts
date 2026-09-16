@@ -11,7 +11,6 @@ export const checkbox: ComponentSchema = {
         {
             name: 'md-checkbox',
             description: 'Checkboxes allow users to select one or more items from a set. Checkboxes can turn an option on or off.',
-            treeLabel: 'Checkbox',
         },
     ],
     attributes: [

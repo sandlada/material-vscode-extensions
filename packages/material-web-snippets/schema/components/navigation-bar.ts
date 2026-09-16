@@ -11,7 +11,6 @@ export const navigationBar: ComponentSchema = {
         {
             name: 'md-navigation-bar',
             description: 'Navigation bars offer a persistent and convenient way to switch between primary destinations in an app.',
-            treeLabel: 'Navigation Bar',
         },
     ],
     baseBody: ['<md-navigation-bar>', '\t${1}', '</md-navigation-bar>'],

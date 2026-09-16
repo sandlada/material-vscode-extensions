@@ -11,7 +11,6 @@ export const switchSchema: ComponentSchema = {
         {
             name: 'md-switch',
             description: 'Switches toggle the state of an item on or off.',
-            treeLabel: 'Switch',
         },
     ],
     attributes: [

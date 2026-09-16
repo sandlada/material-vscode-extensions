@@ -11,7 +11,6 @@ export const list: ComponentSchema = {
         {
             name: 'md-list',
             description: 'Lists are continuous, vertical indexes of text and images',
-            treeLabel: 'List',
         },
     ],
     baseBody: ['<md-list>', '\t${1}', '</md-list>'],
@@ -26,7 +25,6 @@ export const listItem: ComponentSchema = {
         {
             name: 'md-list-item',
             description: '<md-list> is a container composed of <md-list-item>s of different types.',
-            treeLabel: 'List Item',
         },
     ],
     attributes: [
@@ -57,11 +55,13 @@ export const listItem: ComponentSchema = {
         {
             key: 'MD List Item With Slot',
             prefix: 'md-list-item:with-slot',
+            description: 'List item with start, headline, supporting-text and end slots.',
             body: ['<md-list-item>', '\t<div slot="start">${1}</div>', '\t<div slot="headline">${2}</div>', '\t<div slot="supporting-text">${3}</div>', '\t<div slot="end">${4}</div>', '</md-list-item>'],
         },
         {
             key: 'MD List Item Slot',
             prefix: 'md-list-item:slot',
+            description: 'Slotted content block for a list item (start, headline, supporting-text or end).',
             body: ['<div slot="${1|start,headline,supporting-text,end|}">${2}</div>'],
         },
     ],

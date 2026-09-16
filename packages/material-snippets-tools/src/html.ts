@@ -58,6 +58,22 @@ function autoAttrs(comp: ComponentSchema): ComponentAttr[] {
     return comp.attributes.filter((a) => !(comp.skipAutoAttrs ?? []).includes(a.name))
 }
 
+/** Fallback description so every snippet shows help text in completion lists. */
+export function describeAttr(family: string, attr: ComponentAttr): string {
+    if (attr.description) return attr.description
+    return `The ${attr.name} attribute for ${family}.`
+}
+
+/** Fallback description for :full-properties index snippets. */
+export function describeFullProperties(title: string): string {
+    return `${title} with all attributes in one snippet.`
+}
+
+function describeOverride(key: string, description?: string): string {
+    if (description) return description
+    return `${key} template.`
+}
+
 /** snippets.code-snippets entries: base + one :variant per attr + full-properties + overrides */
 export function buildSnippets(comp: ComponentSchema): Record<string, SnippetDef> {
     const out: Record<string, SnippetDef> = {}
@@ -69,7 +85,7 @@ export function buildSnippets(comp: ComponentSchema): Record<string, SnippetDef>
         buildSingleSnippets(comp, title, out)
     }
     for (const o of comp.snippetOverrides ?? []) {
-        out[o.key] = { prefix: o.prefix, body: o.body, description: o.description ?? '' }
+        out[o.key] = { prefix: o.prefix, body: o.body, description: describeOverride(o.key, o.description) }
     }
     return out
 }
@@ -86,14 +102,16 @@ function buildSingleSnippets(comp: ComponentSchema, title: string, out: Record<s
         out[`MD ${title} ${titleCase(a.name)}`] = {
             prefix: `${comp.familyPrefix}:${a.name}`,
             body: [attrBody(tag, a, 1)],
-            description: a.description ?? '',
+            description: describeAttr(comp.family, a),
         }
     })
-    const parts = attrs.map((a, i) => attrPart(a, i + 1))
-    out[`MD ${title} Full Properties`] = {
-        prefix: `${comp.familyPrefix}:full-properties`,
-        body: [`<${tag} ${parts.join(' ')}></${tag}>`],
-        description: '',
+    if (attrs.length > 0) {
+        const parts = attrs.map((a, i) => attrPart(a, i + 1))
+        out[`MD ${title} Full Properties`] = {
+            prefix: `${comp.familyPrefix}:full-properties`,
+            body: [`<${tag} ${parts.join(' ')}></${tag}>`],
+            description: describeFullProperties(title),
+        }
     }
 }
 
@@ -118,17 +136,19 @@ function buildTemplatedSnippets(
         out[`MD ${title} ${titleCase(a.name)}`] = {
             prefix: `${comp.familyPrefix}:${a.name}`,
             body: [attrBody(open, a, 2)],
-            description: a.description ?? '',
+            description: describeAttr(comp.family, a),
         }
     })
-    const parts = attrs.map((a, i) => attrPart(a, i + 2))
-    out[`MD ${title} Full Properties`] = {
-        prefix: `${comp.familyPrefix}:full-properties`,
-        body: [`<${open} ${parts.join(' ')}></${open}>`],
-        description: '',
+    if (attrs.length > 0) {
+        const parts = attrs.map((a, i) => attrPart(a, i + 2))
+        out[`MD ${title} Full Properties`] = {
+            prefix: `${comp.familyPrefix}:full-properties`,
+            body: [`<${open} ${parts.join(' ')}></${open}>`],
+            description: describeFullProperties(title),
+        }
     }
     for (const t of comp.tags) {
-        out[`MD ${t.treeLabel}`] = {
+        out[`MD ${titleCase(t.name.replace(/^md-/, ''))}`] = {
             prefix: t.name,
             body: [`<${t.name}></${t.name}>`],
             description: t.description,
@@ -150,7 +170,3 @@ export function buildMegaSnippet(tags: string[]): { key: string; def: SnippetDef
     }
 }
 
-/** SnippetsTree.ts items (plain insert strings, no tabstops) */
-export function buildTreeItems(comp: ComponentSchema) {
-    return comp.tags.map((t) => ({ label: t.treeLabel, code: `<${t.name}></${t.name}>` }))
-}

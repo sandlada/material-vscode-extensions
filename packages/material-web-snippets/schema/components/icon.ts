@@ -11,7 +11,6 @@ export const icon: ComponentSchema = {
         {
             name: 'md-icon',
             description: 'Icons can be used to represent common actions. Material Symbols are a set of variable icon fonts created at seven weights across three different styles.',
-            treeLabel: 'Icon',
         },
     ],
     baseBody: ['<md-icon>${1}</md-icon>'],

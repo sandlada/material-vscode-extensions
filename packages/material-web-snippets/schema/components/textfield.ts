@@ -11,12 +11,10 @@ export const textField: ComponentSchema = {
         {
             name: 'md-filled-text-field',
             description: 'Filled and outlined text fields are functionally identical. See choosing a text field for guidance on which one to use.',
-            treeLabel: 'Filled Text Field',
         },
         {
             name: 'md-outlined-text-field',
             description: 'Filled and outlined text fields are functionally identical. See choosing a text field for guidance on which one to use.',
-            treeLabel: 'Outlined Text Field',
         },
     ],
     tagTemplate: 'md-{variant}-text-field',

@@ -12,7 +12,6 @@ export const segmentedButton: ComponentSchema = {
         {
             name: 'md-outlined-segmented-button',
             description: 'MdOutlinedSegmentedButton is the custom element for the Material Design outlined segmented button component. It is intended only for use as a child of a segmented button set.',
-            treeLabel: 'Segmented Button',
         },
     ],
     attributes: [
@@ -51,7 +50,6 @@ export const segmentedButtonSet: ComponentSchema = {
         {
             name: 'md-outlined-segmented-button-set',
             description: 'MdOutlinedSegmentedButtonSet is the custom element for the Material Design outlined segmented button set component. Only segmented button components may be used as children.',
-            treeLabel: 'Segmented Button Set',
         },
     ],
     baseBody: ['<md-outlined-segmented-button-set>', '\t${1}', '</md-outlined-segmented-button-set>'],

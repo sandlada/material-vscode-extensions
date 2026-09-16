@@ -43,7 +43,7 @@
     "body": [
       "<md-focus-ring ${1:visible} ${2:inward} for=\"${3:controlId}\"></md-focus-ring>"
     ],
-    "description": ""
+    "description": "Focus Ring with all attributes in one snippet."
   },
   "MD Badge": {
     "prefix": "md-badge",
@@ -64,7 +64,7 @@
     "body": [
       "<md-badge value=\"${1:}\"></md-badge>"
     ],
-    "description": ""
+    "description": "Badge with all attributes in one snippet."
   },
   "MD Button": {
     "prefix": "md-button",
@@ -155,7 +155,7 @@
     "body": [
       "<md-${1|elevated,filled,filled-tonal,outlined,text|}-button ${2:disabled} ${3:soft-disabled} href=\"${4:}\" download=\"${5:}\" ${6:trailing-icon} ${7:has-icon} value=\"${8:}\" name=\"${9:}\" form=\"${10:}\" type=\"${11|submit,button,reset|}\" target=\"${12|_blank,_parent,_self,_top|}\"></md-${1|elevated,filled,filled-tonal,outlined,text|}-button>"
     ],
-    "description": ""
+    "description": "Button with all attributes in one snippet."
   },
   "MD Elevated Button": {
     "prefix": "md-elevated-button",
@@ -201,13 +201,6 @@
     ],
     "description": "Elevated cards display content in a container with a shadow."
   },
-  "MD Elevated Card Full Properties": {
-    "prefix": "md-elevated-card:full-properties",
-    "body": [
-      "<md-elevated-card ></md-elevated-card>"
-    ],
-    "description": ""
-  },
   "MD Filled Card": {
     "prefix": "md-filled-card",
     "body": [
@@ -217,13 +210,6 @@
     ],
     "description": "Filled cards display content in a container with a fill color and no shadow."
   },
-  "MD Filled Card Full Properties": {
-    "prefix": "md-filled-card:full-properties",
-    "body": [
-      "<md-filled-card ></md-filled-card>"
-    ],
-    "description": ""
-  },
   "MD Outlined Card": {
     "prefix": "md-outlined-card",
     "body": [
@@ -232,13 +218,6 @@
       "</md-outlined-card>"
     ],
     "description": "Outlined cards display content in a container with an outline border."
-  },
-  "MD Outlined Card Full Properties": {
-    "prefix": "md-outlined-card:full-properties",
-    "body": [
-      "<md-outlined-card ></md-outlined-card>"
-    ],
-    "description": ""
   },
   "MD Checkbox": {
     "prefix": "md-checkbox",
@@ -301,7 +280,7 @@
     "body": [
       "<md-checkbox ${1:checked} ${2:disabled} ${3:indeterminate} ${4:required} value=\"${5:}\" name=\"${6:}\" form=\"${7:}\"></md-checkbox>"
     ],
-    "description": ""
+    "description": "Checkbox with all attributes in one snippet."
   },
   "MD Chip Set": {
     "prefix": "md-chip-set",
@@ -311,13 +290,6 @@
       "</md-chip-set>"
     ],
     "description": "Chips help people enter information, make selections, filter content, or trigger actions."
-  },
-  "MD Chip Set Full Properties": {
-    "prefix": "md-chip-set:full-properties",
-    "body": [
-      "<md-chip-set ></md-chip-set>"
-    ],
-    "description": ""
   },
   "MD Assist Chip": {
     "prefix": "md-assist-chip",
@@ -331,7 +303,7 @@
     "body": [
       "<md-assist-chip elevated></md-assist-chip>"
     ],
-    "description": ""
+    "description": "Whether or not the chip is elevated (renders with a shadow)."
   },
   "MD Assist Chip Href": {
     "prefix": "md-assist-chip:href",
@@ -394,7 +366,7 @@
     "body": [
       "<md-assist-chip ${1:elevated} href=\"${2:}\" download=\"${3:}\" target=\"${4|_blank,_parent,_self,_top|}\" ${5:disabled} ${6:soft-disabled} ${7:always-focusable} label=\"${8:}\" ${9:has-icon}></md-assist-chip>"
     ],
-    "description": ""
+    "description": "Assist Chip with all attributes in one snippet."
   },
   "MD Filter Chip": {
     "prefix": "md-filter-chip",
@@ -408,21 +380,21 @@
     "body": [
       "<md-filter-chip elevated></md-filter-chip>"
     ],
-    "description": ""
+    "description": "Whether or not the chip is elevated (renders with a shadow)."
   },
   "MD Filter Chip Removable": {
     "prefix": "md-filter-chip:removable",
     "body": [
       "<md-filter-chip removable></md-filter-chip>"
     ],
-    "description": ""
+    "description": "Whether or not the chip shows a trailing remove button."
   },
   "MD Filter Chip Selected": {
     "prefix": "md-filter-chip:selected",
     "body": [
       "<md-filter-chip selected></md-filter-chip>"
     ],
-    "description": ""
+    "description": "Whether or not the chip is selected."
   },
   "MD Filter Chip Disabled": {
     "prefix": "md-filter-chip:disabled",
@@ -457,7 +429,7 @@
     "body": [
       "<md-filter-chip aria-label-remove=\"${1}\"></md-filter-chip>"
     ],
-    "description": ""
+    "description": "The accessible label for the chip remove button."
   },
   "MD Filter Chip Has Icon": {
     "prefix": "md-filter-chip:has-icon",
@@ -478,7 +450,7 @@
     "body": [
       "<md-filter-chip ${1:elevated} ${2:removable} ${3:selected} ${4:disabled} ${5:soft-disabled} ${6:always-focusable} label=\"${7:}\" aria-label-remove=\"${8:}\" ${9:has-icon} ${10:has-selected-icon}></md-filter-chip>"
     ],
-    "description": ""
+    "description": "Filter Chip with all attributes in one snippet."
   },
   "MD Input Chip": {
     "prefix": "md-input-chip",
@@ -492,7 +464,7 @@
     "body": [
       "<md-input-chip avatar></md-input-chip>"
     ],
-    "description": ""
+    "description": "Whether or not the chip icon is displayed as a larger circular avatar image."
   },
   "MD Input Chip Href": {
     "prefix": "md-input-chip:href",
@@ -513,14 +485,14 @@
     "body": [
       "<md-input-chip remove-only></md-input-chip>"
     ],
-    "description": ""
+    "description": "Whether or not the chip only shows the trailing remove action."
   },
   "MD Input Chip Selected": {
     "prefix": "md-input-chip:selected",
     "body": [
       "<md-input-chip selected></md-input-chip>"
     ],
-    "description": ""
+    "description": "Whether or not the chip is selected."
   },
   "MD Input Chip Disabled": {
     "prefix": "md-input-chip:disabled",
@@ -555,7 +527,7 @@
     "body": [
       "<md-input-chip aria-label-remove=\"${1}\"></md-input-chip>"
     ],
-    "description": ""
+    "description": "The accessible label for the chip remove button."
   },
   "MD Input Chip Has Icon": {
     "prefix": "md-input-chip:has-icon",
@@ -569,7 +541,7 @@
     "body": [
       "<md-input-chip ${1:avatar} href=\"${2:}\" target=\"${3|_blank,_parent,_self,_top|}\" ${4:remove-only} ${5:selected} ${6:disabled} ${7:soft-disabled} ${8:always-focusable} label=\"${9:}\" aria-label-remove=\"${10:}\" ${11:has-icon}></md-input-chip>"
     ],
-    "description": ""
+    "description": "Input Chip with all attributes in one snippet."
   },
   "MD Suggestion Chip": {
     "prefix": "md-suggestion-chip",
@@ -583,7 +555,7 @@
     "body": [
       "<md-suggestion-chip elevated></md-suggestion-chip>"
     ],
-    "description": ""
+    "description": "Whether or not the chip is elevated (renders with a shadow)."
   },
   "MD Suggestion Chip Href": {
     "prefix": "md-suggestion-chip:href",
@@ -646,7 +618,7 @@
     "body": [
       "<md-suggestion-chip ${1:elevated} href=\"${2:}\" download=\"${3:}\" target=\"${4|_blank,_parent,_self,_top|}\" ${5:disabled} ${6:soft-disabled} ${7:always-focusable} label=\"${8:}\" ${9:has-icon}></md-suggestion-chip>"
     ],
-    "description": ""
+    "description": "Suggestion Chip with all attributes in one snippet."
   },
   "MD Dialog": {
     "prefix": "md-dialog",
@@ -696,14 +668,14 @@
     "body": [
       "<md-dialog ${1:open} ${2:quick} type=\"${3|alert|}\" ${4:no-focus-trap}></md-dialog>"
     ],
-    "description": ""
+    "description": "Dialog with all attributes in one snippet."
   },
   "MD Dialog Slot": {
     "prefix": "md-dialog:slot",
     "body": [
       "<${1|div,form|} slot=\"${2|headline,content,actions|}\">${3}</${1|div,form|}>"
     ],
-    "description": ""
+    "description": "MD Dialog Slot template."
   },
   "MD Divider": {
     "prefix": "md-divider",
@@ -738,7 +710,7 @@
     "body": [
       "<md-divider ${1:inset} ${2:inset-start} ${3:inset-end}></md-divider>"
     ],
-    "description": ""
+    "description": "Divider with all attributes in one snippet."
   },
   "MD Elevation": {
     "prefix": "md-elevation",
@@ -746,13 +718,6 @@
       "<md-elevation></md-elevation>"
     ],
     "description": "Material's elevation system is deliberately limited to just a handful of levels. This creative constraint means you need to make thoughtful decisions about your UI's elevation story."
-  },
-  "MD Elevation Full Properties": {
-    "prefix": "md-elevation:full-properties",
-    "body": [
-      "<md-elevation ></md-elevation>"
-    ],
-    "description": ""
   },
   "MD Fab": {
     "prefix": "md-fab",
@@ -794,7 +759,7 @@
     "body": [
       "<md-fab variant=\"${1|surface,primary,secondary,tertiary|}\" size=\"${2|small,medium,large|}\" label=\"${3:}\" ${4:lowered}></md-fab>"
     ],
-    "description": ""
+    "description": "Fab with all attributes in one snippet."
   },
   "MD Branded Fab": {
     "prefix": "md-branded-fab",
@@ -836,7 +801,7 @@
     "body": [
       "<md-branded-fab variant=\"${1|surface,primary,secondary,tertiary|}\" size=\"${2|medium,large|}\" label=\"${3:}\" ${4:lowered}></md-branded-fab>"
     ],
-    "description": ""
+    "description": "Branded Fab with all attributes in one snippet."
   },
   "MD Field": {
     "prefix": "md-field",
@@ -948,7 +913,7 @@
     "body": [
       "<md-${1|filled,outlined|}-field ${2:disabled} ${3:error} ${4:focused} label=\"${5:}\" ${6:no-asterisk} ${7:populated} ${8:required} ${9:resizable} supporting-text=\"${10:}\" error-text=\"${11:}\" count=\"${12:}\" max=\"${13:}\" ${14:has-start} ${15:has-end}></md-${1|filled,outlined|}-field>"
     ],
-    "description": ""
+    "description": "Field with all attributes in one snippet."
   },
   "MD Filled Field": {
     "prefix": "md-filled-field",
@@ -970,13 +935,6 @@
       "<md-icon>${1}</md-icon>"
     ],
     "description": "Icons can be used to represent common actions. Material Symbols are a set of variable icon fonts created at seven weights across three different styles."
-  },
-  "MD Icon Full Properties": {
-    "prefix": "md-icon:full-properties",
-    "body": [
-      "<md-icon ></md-icon>"
-    ],
-    "description": ""
   },
   "MD Icon Button": {
     "prefix": "md-icon-button",
@@ -1081,7 +1039,7 @@
     "body": [
       "<md-${1|icon,filled-icon,filled-tonal-icon,outlined-icon|}-button ${2:disabled} ${3:soft-disabled} ${4:flip-icon-in-rtl} href=\"${5:}\" download=\"${6:}\" target=\"${7|_blank,_parent,_self,_top|}\" aria-label-selected=\"${8:}\" ${9:toggle} ${10:selected} type=\"${11|submit,button,reset|}\" value=\"${12:}\" name=\"${13:}\" form=\"${14:}\"></md-${1|icon,filled-icon,filled-tonal-icon,outlined-icon|}-button>"
     ],
-    "description": ""
+    "description": "Icon Button with all attributes in one snippet."
   },
   "MD Filled Icon Button": {
     "prefix": "md-filled-icon-button",
@@ -1125,7 +1083,7 @@
     "body": [
       "<md-item ${1:multiline}></md-item>"
     ],
-    "description": ""
+    "description": "Item with all attributes in one snippet."
   },
   "MD List": {
     "prefix": "md-list",
@@ -1135,13 +1093,6 @@
       "</md-list>"
     ],
     "description": "Lists are continuous, vertical indexes of text and images"
-  },
-  "MD List Full Properties": {
-    "prefix": "md-list:full-properties",
-    "body": [
-      "<md-list ></md-list>"
-    ],
-    "description": ""
   },
   "MD List Item": {
     "prefix": "md-list-item",
@@ -1183,7 +1134,7 @@
     "body": [
       "<md-list-item ${1:disabled} type=\"${2|text,link,button|}\" href=\"${3:}\" target=\"${4|_blank,_parent,_self,_top|}\"></md-list-item>"
     ],
-    "description": ""
+    "description": "List Item with all attributes in one snippet."
   },
   "MD List Item With Slot": {
     "prefix": "md-list-item:with-slot",
@@ -1195,14 +1146,14 @@
       "\t<div slot=\"end\">${4}</div>",
       "</md-list-item>"
     ],
-    "description": ""
+    "description": "List item with start, headline, supporting-text and end slots."
   },
   "MD List Item Slot": {
     "prefix": "md-list-item:slot",
     "body": [
       "<div slot=\"${1|start,headline,supporting-text,end|}\">${2}</div>"
     ],
-    "description": ""
+    "description": "Slotted content block for a list item (start, headline, supporting-text or end)."
   },
   "MD Menu": {
     "prefix": "md-menu",
@@ -1337,7 +1288,7 @@
     "body": [
       "<md-menu anchor=\"${1:}\" positioning=\"${2|absolute,fixed,document,popover|}\" ${3:quick} ${4:has-overflow} ${5:open} x-offset=\"${6:}\" y-offset=\"${7:}\" ${8:no-horizontal-flip} ${9:no-vertical-flip} typeahead-delay=\"${10:}\" anchor-corner=\"${11|end-start,end-end,start-start,start-end|}\" menu-corner=\"${12|end-start,end-end,start-start,start-end|}\" ${13:stay-open-on-outside-click} ${14:stay-open-on-focusout} ${15:skip-restore-focus} default-focus=\"${16|none,list-root,first-item,last-item|}\" ${17:no-navigation-wrap}></md-menu>"
     ],
-    "description": ""
+    "description": "Menu with all attributes in one snippet."
   },
   "MD Menu Item": {
     "prefix": "md-menu-item",
@@ -1402,7 +1353,7 @@
     "body": [
       "<md-menu-item ${1:disabled} type=\"${2|menuitem,option,button,link|}\" href=\"${3:}\" target=\"${4|_blank,_parent,_self,_top|}\" ${5:keep-open} ${6:selected} typeahead-text=\"${7:}\"></md-menu-item>"
     ],
-    "description": ""
+    "description": "Menu Item with all attributes in one snippet."
   },
   "MD Sub Menu": {
     "prefix": "md-sub-menu",
@@ -1412,7 +1363,7 @@
       "\t<md-menu slot=\"menu\">${2}</md-menu>",
       "</md-sub-menu>"
     ],
-    "description": ""
+    "description": "Sub menu with trigger item and nested menu slots."
   },
   "MD Sub Menu Anchor Corner": {
     "prefix": "md-sub-menu:anchor-corner",
@@ -1447,7 +1398,7 @@
     "body": [
       "<md-sub-menu anchor-corner=\"${1|end-start,end-end,start-start,start-end|}\" menu-corner=\"${2|end-start,end-end,start-start,start-end|}\" hover-open-delay=\"${3:}\" hover-close-delay=\"${4:}\"></md-sub-menu>"
     ],
-    "description": ""
+    "description": "Sub Menu with all attributes in one snippet."
   },
   "MD Navigation Bar": {
     "prefix": "md-navigation-bar",
@@ -1477,7 +1428,7 @@
     "body": [
       "<md-navigation-bar active-index=\"${1:}\" ${2:hide-inactive-labels}></md-navigation-bar>"
     ],
-    "description": ""
+    "description": "Navigation Bar with all attributes in one snippet."
   },
   "MD Navigation Drawer": {
     "prefix": "md-navigation-drawer",
@@ -1507,7 +1458,7 @@
     "body": [
       "<md-navigation-drawer ${1:opened} pivot=\"${2|start,end|}\"></md-navigation-drawer>"
     ],
-    "description": ""
+    "description": "Navigation Drawer with all attributes in one snippet."
   },
   "MD Navigation Drawer Modal": {
     "prefix": "md-navigation-drawer-modal",
@@ -1537,7 +1488,7 @@
     "body": [
       "<md-navigation-drawer-modal ${1:opened} pivot=\"${2|start,end|}\"></md-navigation-drawer-modal>"
     ],
-    "description": ""
+    "description": "Navigation Drawer Modal with all attributes in one snippet."
   },
   "MD Navigation Tab": {
     "prefix": "md-navigation-tab",
@@ -1593,7 +1544,7 @@
     "body": [
       "<md-navigation-tab ${1:disabled} ${2:active} ${3:hide-inactive-label} label=\"${4:}\" badge-value=\"${5:}\" ${6:show-badge}></md-navigation-tab>"
     ],
-    "description": ""
+    "description": "Navigation Tab with all attributes in one snippet."
   },
   "MD Circular Progress": {
     "prefix": "md-circular-progress",
@@ -1635,7 +1586,7 @@
     "body": [
       "<md-circular-progress value=\"${1:}\" max=\"${2:}\" ${3:indeterminate} ${4:four-color}></md-circular-progress>"
     ],
-    "description": ""
+    "description": "Circular Progress with all attributes in one snippet."
   },
   "MD Linear Progress": {
     "prefix": "md-linear-progress",
@@ -1649,7 +1600,7 @@
     "body": [
       "<md-linear-progress buffer=\"${1}\"></md-linear-progress>"
     ],
-    "description": ""
+    "description": "Buffer amount to display, a fraction between 0 and max. If the value is 0 or negative, the buffer is not displayed."
   },
   "MD Linear Progress Value": {
     "prefix": "md-linear-progress:value",
@@ -1684,7 +1635,7 @@
     "body": [
       "<md-linear-progress buffer=\"${1:}\" value=\"${2:}\" max=\"${3:}\" ${4:indeterminate} ${5:four-color}></md-linear-progress>"
     ],
-    "description": ""
+    "description": "Linear Progress with all attributes in one snippet."
   },
   "MD Radio": {
     "prefix": "md-radio",
@@ -1740,7 +1691,7 @@
     "body": [
       "<md-radio ${1:disabled} ${2:required} value=\"${3:}\" ${4:checked} name=\"${5:}\" form=\"${6:}\"></md-radio>"
     ],
-    "description": ""
+    "description": "Radio with all attributes in one snippet."
   },
   "MD Ripple": {
     "prefix": "md-ripple",
@@ -1768,7 +1719,7 @@
     "body": [
       "<md-ripple ${1:disabled} for=\"${2:controlId}\"></md-ripple>"
     ],
-    "description": ""
+    "description": "Ripple with all attributes in one snippet."
   },
   "MD Segmented Button": {
     "prefix": "md-outlined-segmented-button",
@@ -1817,7 +1768,7 @@
     "body": [
       "<md-outlined-segmented-button ${1:disabled} ${2:selected} label=\"${3:}\" ${4:no-checkmark} ${5:has-icon}></md-outlined-segmented-button>"
     ],
-    "description": ""
+    "description": "Segmented Button with all attributes in one snippet."
   },
   "MD Segmented Button Set": {
     "prefix": "md-outlined-segmented-button-set",
@@ -1840,7 +1791,7 @@
     "body": [
       "<md-outlined-segmented-button-set ${1:multiselect}></md-outlined-segmented-button-set>"
     ],
-    "description": ""
+    "description": "Segmented Button Set with all attributes in one snippet."
   },
   "MD Select": {
     "prefix": "md-select",
@@ -1982,7 +1933,7 @@
     "body": [
       "<md-${1|filled,outlined|}-select ${2:quick} ${3:required} ${4:disabled} error-text=\"${5:}\" label=\"${6:}\" ${7:no-asterisk} supporting-text=\"${8:}\" ${9:error} menu-positioning=\"${10|absolute,fixed,popover|}\" ${11:clamp-menu-width} typeahead-delay=\"${12:}\" ${13:has-leading-icon} display-text=\"${14:}\" menu-align=\"${15|start,end|}\" value=\"${16:}\" selected-index=\"${17:}\" name=\"${18:}\" form=\"${19:}\"></md-${1|filled,outlined|}-select>"
     ],
-    "description": ""
+    "description": "Select with all attributes in one snippet."
   },
   "MD Filled Select": {
     "prefix": "md-filled-select",
@@ -2045,7 +1996,7 @@
     "body": [
       "<md-select-option ${1:disabled} ${2:selected} value=\"${3:}\" typeahead-text=\"${4:}\" display-text=\"${5:}\"></md-select-option>"
     ],
-    "description": ""
+    "description": "Select Option with all attributes in one snippet."
   },
   "MD Select Option Slot": {
     "prefix": "md-select-option:slot",
@@ -2054,7 +2005,7 @@
       "\t<div slot=\"headline\">${2}</div>",
       "</md-select-option>"
     ],
-    "description": ""
+    "description": "Select option with headline slot."
   },
   "MD Slider": {
     "prefix": "md-slider",
@@ -2201,7 +2152,7 @@
     "body": [
       "<md-slider ${1:disabled} min=\"${2:}\" max=\"${3:}\" value=\"${4:}\" value-start=\"${5:}\" value-end=\"${6:}\" value-label=\"${7:}\" value-label-start=\"${8:}\" value-label-end=\"${9:}\" aria-label-start=\"${10:}\" aria-label-end=\"${11:}\" aria-valuetext-start=\"${12:}\" aria-valuetext-end=\"${13:}\" step=\"${14:}\" ${15:ticks} ${16:labeled} ${17:range} name=\"${18:}\" form=\"${19:}\"></md-slider>"
     ],
-    "description": ""
+    "description": "Slider with all attributes in one snippet."
   },
   "MD Switch": {
     "prefix": "md-switch",
@@ -2271,7 +2222,7 @@
     "body": [
       "<md-switch ${1:disabled} ${2:selected} ${3:icons} ${4:show-only-selected-icon} ${5:required} value=\"${6:}\" name=\"${7:}\" form=\"${8:}\"></md-switch>"
     ],
-    "description": ""
+    "description": "Switch with all attributes in one snippet."
   },
   "MD Tabs": {
     "prefix": "md-tabs",
@@ -2301,7 +2252,7 @@
     "body": [
       "<md-tabs ${1:auto-activate} active-tab-index=\"${2:}\"></md-tabs>"
     ],
-    "description": ""
+    "description": "Tabs with all attributes in one snippet."
   },
   "MD Tabs Tab Panel": {
     "prefix": "md-tabs:tab-panel",
@@ -2313,7 +2264,7 @@
       "\t${3}",
       "</div>"
     ],
-    "description": ""
+    "description": "Tabs bar with a linked tab panel section."
   },
   "MD Primary Tab": {
     "prefix": "md-primary-tab",
@@ -2327,7 +2278,7 @@
     "body": [
       "<md-primary-tab inline-icon></md-primary-tab>"
     ],
-    "description": ""
+    "description": "Whether or not the icon renders inline with the label or stacked vertically."
   },
   "MD Primary Tab Active": {
     "prefix": "md-primary-tab:active",
@@ -2355,7 +2306,7 @@
     "body": [
       "<md-primary-tab ${1:inline-icon} ${2:active} ${3:has-icon} ${4:icon-only}></md-primary-tab>"
     ],
-    "description": ""
+    "description": "Primary Tab with all attributes in one snippet."
   },
   "MD Secondary Tab": {
     "prefix": "md-secondary-tab",
@@ -2390,7 +2341,7 @@
     "body": [
       "<md-secondary-tab ${1:active} ${2:has-icon} ${3:icon-only}></md-secondary-tab>"
     ],
-    "description": ""
+    "description": "Secondary Tab with all attributes in one snippet."
   },
   "MD Text Field": {
     "prefix": "md-text-field",
@@ -2615,7 +2566,7 @@
     "body": [
       "<md-${1|filled,outlined|}-text-field ${2:disabled} ${3:error} error-text=\"${4:}\" label=\"${5:}\" ${6:no-asterisk} ${7:required} value=\"${8:}\" prefix-text=\"${9:}\" suffix-text=\"${10:}\" ${11:has-leading-icon} ${12:has-trailing-icon} supporting-text=\"${13:}\" text-direction=\"${14:}\" rows=\"${15:}\" cols=\"${16:}\" inputmode=\"${17:}\" max=\"${18:}\" maxlength=\"${19:}\" min=\"${20:}\" minlength=\"${21:}\" pattern=\"${22:}\" placeholder=\"${23:}\" ${24:readonly} ${25:multiple} step=\"${26:}\" ${27:no-spinner} type=\"${28|text,email,number,password,search,tel,url,textarea|}\" autocomplete=\"${29:}\" name=\"${30:}\" form=\"${31:}\"></md-${1|filled,outlined|}-text-field>"
     ],
-    "description": ""
+    "description": "Text Field with all attributes in one snippet."
   },
   "MD Filled Text Field": {
     "prefix": "md-filled-text-field",

@@ -11,22 +11,18 @@ export const iconButton: ComponentSchema = {
         {
             name: 'md-icon-button',
             description: 'Icon buttons can be grouped together or they can stand alone.',
-            treeLabel: 'Icon Button',
         },
         {
             name: 'md-filled-icon-button',
             description: 'Filled icon buttons have higher visual impact and are best for high emphasis actions.',
-            treeLabel: 'Filled Icon Button',
         },
         {
             name: 'md-filled-tonal-icon-button',
             description: 'Filled tonal icon buttons are a middle ground between filled and outlined icon buttons. They\'re useful in contexts where the button requires slightly more emphasis than an outline would give, such as a secondary action paired with a high emphasis action.',
-            treeLabel: 'Filled Tonal Icon Button',
         },
         {
             name: 'md-outlined-icon-button',
             description: 'Outlined icon buttons are medium-emphasis buttons. They\'re useful when an icon button needs more emphasis than a standard icon button but less than a filled or filled tonal icon button.',
-            treeLabel: 'Outlined Icon Button',
         },
     ],
     tagTemplate: 'md-{variant}-button',
